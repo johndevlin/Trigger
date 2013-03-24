@@ -4,7 +4,7 @@ My Boilerplate
 The fuck?
 ---------
 
-It's a mashup of the [HTML5 Boilerplate](http://html5boilerplate.com/), with some [Normalise.css](http://necolas.github.com/normalize.css/), the [1140 CSS Grid](http://cssgrid.net/), and some of my own HTML & CSS. 
+It's a mashup of the [HTML5 Boilerplate](http://html5boilerplate.com/), with some [Normalise.css](http://necolas.github.com/normalize.css/), a pinch of the3 [1140 CSS Grid](http://cssgrid.net/), and some of my own HTML & CSS. 
 
 So, the fuck?
 -------------
