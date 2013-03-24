@@ -66,7 +66,7 @@ td { vertical-align: top; }
 }
 
 html {
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 }
 
 body {
@@ -106,7 +106,7 @@ p {
 }
 
 p a {
-	color: #008ED6;
+	color: #008ed6;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -139,7 +139,7 @@ h6 {
 /* Buttons */
 
 a.button {
-	color: #FFFFFF !important;
+	color: #ffffff !important;
 	font-size: 15px;
 	padding: 10px 15px;
 }
