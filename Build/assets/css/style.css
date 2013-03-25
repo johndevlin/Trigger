@@ -136,21 +136,12 @@ h6 {
 }
 
 
-/* Buttons */
-
-a.button {
-	color: #ffffff !important;
-	font-size: 15px;
-	padding: 10px 15px;
-}
-
-
 /**********
 	Header
 */
 
 header {
-	margin-top: 20px;
+	padding-top: 20px;
 }
 
 header h1 a {
@@ -161,7 +152,7 @@ header h1 a {
 }
 
 header nav {
-	margin-top: 20px;
+	padding-top: 20px;
 }
 
 
@@ -171,7 +162,7 @@ header nav {
 */
 
 div#main {
-	margin-top: 10px;
+	padding-top: 20px;
 }
 
 
@@ -180,9 +171,9 @@ div#main {
 	Footer
 */
 
-footer {}
-
-footer .container {}
+footer {
+	padding-top: 20px;
+}
 	
 	
 	
