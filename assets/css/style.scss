@@ -58,6 +58,7 @@ td { vertical-align: top; }
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
 
+
 /*************
 	Variables
 */
@@ -67,10 +68,39 @@ td { vertical-align: top; }
 $white: #ffffff;
 $darkgrey: #333333;
 
+$pcolour: $darkgrey;
+
 
 /* Margins */
 
 $sitemargin: 50px;
+
+
+
+
+/**********
+	Mixins 
+*/
+
+@mixin pbutton {
+	
+	cursor: pointer;
+	
+	&::-moz-selection {
+		background: transparent; 
+		color: $pcolour;
+	}
+	
+	&::selection {
+		background: transparent; 
+		color: $pcolour;
+	}
+	
+}
+
+p.my-button {
+	@include pbutton;
+}
 
 
 * {

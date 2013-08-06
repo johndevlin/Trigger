@@ -202,6 +202,18 @@ td {
 */
 /* Colours */
 /* Margins */
+/**********
+	Mixins 
+*/
+p.my-button {
+  cursor: pointer; }
+  p.my-button::-moz-selection {
+    background: transparent;
+    color: #333333; }
+  p.my-button::selection {
+    background: transparent;
+    color: #333333; }
+
 * {
   margin: 0;
   -webkit-font-smoothing: antialiased;
