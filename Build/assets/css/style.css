@@ -301,12 +301,23 @@ footer {
 /****************
 	Media Queries 
 */
-/* Smaller screens */
-/* Mobile */
+/* Tablet (Landscape) */
+@media only screen and (max-width: 1025px) {
+  /* Dust */ }
+/* Tablet (Portrait) */
+@media only screen and (max-width: 1023px) {
+  /* Dust */ }
+/* Mobile (Landscape) */
 @media handheld, only screen and (max-width: 767px) {
   body {
     font-size: 16px;
     -webkit-text-size-adjust: none; } }
+/* Mobile (Portrait) */
+@media handheld, only screen and (max-width: 479px) {
+  /* Dust */ }
+/***********
+	Helpers
+*/
 .ir {
   display: block;
   border: 0;
@@ -356,6 +367,9 @@ footer {
 .clearfix {
   *zoom: 1; }
 
+/*********
+	Print 
+*/
 @media print {
   * {
     background: transparent !important;

@@ -246,27 +246,43 @@ footer {
 */
 
 
-/* Smaller screens */
+/* Tablet (Landscape) */
+@media only screen and (max-width: 1025px) {
 
-@media only screen and (max-width: 1023px) {
-
+	/* Dust */
 
 }
 
+/* Tablet (Portrait) */
+@media only screen and (max-width: 1023px) {
+	
+	/* Dust */
+	
+}
 
-/* Mobile */
-
+/* Mobile (Landscape) */
 @media handheld, only screen and (max-width: 767px) {
 
 	body {
 		font-size: 16px;
 		-webkit-text-size-adjust: none;
 	}
-	
-	
 
 }
 
+/* Mobile (Portrait) */
+@media handheld, only screen and (max-width: 479px) {
+	
+	
+	/* Dust */
+	
+}
+
+
+
+/***********
+	Helpers
+*/
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }
@@ -277,6 +293,12 @@ footer {
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
+
+
+
+/*********
+	Print 
+*/
 
 @media print {
 * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
