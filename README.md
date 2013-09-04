@@ -40,7 +40,7 @@ To-dos
 This is (and probably always will be) a work in progress. Here are some features I'll be adding in.
 
 * Adding in a responsivness with [Bourbon Neat](http://neat.bourbon.io/)
-* Update [no_hammer branch](https://github.com/johndevlin/Trigger/tree/no_hammer).
+* Update [no_hammer branch](https://github.com/johndevlin/Trigger/tree/no_hammer)
 
 
 
