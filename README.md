@@ -21,7 +21,16 @@ If Hammer isn't your thing, I've branched off [a non-hammer version of this](htt
 JavaScript
 ----------
 
-I've added in a lot of regularly used jQuery to scripts.js. These should be removed if not needed, think of all those sweet, sweet Kb you're saving yo'.
+I've added in a lot of regularly used jQuery to scripts.js. 
+
+* Date injection - For the footer's copyright
+* [jQuery Smartresize](https://github.com/louisremi/jquery-smartresize) - Debounced resize events for jQuery
+* ESC Key listener
+* Sticky content after scroll
+* Validation
+* Smooth scroll
+
+These should be removed if not needed, think of all those sweet, sweet Kb you're saving yo'.
 
 
 
