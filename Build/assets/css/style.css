@@ -265,15 +265,6 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility; }
 
 /**********
-	Images 
-*/
-img, object, embed {
-  max-width: 100%; }
-
-img {
-  height: auto; }
-
-/**********
 	Header
 */
 header {
@@ -307,6 +298,35 @@ footer p {
   font-size: 0.75em;
   font-weight: bold; }
 
+/*******************
+	Responsive Guff
+*/
+img, object, embed {
+  max-width: 100%; }
+
+img {
+  height: auto; }
+
+.mobile {
+  display: none; }
+
+.desktop {
+  display: block; }
+
+/**********************
+	Icons
+*/
+@font-face {
+  font-family: 'Icons';
+  src: url("/assets/typography/icons.eot");
+  src: url("/assets/typography/iconseot?#iefix") format("embedded-opentype"), url("/assets/typography/icons.woff") format("woff"), url("/assets/typography/icons.woff") format("truetype"), url("/assets/typography/icons.ttf#Icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+a.icons:before {
+  content: attr(data-icon);
+  font-family: 'Icons'; }
+
 /****************
 	Media Queries 
 */
@@ -320,7 +340,13 @@ footer p {
 @media handheld, only screen and (max-width: 767px) {
   body {
     font-size: 16px;
-    -webkit-text-size-adjust: none; } }
+    -webkit-text-size-adjust: none; }
+
+  .mobile {
+    display: block; }
+
+  .desktop {
+    display: none; } }
 /* Mobile (Portrait) */
 @media handheld, only screen and (max-width: 479px) {
   /* Dust */ }
