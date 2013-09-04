@@ -7,9 +7,6 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 body { margin: 0; font-size: 1em; line-height: 1.4; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
-
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
 blockquote { margin: 1em 40px; }
@@ -57,6 +54,9 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
+::-moz-selection { background: #fe57a1; color: #ffffff; text-shadow: none; }
+::selection { background: #fe57a1; color: #ffffff; text-shadow: none; }
+
 
 
 /*************
@@ -66,9 +66,9 @@ td { vertical-align: top; }
 /* Colours */
 
 $white: #ffffff;
-$darkgrey: #333333;
+$grey: #333333;
 
-$pcolour: $darkgrey;
+$pcolour: $grey;
 
 
 /* Margins */
@@ -114,7 +114,7 @@ html {
 }
 
 body {
-	color: $darkgrey;
+	color: $grey;
 	font-family: 'Helvetica Neue', Helvetica, Arial, san-serif; 
 	font-size: 1em;
 	line-height: 1;
@@ -122,7 +122,7 @@ body {
 }
 
 a {
-	color: $darkgrey;
+	color: $grey;
 	text-decoration: none;
 		transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
@@ -143,7 +143,7 @@ a {
 */
 
 p {
-	color: $darkgrey;
+	color: $grey;
 	font-family: 'Helvetica Neue', Helvetica, Arial, san-serif; 
 	font-size: 1em;
 	line-height: 1.5;
@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Helvetica Neue', Helvetica, Arial, san-serif; 
 	font-weight: normal;
 	line-height: 1.5;
-	margin:0 0 20px;
+	margin: 0 0 20px;
 	padding: 0;
 }
 

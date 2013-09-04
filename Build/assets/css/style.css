@@ -26,16 +26,6 @@ body {
   font-size: 1em;
   line-height: 1.4; }
 
-::-moz-selection {
-  background: #fe57a1;
-  color: #fff;
-  text-shadow: none; }
-
-::selection {
-  background: #fe57a1;
-  color: #fff;
-  text-shadow: none; }
-
 abbr[title] {
   border-bottom: 1px dotted; }
 
@@ -196,6 +186,16 @@ td {
   background: #ccc;
   color: black;
   padding: 0.2em 0; }
+
+::-moz-selection {
+  background: #fe57a1;
+  color: #ffffff;
+  text-shadow: none; }
+
+::selection {
+  background: #fe57a1;
+  color: #ffffff;
+  text-shadow: none; }
 
 /*************
 	Variables

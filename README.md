@@ -1,19 +1,21 @@
-Boilerplate
-===========
+Trigger
+=======
 
 
-Uh?
+WTF
 ---
 
-This is a super lightweight front-end framework made to use with [Hammer for Mac](http://hammerformac.com/). It's based on [HTML5 Boilerplate](http://html5boilerplate.com/), with some unnecessary stuff taken out, and some [SASS](http://sass-lang.com/) & [Bourbon Mixins](http://bourbon.io/) added in.
+Trigger is a lightweight HTML5 template made to use with [Hammer for Mac](http://hammerformac.com/). If Hammer isn't your thing, I've branched off a non-hammer version of this. 
+
+It's based on [the HTML5 Boilerplate](http://html5boilerplate.com/), with some of the guff I never use stripped out, and some [SASS](http://sass-lang.com/) & [Bourbon Mixins](http://bourbon.io/) added in.
 
 
 To-dos
 ------
 
-Some features I'll be adding in.
+This is (and probably always will be) a work in progress. Here are some features I'll be adding in.
 
-* Making this responsive with [Bourbon Neat](http://neat.bourbon.io/)
+* Adding in a responsivness with [Bourbon Neat](http://neat.bourbon.io/)
 
 
 Feedback
