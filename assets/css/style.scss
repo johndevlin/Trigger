@@ -147,7 +147,7 @@ p {
 	font-family: 'Helvetica Neue', Helvetica, Arial, san-serif; 
 	font-size: 1em;
 	line-height: 1.5;
-	margin: 0 0 10px;
+	margin: 0 0 1em;
 }
 
 p a {
@@ -156,9 +156,9 @@ p a {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Helvetica Neue', Helvetica, Arial, san-serif; 
-	font-weight: normal;
+	font-weight: bold;
 	line-height: 1.5;
-	margin: 0 0 20px;
+	margin: 0 0 1em;
 	padding: 0;
 }
 
@@ -225,7 +225,7 @@ header nav {
 */
 
 div#main {
-	padding: 20px 20px 0;
+	padding: 0 20px;
 }
 
 
@@ -235,7 +235,12 @@ div#main {
 */
 
 footer {
-	padding: 20px 20px 0;
+	padding: 0 20px;
+}
+
+footer p {
+	font-size: 0.75em;
+	font-weight: bold;
 }
 
 
