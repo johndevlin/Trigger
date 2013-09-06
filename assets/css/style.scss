@@ -124,9 +124,7 @@ body {
 a {
 	color: $grey;
 	text-decoration: none;
-		transition: all 0.3s ease-in-out;
-   -moz-transition: all 0.3s ease-in-out;
--webkit-transition: all 0.3s ease-in-out;
+	@include transition (all 0.3s ease-in-out);
 }
 
 .container {
