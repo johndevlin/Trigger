@@ -398,7 +398,7 @@ img {
 .desktop {
   display: block; }
 
-/**********************
+/*********
 	Icons
 */
 @font-face {
@@ -415,7 +415,7 @@ a.icons:before {
 /****************
 	Media Queries 
 */
-/* Tablet (Landscape) */
+/* Landscape tablet and small desktop */
 @media only screen and (max-width: 1025px) {
   /* Dust */ }
 /* Tablet (Portrait) */

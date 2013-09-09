@@ -248,6 +248,7 @@ div#main article {
 		@include span-columns(4);
 	}
 }
+
 div#main aside {
 	@include media($tablet) {
 		@include span-columns(2);
@@ -309,7 +310,7 @@ img {
 
 
 
-/**********************
+/*********
 	Icons
 */
 
@@ -335,7 +336,7 @@ a.icons:before {
 	Media Queries 
 */
 
-/* Tablet (Landscape) */
+/* Landscape tablet and small desktop */
 @media only screen and (max-width: 1025px) {
 
 	/* Dust */
