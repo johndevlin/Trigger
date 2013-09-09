@@ -197,6 +197,20 @@ td {
   color: #ffffff;
   text-shadow: none; }
 
+/*****************
+	Bourbon: Neat
+*/
+/*****************
+	Grid settings
+*/
+/***************
+	Breakpoints
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /*************
 	Variables
 */
@@ -237,11 +251,15 @@ a {
   transition: all 0.3s ease-in-out; }
 
 .container {
-  height: auto;
-  margin: 0 auto;
-  text-align: left;
-  width: 100%;
-  max-width: 1140px; }
+  *zoom: 1;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
 
 /**************
 	Typography
@@ -283,6 +301,73 @@ header nav {
 */
 div#main {
   padding: 0 20px; }
+
+/* Desktop */
+div#main article {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  div#main article:last-child {
+    margin-right: 0; }
+
+div#main aside {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  div#main aside:last-child {
+    margin-right: 0; }
+
+/* Small (Landscape tablet & small desktop) */
+@media screen and (max-width: 1025px) {
+  div#main article {
+    display: block;
+    float: left;
+    margin-right: 3.57866%;
+    width: 61.158%; }
+    div#main article:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 1025px) {
+  div#main aside {
+    display: block;
+    float: left;
+    margin-right: 3.57866%;
+    width: 35.26334%; }
+    div#main aside:last-child {
+      margin-right: 0; } }
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  div#main article {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 65.05695%; }
+    div#main article:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 768px) {
+  div#main aside {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 30.11389%; }
+    div#main aside:last-child {
+      margin-right: 0; } }
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  div#main article,
+  div#main aside {
+    display: block;
+    float: left;
+    margin-right: 38.19821%;
+    width: 100%; }
+    div#main article:last-child,
+    div#main aside:last-child {
+      margin-right: 0; } }
 
 .stuck {
   position: fixed;
@@ -334,10 +419,10 @@ a.icons:before {
 @media only screen and (max-width: 1025px) {
   /* Dust */ }
 /* Tablet (Portrait) */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 768px) {
   /* Dust */ }
 /* Mobile (Landscape) */
-@media handheld, only screen and (max-width: 767px) {
+@media handheld, only screen and (max-width: 480px) {
   body {
     font-size: 16px;
     -webkit-text-size-adjust: none; }
@@ -348,7 +433,7 @@ a.icons:before {
   .desktop {
     display: none; } }
 /* Mobile (Portrait) */
-@media handheld, only screen and (max-width: 479px) {
+@media handheld, only screen and (max-width: 320px) {
   /* Dust */ }
 /***********
 	Helpers

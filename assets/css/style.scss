@@ -58,6 +58,13 @@ td { vertical-align: top; }
 ::selection { background: #fe57a1; color: #ffffff; text-shadow: none; }
 
 
+/*****************
+	Bourbon: Neat
+*/
+
+@import "grid-settings";
+@import "neat/neat";
+
 
 /*************
 	Variables
@@ -128,11 +135,7 @@ a {
 }
 
 .container {
-	height: auto;
-	margin: 0 auto;
-	text-align: left;
-	width: 100%;
-	max-width: 1140px;
+	@include outer-container;
 }
 
 
@@ -214,6 +217,53 @@ div#main {
 	padding: 0 20px;
 }
 
+
+/* Desktop */
+div#main article {
+	@include span-columns(8);
+}
+
+div#main aside {
+	@include span-columns(4);
+}
+
+
+/* Small (Landscape tablet & small desktop) */
+div#main article {
+	@include media($small) {
+		@include span-columns(5);
+	}
+}
+
+div#main aside {
+	@include media($small) {
+		@include span-columns(3);
+	}
+}
+
+
+/* Tablet */
+div#main article {
+	@include media($tablet) {
+		@include span-columns(4);
+	}
+}
+div#main aside {
+	@include media($tablet) {
+		@include span-columns(2);
+	}
+}
+
+
+/* Mobile */
+div#main article,
+div#main aside {
+	@include media($mobile) {
+		@include span-columns(1);
+	}
+}
+
+
 .stuck {
 	position: fixed;
 	top: 30px;
@@ -285,7 +335,6 @@ a.icons:before {
 	Media Queries 
 */
 
-
 /* Tablet (Landscape) */
 @media only screen and (max-width: 1025px) {
 
@@ -294,14 +343,14 @@ a.icons:before {
 }
 
 /* Tablet (Portrait) */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 768px) {
 	
 	/* Dust */
 	
 }
 
 /* Mobile (Landscape) */
-@media handheld, only screen and (max-width: 767px) {
+@media handheld, only screen and (max-width: 480px) {
 
 	body {
 		font-size: 16px;
@@ -319,7 +368,7 @@ a.icons:before {
 }
 
 /* Mobile (Portrait) */
-@media handheld, only screen and (max-width: 479px) {
+@media handheld, only screen and (max-width: 320px) {
 	
 	
 	/* Dust */
