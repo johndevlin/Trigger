@@ -1,0 +1,48 @@
+
+
+
+/* Desktop */
+div#main article {
+	@include span-columns(8);
+}
+
+div#main aside {
+	@include span-columns(4);
+}
+
+
+/* Small (Landscape tablet & small desktop) */
+div#main article {
+	@include media($small) {
+		@include span-columns(5);
+	}
+}
+
+div#main aside {
+	@include media($small) {
+		@include span-columns(3);
+	}
+}
+
+
+/* Tablet */
+div#main article {
+	@include media($tablet) {
+		@include span-columns(4);
+	}
+}
+
+div#main aside {
+	@include media($tablet) {
+		@include span-columns(2);
+	}
+}
+
+
+/* Mobile */
+div#main article,
+div#main aside {
+	@include media($mobile) {
+		@include span-columns(1);
+	}
+}

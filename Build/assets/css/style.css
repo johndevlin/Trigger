@@ -211,23 +211,29 @@ td {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/********************
+	Website Settings
+	----------------
+	Colour, and 
+	typography
+	
+*/
 /*************
 	Variables
 */
 /* Colours */
 /* Margins */
-/**********
-	Mixins 
-*/
-p.my-button {
-  cursor: pointer; }
-  p.my-button::-moz-selection {
-    background: transparent;
-    color: #333333; }
-  p.my-button::selection {
-    background: transparent;
-    color: #333333; }
+/* Typography */
+/* Helvetica */
+.helvetica-regular {
+  font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+  font-weight: normal; }
 
+.helvetica-bold {
+  font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+  font-weight: bold; }
+
+/* Headings */
 * {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -238,7 +244,6 @@ html {
 
 body {
   color: #333333;
-  font-family: 'Helvetica Neue', Helvetica, Arial, san-serif;
   font-size: 1em;
   line-height: 1;
   margin: 0; }
@@ -250,23 +255,13 @@ a {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
-.container {
-  *zoom: 1;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto; }
-  .container:before, .container:after {
-    content: " ";
-    display: table; }
-  .container:after {
-    clear: both; }
-
 /**************
 	Typography
 */
 p {
-  color: #333333;
-  font-family: 'Helvetica Neue', Helvetica, Arial, san-serif;
+  color: #777777;
+  font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+  font-weight: normal;
   font-size: 1em;
   line-height: 1.5;
   margin: 0 0 1em; }
@@ -275,33 +270,17 @@ p a {
   color: #008ed6; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, san-serif;
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 0 0 1em;
   padding: 0;
   text-rendering: optimizeLegibility; }
 
-/**********
-	Header
+/********
+	Grid
 */
-header {
-  padding: 20px 20px 0; }
-
-header h1 a {
-  display: block;
-  height: 0px;
-  width: 0px; }
-
-header nav {
-  padding-top: 20px; }
-
-/**********
-	Main
-*/
-div#main {
-  padding: 0 20px; }
-
 /* Desktop */
 div#main article {
   display: block;
@@ -320,7 +299,7 @@ div#main aside {
     margin-right: 0; }
 
 /* Small (Landscape tablet & small desktop) */
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1139px) {
   div#main article {
     display: block;
     float: left;
@@ -329,7 +308,7 @@ div#main aside {
     div#main article:last-child {
       margin-right: 0; } }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1139px) {
   div#main aside {
     display: block;
     float: left;
@@ -339,7 +318,7 @@ div#main aside {
       margin-right: 0; } }
 
 /* Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   div#main article {
     display: block;
     float: left;
@@ -348,7 +327,7 @@ div#main aside {
     div#main article:last-child {
       margin-right: 0; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   div#main aside {
     display: block;
     float: left;
@@ -358,7 +337,7 @@ div#main aside {
       margin-right: 0; } }
 
 /* Mobile */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   div#main article,
   div#main aside {
     display: block;
@@ -368,6 +347,36 @@ div#main aside {
     div#main article:last-child,
     div#main aside:last-child {
       margin-right: 0; } }
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/**********
+	Header
+*/
+header {
+  padding: 20px 20px 0; }
+
+header h1 a {
+  color: #333333;
+  display: block;
+  height: 0px;
+  width: 0px; }
+
+header nav {
+  padding-top: 20px; }
+
+/**********
+	Main
+*/
+div#main {
+  padding: 0 20px; }
 
 .stuck {
   position: fixed;
@@ -416,15 +425,14 @@ a.icons:before {
 	Media Queries 
 */
 /* Landscape tablet and small desktop */
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1139px) {
   /* Dust */ }
 /* Tablet (Portrait) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   /* Dust */ }
 /* Mobile (Landscape) */
-@media handheld, only screen and (max-width: 480px) {
+@media handheld, only screen and (max-width: 767px) {
   body {
-    font-size: 16px;
     -webkit-text-size-adjust: none; }
 
   .mobile {
@@ -432,9 +440,6 @@ a.icons:before {
 
   .desktop {
     display: none; } }
-/* Mobile (Portrait) */
-@media handheld, only screen and (max-width: 320px) {
-  /* Dust */ }
 /***********
 	Helpers
 */

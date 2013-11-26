@@ -66,48 +66,16 @@ td { vertical-align: top; }
 @import "neat/neat";
 
 
-/*************
-	Variables
+
+/********************
+	Website Settings
+	----------------
+	Colour, and 
+	typography
+	
 */
 
-/* Colours */
-
-$white: #ffffff;
-$grey: #333333;
-
-$pcolour: $grey;
-
-
-/* Margins */
-
-$sitemargin: 50px;
-
-
-
-
-/**********
-	Mixins 
-*/
-
-@mixin pbutton {
-	
-	cursor: pointer;
-	
-	&::-moz-selection {
-		background: transparent; 
-		color: $pcolour;
-	}
-	
-	&::selection {
-		background: transparent; 
-		color: $pcolour;
-	}
-	
-}
-
-p.my-button {
-	@include pbutton;
-}
+@import "settings";
 
 
 * {
@@ -122,7 +90,7 @@ html {
 
 body {
 	color: $grey;
-	font-family: 'Helvetica Neue', Helvetica, Arial, san-serif; 
+	@extend .paragraph;
 	font-size: 1em;
 	line-height: 1;
 	margin: 0;
@@ -134,58 +102,26 @@ a {
 	@include transition (all 0.3s ease-in-out);
 }
 
-.container {
-	@include outer-container;
-}
 
 
 /**************
 	Typography
 */
 
-p {
-	color: $grey;
-	font-family: 'Helvetica Neue', Helvetica, Arial, san-serif; 
-	font-size: 1em;
-	line-height: 1.5;
-	margin: 0 0 1em;
-}
+@import "typography";
 
-p a {
-	color: #008ed6;
-}
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Helvetica Neue', Helvetica, Arial, san-serif; 
-	font-weight: bold;
-	line-height: 1.5;
-	margin: 0 0 1em;
-	padding: 0;
-	text-rendering: optimizeLegibility;
-}
 
-h1 {
+/********
+	Grid
+*/
 
-}
+@import "grid";
 
-h2 {
-	
-}
 
-h3 {
-	
-}
 
-h4 {
-	
-}
-
-h5 {
-	
-}
-
-h6 {
-	
+.container {
+	@include outer-container;
 }
 
 
@@ -193,19 +129,7 @@ h6 {
 	Header
 */
 
-header {
-	padding: 20px 20px 0;
-}
-
-header h1 a {
-	display: block;
-	height: 0px;
-	width: 0px;
-}
-
-header nav {
-	padding-top: 20px;
-}
+@import "header";
 
 
 
@@ -216,54 +140,6 @@ header nav {
 div#main {
 	padding: 0 20px;
 }
-
-
-/* Desktop */
-div#main article {
-	@include span-columns(8);
-}
-
-div#main aside {
-	@include span-columns(4);
-}
-
-
-/* Small (Landscape tablet & small desktop) */
-div#main article {
-	@include media($small) {
-		@include span-columns(5);
-	}
-}
-
-div#main aside {
-	@include media($small) {
-		@include span-columns(3);
-	}
-}
-
-
-/* Tablet */
-div#main article {
-	@include media($tablet) {
-		@include span-columns(4);
-	}
-}
-
-div#main aside {
-	@include media($tablet) {
-		@include span-columns(2);
-	}
-}
-
-
-/* Mobile */
-div#main article,
-div#main aside {
-	@include media($mobile) {
-		@include span-columns(1);
-	}
-}
-
 
 .stuck {
 	position: fixed;
@@ -276,14 +152,7 @@ div#main aside {
 	Footer
 */
 
-footer {
-	padding: 0 20px;
-}
-
-footer p {
-	font-size: 0.75em;
-	font-weight: bold;
-}
+@import "footer";
 	
 
 	
@@ -337,44 +206,13 @@ a.icons:before {
 */
 
 /* Landscape tablet and small desktop */
-@media only screen and (max-width: 1025px) {
-
-	/* Dust */
-
-}
+@import "mq-small-desktop";
 
 /* Tablet (Portrait) */
-@media only screen and (max-width: 768px) {
-	
-	/* Dust */
-	
-}
+@import "mq-tablet";
 
 /* Mobile (Landscape) */
-@media handheld, only screen and (max-width: 480px) {
-
-	body {
-		font-size: 16px;
-		-webkit-text-size-adjust: none;
-	}
-	
-	.mobile {
-		display: block;
-	}
-
-	.desktop {
-		display: none;
-	}
-
-}
-
-/* Mobile (Portrait) */
-@media handheld, only screen and (max-width: 320px) {
-	
-	
-	/* Dust */
-	
-}
+@import "mq-mobile";
 
 
 
