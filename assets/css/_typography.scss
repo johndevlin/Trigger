@@ -1,21 +1,29 @@
 
+body {
+	@include helvetica-regular;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
 
 p {
-	color: $paragraph-colour;
-	@include paragraph;
+	@include helvetica-regular;
+	color: $body-colour;
 	font-size: 1em;
-	line-height: 1.5;
+	line-height: 1.2;
 	margin: 0 0 1em;
 }
 
 p a {
-	color: #008ed6;
+	color: $base-colour;
 }
 
 h1, h2, h3, h4, h5, h6 {
+	@include helvetica-bold;
 	color: $heading-colour;
-	@include heading;
-	line-height: 1.5;
+	line-height: 1.2;
 	margin: 0 0 1em;
 	padding: 0;
 	text-rendering: optimizeLegibility;

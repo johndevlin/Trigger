@@ -6,11 +6,17 @@
 /* Colours */
 
 $white: #ffffff;
-$grey: #333333;
+$white-grey: #eeeeee;
 $light-grey: #777777;
+$grey: #333333;
+$dark-grey: #111111;
 
+$red: #dd4433;
+
+$base-colour: $red;
+$body-colour: $light-grey;
 $heading-colour: $grey;
-$paragraph-colour: $light-grey;
+$background-colour: $white;
 
 
 /* Margins */
@@ -24,16 +30,6 @@ $sitemargin: 50px;
 
 $helvetica: 'Helvetica Neue', Helvetica, Arial, san-serif;
 
-.helvetica-regular {
-	font-family: $helvetica;
-	font-weight: normal;
-}
-
-.helvetica-bold {
-	font-family: $helvetica;
-	font-weight: bold;
-}
-
 @mixin helvetica-regular {
 	font-family: $helvetica;
 	font-weight: normal;
@@ -44,15 +40,4 @@ $helvetica: 'Helvetica Neue', Helvetica, Arial, san-serif;
 	font-weight: bold;
 }
 
-
-
-/* Headings */
-
-@mixin heading {
-	@include helvetica-bold;
-}
-
-@mixin paragraph {
-	@include helvetica-regular;
-}
 
