@@ -231,19 +231,18 @@ img {
 	background: $base-colour;
 	border: 1px solid $base-colour;
 	border-radius: 3px;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.35);
 	color: $white;
 	cursor: pointer;
 	line-height: 1;
 	padding: 11px 15px;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.1);
-	@include background(linear-gradient(transparentize($base-colour, 0.15), $base-colour) left repeat);
 	@include inline-block;
 	@include helvetica-bold;
 	
 	&:hover,
 	&:focus {
-		box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+		box-shadow: 0 1px 4px rgba(0,0,0,0.6);
 	}
 	
 	&:active {
