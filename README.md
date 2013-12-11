@@ -1,14 +1,9 @@
 Trigger 0.2
 ===========
 
-Branch: Grunt
--------------
+## Branch: Grunt
 
-Status: Unstable
-----------------
-
-* [Bourbon Neat](http://neat.bourbon.io/) has just been added, and has not been fully tested. 
-* Non-hammer branch is not up to date with Master
+### Status: Unstable
 
 
 
@@ -37,7 +32,7 @@ This project relays heavily on [Grunt](http://gruntjs.com/). I've added in the f
 File structure
 --------------
 
-This is the basic file structure, and how Grunt outputs.
+This is the basic file structure, and how Grunt outputs. It'll make more sense when you open it in your text editor. 
 
 * assets/
 	* css/
@@ -104,7 +99,7 @@ Cheers
 
 This wouldn't exist without some amazing people on the web, their articles, and open source projects. Trigger wouldn't be possible without these [GBOLs](http://www.urbandictionary.com/define.php?term=gbol):
 
-* [Chris Coyier](https://twitter.com/chriscoyier) and his [amazing article on Grunt](http://24ways.org/2013/grunt-is-not-weird-and-hard/).
+* [Chris Coyier](https://twitter.com/chriscoyier), and his [amazing article on Grunt](http://24ways.org/2013/grunt-is-not-weird-and-hard/).
 
 [Cheers!](https://dl.dropboxusercontent.com/u/5265846/GIFs/cheers.gif)
 
