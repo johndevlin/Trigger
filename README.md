@@ -81,7 +81,7 @@ These should be removed if not needed, think of all those sweet, sweet Kb you're
 Where's Hammer?
 ---------------
 
-Yes, Trigger started off life as a [Hammer](http://hammerformac.com/) boilerplate, since the agency I work in has grown and grown, there is less need for me using [Hammer](http://hammerformac.com/). 
+Yes, Trigger started off life as a [Hammer](http://hammerformac.com/) boilerplate, since the agency I work in has grown and grown, there is less need for me using [Hammer](http://hammerformac.com/). But I have [branched off my last Hammer commit](https://github.com/johndevlin/Trigger/tree/Hammer). 
 
 
 
