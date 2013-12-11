@@ -43,9 +43,8 @@ This is the basic file structure, and how Grunt outputs. It'll make more sense w
 			* `production.js` (all `scripts.js` and all `.js` files in libs/ combined )
 			* `production.min.js` (`production.js` minified)
 		* libs/
-			* `plugin.js`
-			* `plugin.js`
-			* `plugin.js`
+			* `a-plugin.js`
+			* `another-plugin.js`
 		* `scripts.js`
 
 * img/
