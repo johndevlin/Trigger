@@ -39,12 +39,24 @@ File structure
 
 This is the basic file structure, and how Grunt outputs.
 
-* assets
+* assets/
+	* css/
+		* `style.scss`
+		* `style.css` (minified)
+	* js/
+		* build/
+			* `production.js` (all `scripts.js` and all `.js` files in libs/ combined )
+			* `production.min.js` (`production.js` minified)
+		* libs/
+			* `plugin.js`
+			* `plugin.js`
+			* `plugin.js`
+		* `scripts.js`
 
-* img
-	* highres
+* img/
+	* highres/
 		* `kitten.gif`
-	* optimised
+	* optimised/
 		* `kitten.gif`
 		
 * `Gruntfile.js`
