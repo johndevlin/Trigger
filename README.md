@@ -39,13 +39,13 @@ This is the basic file structure, and how Grunt outputs. It'll make more sense w
 		* `style.scss`
 		* `style.css` (minified)
 	* js/
-		* build/
-			* `production.js` (all `scripts.js` and all `.js` files in libs/ combined )
-			* `production.min.js` (`production.js` minified)
 		* libs/
 			* `a-plugin.js`
 			* `another-plugin.js`
 		* `scripts.js`
+		* build/
+			* `production.js` (all `scripts.js` and all `.js` files in libs/ combined )
+			* `production.min.js` (`production.js` minified)
 
 * img/
 	* highres/
