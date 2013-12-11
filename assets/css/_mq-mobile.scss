@@ -1,6 +1,6 @@
 
-@media handheld, only screen and (max-width: 767px) {
-
+@include media($mobile) {
+	
 	body {
 		-webkit-text-size-adjust: none;
 	}
@@ -12,5 +12,13 @@
 	.desktop {
 		display: none;
 	}
-
+	
+	div#main {
+	
+		article,
+		aside {
+			@include span-columns(1);
+		}
+	
+	}
 }

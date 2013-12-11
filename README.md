@@ -1,6 +1,9 @@
 Trigger
 =======
 
+Branch: Grunt
+-------------
+
 Status: Unstable
 ----------------
 
@@ -46,7 +49,10 @@ To-dos
 
 This is (and probably always will be) a work in progress. Here are some features I'll be adding in.
 
-* Nothing
+* Get [Grunt](http://gruntjs.com/) up and running
+* Fix SCSS imports
+* Move [Hammer](http://hammerformac.com/) to a branch, because of [Grunt](http://gruntjs.com/), I'm not going to use it anymore
+* Update README
 
 
 

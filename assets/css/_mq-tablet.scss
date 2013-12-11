@@ -1,6 +1,15 @@
 
-@media only screen and (max-width: 1023px) {
+@include media($tablet) {
 	
-	/* Dust */
+	div#main {
 	
+		article {
+			@include span-columns(6);
+		}
+
+		aside {
+			@include span-columns(6);
+		}
+	
+	}
 }

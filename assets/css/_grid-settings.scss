@@ -13,6 +13,6 @@ $max-width: 1140px;
 	Breakpoints
 */
 
-$small: new-breakpoint(max-width 1139px 8);
+$small-desktop: new-breakpoint(max-width 1139px 8);
 $tablet: new-breakpoint(max-width 1023px 6);
 $mobile: new-breakpoint(max-width 767px 1);

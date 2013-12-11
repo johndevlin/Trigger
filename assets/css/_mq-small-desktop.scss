@@ -1,6 +1,12 @@
 
-@media only screen and (max-width: 1139px) {
+@include media($small-desktop) {
 
-	/* Dust */
+	div#main article {
+		@include span-columns(5);
+	}
+
+	div#main aside {
+		@include span-columns(3);
+	}
 
 }
