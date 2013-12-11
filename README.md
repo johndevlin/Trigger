@@ -49,9 +49,9 @@ This is the basic file structure, and how Grunt outputs. It'll make more sense w
 
 * img/
 	* highres/
-		* `kitten.gif`
+		* `kitten.gif` (original images)
 	* optimised/
-		* `kitten.gif`
+		* `kitten.gif` (optimised images)
 		
 * `Gruntfile.js`
 
