@@ -10,7 +10,7 @@ Trigger 0.2
 Uh?
 ---
 
-Trigger is a lightweight HTML5 & SASS template sitting on top of [Grunt.js](http://gruntjs.com/) to automatically combine and minify all JavaScript, optimise images, and run SASS.
+Trigger is a lightweight HTML5 & SASS boilerplate sitting on top of [Grunt.js](http://gruntjs.com/) to automatically combine and minify all JavaScript, optimise images, and run SASS.
 
 Trigger is based on [the HTML5 Boilerplate](http://html5boilerplate.com/), with some of the guff stripped out, and some [SASS](http://sass-lang.com/), [Bourbon Mixins](http://bourbon.io/), [Bourbon Neat grid](http://neat.bourbon.io/) & some JavaScript I regularly us, added in.
 
