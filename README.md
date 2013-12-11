@@ -21,6 +21,36 @@ Trigger is based on [the HTML5 Boilerplate](http://html5boilerplate.com/), with 
 
 
 
+Grunt.js
+--------
+
+This project relays heavily on [Grunt](http://gruntjs.com/). I've added in the following automated plugins:
+
+* [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat) for merging all JavaScript
+* [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify) for minifying said JavaScript
+* [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) for optimising those images
+* [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch) for watching, and automating
+* [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass) for turning your SASS into compressed CSS
+
+
+
+File structure
+--------------
+
+This is the basic file structure, and how Grunt outputs.
+
+* assets
+
+* img
+	* highres
+		* `kitten.gif`
+	* optimised
+		* `kitten.gif`
+		
+* `Gruntfile.js`
+
+
+
 JavaScript
 ----------
 
@@ -53,11 +83,25 @@ To-dos
 
 This is (and probably always will be) a work in progress. Here are some features I'll be adding in.
 
-* Get [Grunt](http://gruntjs.com/) up and running
-* [Type Rendering Mix](http://typerendering.com/)
+* Dust
+
+
+
+Cheers
+------
+
+This wouldn't exist without some amazing people on the web, their articles, and open source projects. Trigger wouldn't be possible without these [GBOLs](http://www.urbandictionary.com/define.php?term=gbol):
+
+* [Chris Coyier](https://twitter.com/chriscoyier) and his [amazing article on Grunt](http://24ways.org/2013/grunt-is-not-weird-and-hard/).
+
+[Cheers!](https://dl.dropboxusercontent.com/u/5265846/GIFs/cheers.gif)
+
 
 
 Feedback
 --------
 
 If you have any ideas on how to improve this project please give me a shout on Twitter - [@john_devlin](https://twitter.com/john_devlin).
+
+
+
