@@ -1,5 +1,5 @@
-Trigger
-=======
+Trigger - 0.2
+=============
 
 Branch: Grunt
 -------------
@@ -15,9 +15,9 @@ Status: Unstable
 Uh?
 ---
 
-Trigger is a lightweight HTML5 template made to use with [Hammer for Mac](http://hammerformac.com/).
+Trigger is a lightweight HTML5 & SASS template sitting on top of [Grunt.js](http://gruntjs.com/) to automatically combine and minify all JavaScript, optimise images, and run SASS.
 
-It's based on [the HTML5 Boilerplate](http://html5boilerplate.com/), with some of the guff stripped out, and some [SASS](http://sass-lang.com/), [Bourbon Mixins](http://bourbon.io/), [Bourbon Neat grid](http://neat.bourbon.io/) & some JavaScript I regularly us, added in.
+Trigger is based on [the HTML5 Boilerplate](http://html5boilerplate.com/), with some of the guff stripped out, and some [SASS](http://sass-lang.com/), [Bourbon Mixins](http://bourbon.io/), [Bourbon Neat grid](http://neat.bourbon.io/) & some JavaScript I regularly us, added in.
 
 
 
@@ -27,20 +27,24 @@ JavaScript
 I've added in a lot of regularly used jQuery to scripts.js. 
 
 * Date injection - For the footer's copyright
-* [jQuery Smartresize](https://github.com/louisremi/jquery-smartresize) - Debounced resize events for jQuery
 * ESC Key listener
 * Sticky content after scroll
 * Form validation
 * Smooth scroll
 
+Plugins
+
+* [jQuery Smartresize](https://github.com/louisremi/jquery-smartresize) - Debounced resize events for jQuery
+* [Type Rendering Mix](http://typerendering.com/)
+
 These should be removed if not needed, think of all those sweet, sweet Kb you're saving yo'.
 
 
 
-No Hammer?
-----------
+Where's Hammer?
+---------------
 
-If [Hammer](http://hammerformac.com/) isn't your thing, I've branched off [a non-hammer version of the template](https://github.com/johndevlin/Trigger/tree/no_hammer). 
+Yes, Trigger started off life as a [Hammer](http://hammerformac.com/) boilerplate, since the agency I work in has grown and grown, there is less need for me using [Hammer](http://hammerformac.com/). 
 
 
 
@@ -50,10 +54,7 @@ To-dos
 This is (and probably always will be) a work in progress. Here are some features I'll be adding in.
 
 * Get [Grunt](http://gruntjs.com/) up and running
-* Fix SCSS imports
-* Move [Hammer](http://hammerformac.com/) to a branch, because of [Grunt](http://gruntjs.com/), I'm not going to use it anymore
-* Update README
-
+* [Type Rendering Mix](http://typerendering.com/)
 
 
 Feedback
