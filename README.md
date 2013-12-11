@@ -99,7 +99,11 @@ Cheers
 
 This wouldn't exist without some amazing people on the web, their articles, and open source projects. Trigger wouldn't be possible without these [GBOLs](http://www.urbandictionary.com/define.php?term=gbol):
 
-* [Chris Coyier](https://twitter.com/chriscoyier), and his [amazing article on Grunt](http://24ways.org/2013/grunt-is-not-weird-and-hard/).
+* [HTML5 Boilerplate](http://html5boilerplate.com/)
+* [SASS](http://sass-lang.com/)
+* [Bourbon](http://bourbon.io/)
+* [Grunt](http://gruntjs.com/)
+* [Chris Coyier](https://twitter.com/chriscoyier), and his [amazing article on Grunt](http://24ways.org/2013/grunt-is-not-weird-and-hard/)
 
 [Cheers!](https://dl.dropboxusercontent.com/u/5265846/GIFs/cheers.gif)
 
