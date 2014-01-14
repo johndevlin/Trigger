@@ -28,7 +28,7 @@ $('.current-year').text(currentYear)
 
 // Debounced Resize function
 $(window).on("debouncedresize", function( event ) {
-	
+	// Guff
 });
 
 // Return false class for buttons
