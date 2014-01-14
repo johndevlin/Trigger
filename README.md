@@ -64,9 +64,7 @@ I've added in a lot of regularly used jQuery to scripts.js.
 
 * Date injection - For the footer's copyright
 * ESC Key listener
-* Sticky content after scroll
 * Form validation
-* Smooth scroll
 
 Plugins
 
