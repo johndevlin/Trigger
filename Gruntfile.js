@@ -5,10 +5,14 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		concat: {   
+			options: {
+				preserveComments: false,
+				separator: ';'
+			},
 			dist: {
 				src: [
-					'assets/js/libs/*.js', // All JS in the libs folder
-					'assets/js/scripts.js' // This specific file
+					'assets/js/libs/*.js',
+					'assets/js/scripts.js'
 				],
 				dest: 'assets/js/build/production.js',
 			}

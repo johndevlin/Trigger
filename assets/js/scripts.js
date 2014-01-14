@@ -16,10 +16,9 @@
 var currentYear = (new Date).getFullYear();
 $('.current-year').text(currentYear)
 
-
 // Debounced Resize function
 $(window).on("debouncedresize", function( event ) {
-	// Guff
+	alert('sdsdfsds')
 });
 
 
