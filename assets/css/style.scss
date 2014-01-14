@@ -228,6 +228,9 @@ img {
 }
 
 .button {
+	@include inline-block;
+	@include helvetica-bold;
+	@include transition (none);
 	background: $base-colour;
 	border: 1px solid $base-colour;
 	border-radius: 3px;
@@ -238,8 +241,6 @@ img {
 	line-height: 1;
 	padding: 11px 15px;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
-	@include inline-block;
-	@include helvetica-bold;
 	
 	&:hover,
 	&:focus {

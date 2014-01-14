@@ -21,6 +21,10 @@ $(window).on("debouncedresize", function( event ) {
 	
 });
 
+// Return false class for buttons
+$('.return-false').click(function() {
+	return false;
+});
 
 // Do X ESC 
 $(document).keyup(function(e) {
