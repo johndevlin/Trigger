@@ -69,7 +69,6 @@ I've added in a lot of regularly used jQuery to scripts.js.
 Plugins
 
 * [jQuery Smartresize](https://github.com/louisremi/jquery-smartresize) - Debounced resize events for jQuery
-* [Type Rendering Mix](http://typerendering.com/)
 
 These should be removed if not needed, think of all those sweet, sweet Kb you're saving yo'.
 
