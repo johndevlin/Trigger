@@ -57,6 +57,10 @@ module.exports = function(grunt) {
 				options: {
 					spawn: false,
 				}
+			},
+			html: {
+				files: ['*.html'],
+				tasks: ['htmlhint']
 			}
 		},
 
@@ -69,6 +73,22 @@ module.exports = function(grunt) {
 					'assets/css/style.css': 'assets/css/style.scss'
 				}
 			} 
+		},
+		
+		htmlhint: {
+			build: {
+				options: {
+		            'tag-pair': true,
+		            'tagname-lowercase': true,
+		            'attr-lowercase': true,
+		            'attr-value-double-quotes': true,
+		            'doctype-first': true,
+		            'spec-char-escape': true,
+		            'id-unique': true,
+		            'style-disabled': true
+		        },
+				src: ['*.html']
+			}
 		}
 
 	});
@@ -79,9 +99,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-htmlhint');
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-	grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'watch', 'sass']);
+	grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'watch', 'sass', 'htmlhint']);
 
 };
 
