@@ -1,6 +1,6 @@
 
 body {
-	@include helvetica-regular;
+	@include base-font;
 }
 
 * {
@@ -9,9 +9,9 @@ body {
 }
 
 p {
-	@include helvetica-regular;
+	@include base-font;
 	color: $body-colour;
-	font-size: 1em;
+	font-size: em(16);
 	line-height: 1.5;
 	margin: 0 0 1em;
 }
@@ -21,32 +21,32 @@ p a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	@include helvetica-bold;
+	@include heading-font;
 	color: $heading-colour;
 	line-height: 1.2;
-	margin: 0 0 1em;
+	margin: 0 0 0.5em;
 	padding: 0;
 	text-rendering: optimizeLegibility;
 }
 
 h1 {
-
+	font-size: em(48);
 }
 
 h2 {
-	
+	font-size: em(36);
 }
 
 h3 {
-	
+	font-size: em(24);
 }
 
 h4 {
-	
+	font-size: em(18);
 }
 
 h5 {
-	
+	font-size: em(16);
 }
 
 h6 {

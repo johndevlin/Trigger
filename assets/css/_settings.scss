@@ -21,10 +21,10 @@ $background-colour: $white;
 
 /* Margins */
 
-$sitemargin: 50px;
+$site-margin: 30px;
 
 
-/* Typography */
+/* Typography - Typefaces */
 
 /* Helvetica */
 
@@ -41,3 +41,12 @@ $helvetica: 'Helvetica Neue', Helvetica, Arial, san-serif;
 }
 
 
+/* Typography - SASS selectors */
+
+@mixin base-font {
+	@include helvetica-regular;
+}
+
+@mixin heading-font {
+	@include helvetica-bold;
+}

@@ -178,6 +178,7 @@ a {
 */
 
 div#main {
+	margin: 0 0 $site-margin;
 	padding: 0 20px;
 
 	article {
@@ -189,9 +190,30 @@ div#main {
 	}
 }
 
-.stuck {
-	position: fixed;
-	top: 30px;
+
+
+/*****************
+	Form Elements
+*/
+
+
+#{$all-text-inputs},
+textarea {
+	@include transition (border 0.2s ease-in-out);
+	background: #ffffff;
+	border: 1px solid transparentize($base-colour, 0.7);
+	border-radius: 0;
+	font-size: em(16);
+	outline: none;
+	padding: 9px 13px;
+	
+	@include placeholder {
+		color: $base-colour;
+	}
+}
+
+#{$all-text-inputs-focus} {
+	border: 1px solid $base-colour;
 }
 
 
@@ -237,9 +259,9 @@ img {
 	box-shadow: 0 1px 2px rgba(0,0,0,0.35);
 	color: $white;
 	cursor: pointer;
-	font-size: 1.125em;
+	font-size: em(16);
 	line-height: 1;
-	padding: 11px 15px;
+	padding: 9px 13px;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
 	
 	&:hover,
@@ -249,7 +271,23 @@ img {
 	
 	&:active {
 		box-shadow: 0 1px 6px rgba(0,0,0,0.3) inset;
-		padding: 12px 15px 10px;
+		padding: 10px 13px 8px;
+	}
+}
+
+.button.inactive {
+	background: transparentize($base-colour, 0.95);
+	border: 1px solid transparentize($base-colour, 0.4);
+	color: $base-colour;
+	text-shadow: 0 1px 0 #ffffff;
+}
+
+.button.inline {
+	@include inline-block;
+	margin-left: 10px;
+	
+	&:first-child {
+		margin-left: 0;
 	}
 }
 
