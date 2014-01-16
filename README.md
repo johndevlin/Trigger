@@ -1,7 +1,5 @@
-Trigger 0.2
+Trigger 0.5
 ===========
-
-## Branch: Grunt
 
 ### Status: Unstable
 
@@ -64,7 +62,7 @@ I've added in a lot of regularly used jQuery to scripts.js.
 
 * Date injection - For the footer's copyright
 * ESC Key listener
-* Form validation
+* Custom form validation
 
 Plugins
 
