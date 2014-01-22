@@ -1,4 +1,4 @@
-Trigger 0.5
+Trigger 0.4
 ===========
 
 ### Status: Unstable
@@ -62,7 +62,7 @@ I've added in a lot of regularly used jQuery to scripts.js.
 
 * Date injection - For the footer's copyright
 * ESC Key listener
-* Custom form validation
+* Form validation
 
 Plugins
 
@@ -84,7 +84,9 @@ To-dos
 
 This is (and probably always will be) a work in progress. Here are some features I'll be adding in.
 
-* Dust
+* Separate Print CSS from `style.scss`, and give print styling it's own SCSS file
+* Look into deploying with Grunt
+* Look into hashing JS & CSS file names with Grunt
 
 
 
