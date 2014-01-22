@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 	// 1. All configuration goes here 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-
+		
 		concat: {   
 			options: {
 				preserveComments: false,
@@ -36,6 +36,33 @@ module.exports = function(grunt) {
 			}
 		},
 		
+		htmlhint: {
+			build: {
+				options: {
+		            'tag-pair': true,
+		            'tagname-lowercase': true,
+		            'attr-lowercase': true,
+		            'attr-value-double-quotes': true,
+		            'doctype-first': true,
+		            'spec-char-escape': true,
+		            'id-unique': true,
+		            'style-disabled': true
+		        },
+				src: ['*.html']
+			}
+		},
+
+		sass: {
+			dist: {
+				options: {
+					style: 'compressed'
+				},
+				files: {
+					'assets/css/style.css': 'assets/css/style.scss'
+				}
+			} 
+		},
+		
 		watch: {
 			scripts: {
 				files: ['assets/js/*.js'],
@@ -60,34 +87,10 @@ module.exports = function(grunt) {
 			},
 			html: {
 				files: ['*.html'],
-				tasks: ['htmlhint']
-			}
-		},
-
-		sass: {
-			dist: {
+				tasks: ['htmlhint'],
 				options: {
-					style: 'compressed'
-				},
-				files: {
-					'assets/css/style.css': 'assets/css/style.scss'
+					spawn: false,
 				}
-			} 
-		},
-		
-		htmlhint: {
-			build: {
-				options: {
-		            'tag-pair': true,
-		            'tagname-lowercase': true,
-		            'attr-lowercase': true,
-		            'attr-value-double-quotes': true,
-		            'doctype-first': true,
-		            'spec-char-escape': true,
-		            'id-unique': true,
-		            'style-disabled': true
-		        },
-				src: ['*.html']
 			}
 		}
 
