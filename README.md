@@ -1,6 +1,7 @@
-Trigger 0.4
-===========
+Trigger
+=======
 
+### Version: 0.4
 ### Status: Unstable
 
 
