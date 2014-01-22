@@ -84,7 +84,6 @@ To-dos
 
 This is (and probably always will be) a work in progress. Here are some features I'll be adding in.
 
-* Separate Print CSS from `style.scss`, and give print styling it's own SCSS file
 * Look into deploying with Grunt
 * Look into hashing JS & CSS file names with Grunt
 
