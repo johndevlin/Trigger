@@ -87,6 +87,7 @@ This is (and probably always will be) a work in progress. Here are some features
 
 * Look into deploying with Grunt
 * Look into hashing JS & CSS file names with Grunt
+* 404 page
 
 
 

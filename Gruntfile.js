@@ -89,6 +89,35 @@ module.exports = function(grunt) {
 		        },
 				src: ['*.html']
 			}
+		},
+		
+		hashres: {
+			// Global options
+			options: {
+				// Optional. Encoding used to read/write files. Default value 'utf8'
+				encoding: 'utf8',
+				// Optional. Format used to name the files specified in 'files' property.
+				// Default value: '${hash}.${name}.cache.${ext}'
+				fileNameFormat: '${name}.${hash}.cache.${ext}',
+				// Optional. Should files be renamed or only alter the references to the files
+				// Use it with '${name}.${ext}?${hash} to get perfect caching without renaming your files
+				// Default value: true
+				renameFiles: true
+			},
+			// hashres is a multitask. Here 'prod' is the name of the subtask. You can have as many as you want.
+			prod: {
+				// Specific options, override the global ones
+				options: {
+					// You can override encoding, fileNameFormat or renameFiles
+				},
+				// Files to hash
+				src: [
+				// WARNING: These files will be renamed!
+				'assets/js/build/production.min.js',
+				'assets/css/style.css'],
+				// File that refers to above files and needs to be updated with the hashed name
+				dest: 'index.php',
+			}
 		}
 
 	});
@@ -100,6 +129,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-htmlhint');
+	grunt.loadNpmTasks('grunt-hashres');
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'watch', 'sass', 'htmlhint']);
