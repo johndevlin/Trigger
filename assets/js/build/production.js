@@ -16,7 +16,7 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
 	
 */
 
-  
+
 // Add current year to .current-year
 var currentYear = (new Date).getFullYear();
 $('.current-year').text(currentYear)
