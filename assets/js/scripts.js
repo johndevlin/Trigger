@@ -12,19 +12,21 @@
 */
 
 
-// Add current year to .current-year
-var currentYear = (new Date).getFullYear();
-$('.current-year').text(currentYear)
-
 // Debounced Resize function
 $(window).on("debouncedresize", function( event ) {
 	// Guff
 });
 
+
 // Return false class for buttons
 $('.return-false').click(function() {
 	return false;
 });
+
+
+// jQuery placeholder listener 
+$('input, textarea').placeholder();
+
 
 // Do X ESC 
 $(document).keyup(function(e) {
@@ -36,7 +38,20 @@ $(document).keyup(function(e) {
 }); 
 
 
-// Validation 
+// Add current year to .current-year
+var currentYear = (new Date).getFullYear();
+$('.current-year').text(currentYear)
+
+
+// Form validation 
+// ===============
+// To use, please add:
+// onclick="return validation();"
+// to the forms submit input e.g
+
+// <input type="submit" value="This is a submit button" onclick="return validation();" />
+
+
 function validateEmail(email) { 
 	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(email);
