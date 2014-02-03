@@ -3,6 +3,8 @@
 	Variables
 */
 
+
+
 /* Colours */
 
 $white: #ffffff;
@@ -19,34 +21,36 @@ $heading-colour: $grey;
 $background-colour: $white;
 
 
+
 /* Margins */
 
 $site-margin: 30px;
+
 
 
 /* Typography - Typefaces */
 
 /* Helvetica */
 
-$helvetica: 'Helvetica Neue', Helvetica, Arial, san-serif;
+$open-sans: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, san-serif;
 
-@mixin helvetica-regular {
-	font-family: $helvetica;
-	font-weight: normal;
+@mixin open-sans-regular {
+	font-family: $open-sans;
+	font-weight: 400;
 }
 
-@mixin helvetica-bold {
-	font-family: $helvetica;
-	font-weight: bold;
+@mixin open-sans-bold {
+	font-family: $open-sans;
+	font-weight: 700;
 }
 
 
 /* Typography - SASS selectors */
 
 @mixin base-font {
-	@include helvetica-regular;
+	@include open-sans-regular;
 }
 
 @mixin heading-font {
-	@include helvetica-bold;
+	@include open-sans-bold;
 }
