@@ -186,10 +186,14 @@ div#main {
 	}
 
 	aside {
-		@include span-columns(4);
+		@include shift(1);
+		@include span-columns(3);
 	}
 }
 
+hr {
+	margin: 1em 0; 
+}
 
 
 /*****************
@@ -203,17 +207,31 @@ textarea {
 	background: #ffffff;
 	border: 1px solid transparentize($base-colour, 0.7);
 	border-radius: 0;
+	color: $base-colour;
+	display: block;
 	font-size: em(16);
+	margin: 0 0 1em;
 	outline: none;
 	padding: 9px 12px;
+	width: 100%;
 	
 	@include placeholder {
 		color: $base-colour;
 	}
 }
 
+textarea {
+	height: 5em;
+	resize: none;
+}
+
 #{$all-text-inputs-focus} {
 	border: 1px solid $base-colour;
+}
+
+input[type="submit"] {
+	@extend .button;
+	outline: none;
 }
 
 
@@ -259,14 +277,13 @@ img {
 	cursor: pointer;
 	font-size: em(16);
 	line-height: 1;
-	padding: 9px 13px;
+	padding: 9px 12px;
 	
 	&:hover,
 	&:focus {
 	}
 	 
 	&:active {
-		padding: 10px 13px 8px;
 	}
 }
 
@@ -278,14 +295,14 @@ img {
 
 .button.inline {
 	@include inline-block;
-	margin-left: 10px;
+	margin-left: 1em;
 	
 	&:first-child {
 		margin-left: 0;
 	}
 	
 	&:active {
-		padding: 9px 13px;
+		
 	}
 }
 

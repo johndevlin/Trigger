@@ -13,7 +13,7 @@ p {
 	color: $body-colour;
 	font-size: em(16);
 	line-height: 1.5;
-	margin: 0 0 1em;
+	margin: 1em 0; 
 }
 
 p a {
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 	@include heading-font;
 	color: $heading-colour;
 	line-height: 1.2;
-	margin: 0 0 0.5em;
+	margin: 0.5em 0; 
 	padding: 0;
 	text-rendering: optimizeLegibility;
 }
@@ -51,4 +51,17 @@ h5 {
 
 h6 {
 	
+}
+
+
+ul {
+	margin: 0 0 1em;
+	
+	li {
+		@include base-font;
+		color: $body-colour;
+		font-size: em(16);
+		line-height: 1;
+		margin: 0 0 1em;
+	}
 }
