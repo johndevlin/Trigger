@@ -11,7 +11,7 @@ body {
 p {
 	@include base-font;
 	color: $body-colour;
-	font-size: em(16);
+	font-size: em(18);
 	line-height: 1.5;
 	margin: 1em 0; 
 }
@@ -26,32 +26,48 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
 	margin: 0.5em 0; 
 	padding: 0;
-	text-transform: uppercase;
 	text-rendering: optimizeLegibility;
 }
 
 h1 {
-	font-size: em(48);
+	font-size: em(72); 
 }
 
 h2 {
-	font-size: em(36);
+	font-size: em(50);
 }
 
 h3 {
-	font-size: em(24);
+	font-size: em(36);
 }
 
 h4 {
-	font-size: em(18);
+	font-size: em(24);
 }
 
 h5 {
-	font-size: em(16);
+	font-size: em(18);
 }
 
 h6 {
-	
+	@include base-font;
+	font-size: em(18);
+}
+
+header .hgroup {
+
+	h1 {
+		font-size: em(72);
+		margin: 0; 
+		text-transform: uppercase;
+	}
+
+	.intro {
+		@include light-heading-font;
+		color: $heading-colour;
+		font-size: em(36);
+		margin: 0; 
+	}
 }
 
 

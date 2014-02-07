@@ -30,19 +30,25 @@ $site-margin: 30px;
 
 /* Typography - Typefaces */
 
-/* Open Sans */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/* Lato */
 
-$open-sans: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, san-serif;
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-@mixin open-sans-regular {
-	font-family: $open-sans;
+$lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, san-serif;
+
+@mixin lato-light {
+	font-family: $lato;
+	font-weight: 300;
+}
+
+@mixin lato-regular {
+	font-family: $lato;
 	font-weight: 400;
 }
 
-@mixin open-sans-bold {
-	font-family: $open-sans;
+@mixin lato-bold {
+	font-family: $lato;
 	font-weight: 700;
 }
 
@@ -50,9 +56,13 @@ $open-sans: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, san-serif;
 /* Typography - SASS selectors */
 
 @mixin base-font {
-	@include open-sans-regular;
+	@include lato-regular;
+}
+
+@mixin light-heading-font {
+	@include lato-light;
 }
 
 @mixin heading-font {
-	@include open-sans-bold;
+	@include lato-bold;
 }
