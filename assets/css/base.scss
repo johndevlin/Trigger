@@ -311,29 +311,6 @@ img {
 }
 
 
-
-
-/*********
-	Icons
-*/
-
-@font-face {
-    font-family: 'Icons';
-    src: url('/assets/typography/icons.eot');
-    src: url('/assets/typography/iconseot?#iefix') format('embedded-opentype'),
-         url('/assets/typography/icons.woff') format('woff'),
-         url('/assets/typography/icons.woff') format('truetype'),
-         url('/assets/typography/icons.ttf#Icons') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-a.icons:before {
-	content: attr(data-icon);
-	font-family: 'Icons';
-}
-
-
 	
 /****************
 	Media Queries 
