@@ -6,7 +6,7 @@ Trigger
 
 
 
-Uh?
+WTF?
 ---
 
 Trigger is a lightweight HTML5 & SASS boilerplate sitting on top of [Grunt.js](http://gruntjs.com/) to automatically combine and minify all JavaScript, optimise images, and run SASS.
