@@ -28,34 +28,6 @@ This project relays heavily on [Grunt](http://gruntjs.com/). I've added in the f
 
 
 
-File structure
---------------
-
-This is the basic file structure, and how Grunt outputs. It'll make more sense when you open it in your text editor. 
-
-* assets/
-	* css/
-		* `style.scss`
-		* `style.css` (minified)
-	* js/
-		* libs/
-			* `a-plugin.js`
-			* `another-plugin.js`
-		* `scripts.js`
-		* build/
-			* `production.js` (all `scripts.js` and all `.js` files in libs/ combined )
-			* `production.min.js` (`production.js` minified)
-
-* img/
-	* highres/
-		* `kitten.gif` (original images)
-	* optimised/
-		* `kitten.gif` (optimised images)
-		
-* `Gruntfile.js`
-
-
-
 JavaScript
 ----------
 
