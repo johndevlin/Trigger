@@ -133,7 +133,7 @@ article {
 And if you need to off set a column, you can use Neat's `shift` mixin, eg: 
 
 ```
-article {
+aside {
 	@include shift(1);
 	@include span-columns(3);
 }
