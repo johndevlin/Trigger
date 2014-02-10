@@ -1,35 +1,55 @@
 Trigger
 =======
 
-### Version: 0.4
-### Status: Unstable
+### Version: 0.5
+### Status: Stable
 
 
 
 WTF?
 ---
 
-Trigger is a lightweight HTML5 & SASS boilerplate sitting on top of [Grunt.js](http://gruntjs.com/) to automatically combine and minify all JavaScript, optimise images, and run SASS.
-
-Trigger is based on [the HTML5 Boilerplate](http://html5boilerplate.com/), with some of the guff stripped out, and some [SASS](http://sass-lang.com/), [Bourbon Mixins](http://bourbon.io/), [Bourbon Neat grid](http://neat.bourbon.io/) & some JavaScript I regularly us, added in.
+Trigger is a lightweight HTML5 & SASS front-end framework sitting on top of [Grunt.js](http://gruntjs.com/) to automatically combine and minify all JavaScript, optimise images, and run SASS.
 
 
 
-Grunt.js
+Contents
 --------
 
-This project relays heavily on [Grunt](http://gruntjs.com/). I've added in the following automated plugins:
-
-* [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat) for merging all JavaScript
-* [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify) for minifying said JavaScript
-* [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) for optimising those images
-* [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch) for watching, and automating
-* [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass) for turning your SASS into compressed CSS
-
+1. [File structure](#structure)
+2. [JaveScript](#javescript)
+3. [SASS (SCSS)](#sass)
+4. [To-dos](#todos)
+5. [Cheers](#cheers)
+6. [Feedback](#feedback)
 
 
-JavaScript
-----------
+
+<a name='structure'>File structure</a>
+---------------------------------
+
+```
+Trigger/
+├── assets/
+│   ├── development/
+│   │	├── css/
+│	│	├── img/
+│	│	└── js/
+│	│	
+│   └── production/
+│   	├── css/
+│		├── img/
+│		└── js/
+│
+├── node_modules/
+├── Gruntfile.js
+└── index.html
+```
+
+
+
+<a name='javescript'>JaveScript</a>
+-----------------------------------
 
 I've added in a lot of regularly used jQuery to scripts.js. 
 
@@ -37,7 +57,25 @@ I've added in a lot of regularly used jQuery to scripts.js.
 * ESC Key listener
 * Form validation
 
-Plugins
+
+### Grunt.js
+
+Trigger relays heavily on [Grunt](http://gruntjs.com/). I've added in the following automated plugins:
+
+* [Concat](https://github.com/gruntjs/grunt-contrib-concat) combines `scripts.js`, and all JS files inside of `/libs/`
+* [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) minifies the combined JS file from above
+* [Imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) optimises your images
+* [Watch](https://github.com/gruntjs/grunt-contrib-watch) watches your files, and tells Grunt when to make changes
+* [Sass](https://github.com/gruntjs/grunt-contrib-sass) for turning your SASS into compressed CSS
+* [HTML Hint](https://github.com/yaniswang/grunt-htmlhint) flags up invalid HTML 
+
+
+### Libraries
+
+* [jQuery 1.9.1](http://jquery.com/)
+
+
+### Plugins
 
 * [jQuery Smartresize](https://github.com/louisremi/jquery-smartresize) - Debounced resize events for jQuery
 * [HTML5 Placeholder jQuery Plugin](https://github.com/mathiasbynens/jquery-placeholder) - Adding placeholder support for < IE9
@@ -46,19 +84,50 @@ These should be removed if not needed, think of all those sweet, sweet Kb you're
 
 
 
-Where's Hammer?
----------------
+<a name='sass'>SASS (SCSS)</a>
+------------------------------
 
-Yes, Trigger started off life as a [Hammer](http://hammerformac.com/) boilerplate, since the agency I work in has grown and grown, there is less need for me using [Hammer](http://hammerformac.com/). But I have [branched off my last Hammer commit](https://github.com/johndevlin/Trigger/tree/Hammer). 
+Trigger uses [SASS](http://sass-lang.com/) for all of it's style sheets. SASS is run and minified using [Grunt's SASS plug-in](https://github.com/gruntjs/grunt-contrib-sass). 
+
+Because SASS allows you to import multiple files without worrying about additional requests I have separated out a lot of the style sheets from `base.scss` for ease of maintenance. Here are some of the main SASS files, and what they do. 
+
+* base.scss - This is your base style sheet. It will contain most of your sites CSS. It also contains the @import calls to your other SASS files. 
+* _settings.scss - This is where you define your SASS variables, such as colours and typefaces.
+* _grid-settings.scss - You define your sites width, number of columns, and media query breakpoints here. 
+* _typography.scss - Set your websites type. You can call in variables and mixins from _settings.scss to make the site easily maintainable. 
+
+
+### Bourbon
+
+[Bourbon](http://bourbon.io/) is a mixin library for SASS. For a full list of Bourbons mixins take a look at the [docs](http://bourbon.io/docs/).
+
+
+### Bourbon Neat
+
+[Bourbon Neat](http://neat.bourbon.io/) is an extension of [Bourbon](http://bourbon.io/) for semantic grid layouts. Trigger's grid settings can be found in `assets/development/css/_grid-settings.scss`. They can then be called by using Neat's mixins, eg:
+
+```
+	article {
+		@include span-columns(8);
+	}
+```
+
+And if you need to off set a column, you can use Neat's `shift` mixin, eg: 
+
+```
+	article {
+		@include shift(1);
+		@include span-columns(3);
+	}
+```
 
 
 
-To-dos
-------
+<a name='todos'>To-dos</a>
+--------------------------
 
 This is (and probably always will be) a work in progress. Here are some features I'll be adding in.
 
-* Look into deploying with Grunt
 * Look into hashing JS & CSS file names with Grunt
 * Test iOS icon size
 * Add Windows 8 icon
@@ -66,8 +135,8 @@ This is (and probably always will be) a work in progress. Here are some features
 
 
 
-Cheers
-------
+<a name='cheers'>Cheers</a>
+---------------------------
 
 This wouldn't exist without some amazing people on the web, their articles, and open source projects. Trigger wouldn't be possible without these [GBOLs](http://www.urbandictionary.com/define.php?term=gbol):
 
@@ -81,8 +150,8 @@ This wouldn't exist without some amazing people on the web, their articles, and 
 
 
 
-Feedback
---------
+<a name='feedback'>Feedback</a>
+-------------------------------
 
 If you have any ideas on how to improve this project please give me a shout on Twitter - [@john_devlin](https://twitter.com/john_devlin).
 
