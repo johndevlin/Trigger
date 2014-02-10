@@ -33,13 +33,28 @@ Trigger/
 ├── assets/
 │   ├── development/
 │   │   ├── css/
-│   │   ├── img/
-│   │   └── js/
+│   │   │   ├── bourbon/
+│   │   │   ├── neat/
+│   │   │   ├── base.scss
+│   │   │   └── _include-sass-file.scss
+│   │   │
+│   │   ├── js/
+│   │   │   ├── libs/
+│   │   │   └── scripts.js
+│   │   │
+│   │   └── img/
+│   │       └── highres.jpg/png/gif
 │   │
 │   └── production/
-│       ├── css/
-│       ├── img/
-│       └── js/
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   │
+│   │   ├── js/
+│   │   │   ├── modernizer.js
+│   │   │   └── production.min.js
+│   │   │
+│   │   └── img/
+│   │       └── optimized.jpg/png/gif
 │
 ├── node_modules/
 ├── Gruntfile.js
@@ -58,18 +73,6 @@ I've added in a lot of regularly used jQuery to scripts.js.
 * Form validation
 
 
-### Grunt.js
-
-Trigger relays heavily on [Grunt](http://gruntjs.com/). I've added in the following automated plugins:
-
-* [Concat](https://github.com/gruntjs/grunt-contrib-concat) combines `scripts.js`, and all JS files inside of `/libs/`
-* [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) minifies the combined JS file from above
-* [Imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) optimises your images
-* [Watch](https://github.com/gruntjs/grunt-contrib-watch) watches your files, and tells Grunt when to make changes
-* [Sass](https://github.com/gruntjs/grunt-contrib-sass) for turning your SASS into compressed CSS
-* [HTML Hint](https://github.com/yaniswang/grunt-htmlhint) flags up invalid HTML 
-
-
 ### Libraries
 
 * [jQuery 1.9.1](http://jquery.com/)
@@ -80,7 +83,19 @@ Trigger relays heavily on [Grunt](http://gruntjs.com/). I've added in the follow
 * [jQuery Smartresize](https://github.com/louisremi/jquery-smartresize) - Debounced resize events for jQuery
 * [HTML5 Placeholder jQuery Plugin](https://github.com/mathiasbynens/jquery-placeholder) - Adding placeholder support for < IE9
 
-These should be removed if not needed, think of all those sweet, sweet Kb you're saving yo'.
+These should be removed if not needed.
+
+
+### Grunt.js
+
+Trigger relays heavily on [Grunt](http://gruntjs.com/) to automate tasks. I've added in the following plugins:
+
+* [Concat](https://github.com/gruntjs/grunt-contrib-concat) combines `scripts.js`, and all JS files inside of `/libs/`
+* [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) minifies the combined JS file from above
+* [Imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) optimises your images
+* [Watch](https://github.com/gruntjs/grunt-contrib-watch) watches your files, and tells Grunt when to make changes
+* [Sass](https://github.com/gruntjs/grunt-contrib-sass) for turning your SASS into compressed CSS
+* [HTML Hint](https://github.com/yaniswang/grunt-htmlhint) flags up invalid HTML 
 
 
 
