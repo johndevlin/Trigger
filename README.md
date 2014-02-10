@@ -46,15 +46,15 @@ Trigger/
 │   │       └── highres.jpg/png/gif
 │   │
 │   └── production/
-│   │   ├── css/
-│   │   │   └── style.css
-│   │   │
-│   │   ├── js/
-│   │   │   ├── modernizer.js
-│   │   │   └── production.min.js
-│   │   │
-│   │   └── img/
-│   │       └── optimized.jpg/png/gif
+│       ├── css/
+│       │   └── style.css
+│       │
+│       ├── js/
+│       │   ├── modernizer.js
+│       │   └── production.min.js
+│       │
+│       └── img/
+│           └── optimized.jpg/png/gif
 │
 ├── node_modules/
 ├── Gruntfile.js
