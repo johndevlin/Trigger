@@ -2,7 +2,7 @@ Trigger
 =======
 
 ### Version: 0.5
-### Status: Stable
+Status: Stable
 
 
 
