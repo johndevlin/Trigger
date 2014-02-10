@@ -9,7 +9,7 @@ Trigger
 WTF?
 ---
 
-Trigger is a lightweight HTML5 & SASS front-end framework sitting on top of [Grunt.js](http://gruntjs.com/) to automatically combine and minify all JavaScript, optimise images, and run SASS.
+Trigger is a lightweight front-end framework sitting on top of [Grunt.js](http://gruntjs.com/) to automatically combine and minify all JavaScript, optimise images, and run SASS.
 
 
 
@@ -32,14 +32,14 @@ Contents
 Trigger/
 ├── assets/
 │   ├── development/
-│   │	├── css/
-│	│	├── img/
-│	│	└── js/
-│	│	
+│   │   ├── css/
+│   │   ├── img/
+│   │   └── js/
+│   │
 │   └── production/
-│   	├── css/
-│		├── img/
-│		└── js/
+│       ├── css/
+│       ├── img/
+│       └── js/
 │
 ├── node_modules/
 ├── Gruntfile.js
