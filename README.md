@@ -19,8 +19,7 @@ Contents
 2. [JaveScript](#javescript)
 3. [SASS (SCSS)](#sass)
 4. [To-dos](#todos)
-5. [Cheers](#cheers)
-6. [Feedback](#feedback)
+5. [Feedback](#feedback)
 
 
 
@@ -153,25 +152,12 @@ This is (and probably always will be) a work in progress. Here are some features
 
 
 
-<a name='cheers'>Cheers</a>
----------------------------
-
-This wouldn't exist without some amazing people on the web, their articles, and open source projects. Trigger wouldn't be possible without these [GBOLs](http://www.urbandictionary.com/define.php?term=gbol):
-
-* [HTML5 Boilerplate](http://html5boilerplate.com/)
-* [SASS](http://sass-lang.com/)
-* [Bourbon](http://bourbon.io/)
-* [Grunt](http://gruntjs.com/)
-* [Chris Coyier](https://twitter.com/chriscoyier), and his [amazing article on Grunt](http://24ways.org/2013/grunt-is-not-weird-and-hard/)
-
-[Cheers!](https://dl.dropboxusercontent.com/u/5265846/GIFs/cheers.gif)
-
-
-
 <a name='feedback'>Feedback</a>
 -------------------------------
 
 If you have any ideas on how to improve this project please give me a shout on Twitter - [@john_devlin](https://twitter.com/john_devlin).
+
+[Cheers](https://dl.dropboxusercontent.com/u/5265846/GIFs/cheers.gif).
 
 
 
