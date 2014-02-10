@@ -90,12 +90,12 @@ These should be removed if not needed.
 
 Trigger relays heavily on [Grunt](http://gruntjs.com/) to automate tasks. I've added in the following plugins:
 
-* [Concat](https://github.com/gruntjs/grunt-contrib-concat) combines `scripts.js`, and all JS files inside of `/libs/`
-* [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) minifies the combined JS file from above
-* [Imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) optimises your images
-* [Watch](https://github.com/gruntjs/grunt-contrib-watch) watches your files, and tells Grunt when to make changes
-* [Sass](https://github.com/gruntjs/grunt-contrib-sass) for turning your SASS into compressed CSS
-* [HTML Hint](https://github.com/yaniswang/grunt-htmlhint) flags up invalid HTML 
+* [Concat](https://github.com/gruntjs/grunt-contrib-concat) - combines `scripts.js`, and all JS files inside of `/libs/`
+* [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) - minifies the combined JS file from above
+* [Imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) - optimises your images
+* [Watch](https://github.com/gruntjs/grunt-contrib-watch) - watches your files, and tells Grunt when to make changes
+* [Sass](https://github.com/gruntjs/grunt-contrib-sass) - for turning your SASS into compressed CSS
+* [HTML Hint](https://github.com/yaniswang/grunt-htmlhint) - flags up invalid HTML 
 
 
 
@@ -122,18 +122,18 @@ Because SASS allows you to import multiple files without worrying about addition
 [Bourbon Neat](http://neat.bourbon.io/) is an extension of [Bourbon](http://bourbon.io/) for semantic grid layouts. Trigger's grid settings can be found in `assets/development/css/_grid-settings.scss`. They can then be called by using Neat's mixins, eg:
 
 ```
-	article {
-		@include span-columns(8);
-	}
+article {
+	@include span-columns(8);
+}
 ```
 
 And if you need to off set a column, you can use Neat's `shift` mixin, eg: 
 
 ```
-	article {
-		@include shift(1);
-		@include span-columns(3);
-	}
+article {
+	@include shift(1);
+	@include span-columns(3);
+}
 ```
 
 
