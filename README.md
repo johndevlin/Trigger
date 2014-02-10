@@ -64,7 +64,7 @@ Trigger/
 └── index.html
 ```
 
-* * *
+
 
 <a name='javescript'>JavaScript</a>
 -----------------------------------
