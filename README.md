@@ -63,7 +63,7 @@ Trigger/
 
 
 
-<a name='javescript'>JaveScript</a>
+<a name='javescript'>JavaScript</a>
 -----------------------------------
 
 I've added in a lot of regularly used jQuery to scripts.js. 
