@@ -8,6 +8,7 @@
 		}
 
 		aside {
+			@include shift(0);
 			@include span-columns(3);
 		}
 	}

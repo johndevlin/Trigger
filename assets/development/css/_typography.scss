@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 	@include heading-font;
 	color: $heading-colour;
 	line-height: 1.2;
-	margin: 0.5em 0; 
+	margin: 1em 0 0.5em; 
 	padding: 0;
 	text-rendering: optimizeLegibility;
 }
@@ -53,23 +53,6 @@ h6 {
 	@include base-font;
 	font-size: em(18);
 }
-
-header .hgroup {
-
-	h1 {
-		font-size: em(72);
-		margin: 0; 
-		text-transform: uppercase;
-	}
-
-	.intro {
-		@include light-heading-font;
-		color: $heading-colour;
-		font-size: em(36);
-		margin: 0; 
-	}
-}
-
 
 ul {
 	margin: 0 0 1em;

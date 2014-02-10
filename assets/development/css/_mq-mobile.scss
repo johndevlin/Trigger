@@ -21,4 +21,15 @@
 		}
 	
 	}
+
+	.button {
+		display: block;
+		margin-bottom: 1em;
+		text-align: center;
+		width: 100%;
+	}
+
+	.button.inline {
+		margin-left: 0;
+	}
 }

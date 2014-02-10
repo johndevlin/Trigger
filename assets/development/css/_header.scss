@@ -1,15 +1,29 @@
 
 header {
 	padding: 50px 20px 0;
-}
 
-header h1 a {
-	color: $grey;
-	display: block;
-	height: 0px;
-	width: 0px;
-}
+	h1 {
+		font-size: em(72);
+		margin: 0; 
+		text-transform: uppercase;
+	}
 
-header nav {
-	padding-top: 20px;
+	.intro {
+		@include light-heading-font;
+		color: $heading-colour;
+		font-size: em(36);
+		margin: 0; 
+	}
+
+	.logo a {
+		color: $grey;
+		display: block;
+		height: 0px;
+		width: 0px;
+	}
+
+	header nav {
+		padding-top: 20px;
+	}
+
 }
