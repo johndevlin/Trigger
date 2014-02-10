@@ -1,7 +1,7 @@
 
 @include media($tablet) {
 	
-	div#main {
+	div#main-content {
 	
 		article {
 			@include span-columns(6);

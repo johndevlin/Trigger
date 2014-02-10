@@ -1,12 +1,15 @@
 
 @include media($small-desktop) {
 
-	div#main article {
-		@include span-columns(5);
-	}
+	div#main-content {
 
-	div#main aside {
-		@include span-columns(3);
+		article {
+			@include span-columns(5);
+		}
+
+		aside {
+			@include span-columns(3);
+		}
 	}
 
 }
