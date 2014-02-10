@@ -82,12 +82,12 @@ I've added in a lot of regularly used jQuery to scripts.js.
 * [jQuery Smartresize](https://github.com/louisremi/jquery-smartresize) - Debounced resize events for jQuery
 * [HTML5 Placeholder jQuery Plugin](https://github.com/mathiasbynens/jquery-placeholder) - Adding placeholder support for < IE9
 
-These should be removed if not needed.
-
 
 ### Grunt.js
 
-Trigger relays heavily on [Grunt](http://gruntjs.com/) to automate tasks. I've added in the following plugins:
+Trigger relays heavily on [Grunt](http://gruntjs.com/) to automate tasks. If you haven't used Grunt before, check out their [get started guide](http://gruntjs.com/getting-started), or [Chris Coyier's article on Grunt](http://24ways.org/2013/grunt-is-not-weird-and-hard/).
+
+Trigger contains the following Grunt plugins:
 
 * [Concat](https://github.com/gruntjs/grunt-contrib-concat) - combines `scripts.js`, and all JS files inside of `/libs/`
 * [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) - minifies the combined JS file from above
