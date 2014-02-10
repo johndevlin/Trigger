@@ -5,21 +5,22 @@ Trigger
 
 
 
-WTF?
----
-
-Trigger is a lightweight front-end framework sitting on top of [Grunt.js](http://gruntjs.com/) to automatically combine and minify all JavaScript, optimise images, and run SASS.
-
-
-
 Contents
 --------
 
-1. [File structure](#structure)
-2. [JaveScript](#javescript)
-3. [SASS (SCSS)](#sass)
-4. [To-dos](#todos)
-5. [Feedback](#feedback)
+1. [WFT?](#wft)
+2. [File structure](#structure)
+3. [JaveScript](#javescript)
+4. [SASS (SCSS)](#sass)
+5. [To-dos](#todos)
+6. [Feedback](#feedback)
+
+
+
+<a name='wft'>WTF?</a>
+---
+
+Trigger is a lightweight front-end framework sitting on top of [Grunt.js](http://gruntjs.com/) to automatically combine and minify all JavaScript, optimise images, and run SASS.
 
 
 
