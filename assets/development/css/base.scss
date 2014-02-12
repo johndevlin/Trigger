@@ -55,49 +55,6 @@ td { vertical-align: top; }
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
 
-/******************************************
-
-	Contents
-	========
-	
-	1. Base.scss
-	-------------
-	This is the main CSS. It also has 
-	links to all other SCSS files 
-	(listed below).
-	
-	
-	2. Settings.scss
-	----------------
-	settings.scss contains the site's 
-	SASS variables and typography mixins.
-	
-
-	3. Typography.scss
-	------------------
-	The base CSS for headings, paragraphs, 
-	lists, etc all lives in here.
-	
-	
-	4. Grid-Settings.scss
-	---------------------
-	The main grid settings for the site 
-	using Bourbon Neat.
-	
-	
-	5. Header.scss
-	--------------
-	All SCSS for the sites header.
-	
-	
-	6. Footer.scss
-	--------------
-	All SCSS for the sites footer.
-
-
-******************************************/
-
-
 
 /*****************
 	Bourbon: Neat
@@ -114,7 +71,7 @@ td { vertical-align: top; }
 	----------------
 	Colour, and 
 	typography
-	
+
 */
 
 @import "settings";
@@ -146,7 +103,7 @@ a {
 
 
 
-/**************
+/************** 
 	Typography
 */
 
@@ -167,11 +124,11 @@ a {
 
 
 
-/**********
+/********
 	Main
 */
 
-div#main-content {
+div.main-content {
 	padding: 0 20px;
 
 	article {
