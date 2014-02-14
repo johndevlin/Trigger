@@ -155,6 +155,7 @@ hr {
 textarea {
 	@include transition (border 0.2s ease-in-out);
 	@include base-font;
+-webkit-appearance: none;
 	background: #ffffff;
 	border: 1px solid transparentize($base-colour, 0.7);
 	border-radius: 0;
@@ -210,15 +211,7 @@ img {
 }
  
 
-/* Helpers */
-
-.mobile {
-	display: none;
-}
-
-.desktop {
-	display: block;
-}
+/* Buttons */
 
 .button {
 	@include inline-block;
@@ -288,15 +281,35 @@ img {
 	Helpers
 */
 
-.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
-.ir br { display: none; }
-.hidden { display: none !important; visibility: hidden; }
-.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
-.invisible { visibility: hidden; }
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }
+.mobile {
+	display: none;
+}
+
+.desktop {
+	display: block;
+}
+
+.hidden {
+	display: none !important; visibility: hidden;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix {
+	*zoom: 1;
+
+	&:before, 
+	&:after {
+		content: ""; 
+		display: table; 
+	}
+
+	&:after {
+		clear: both;
+	}
+}
 
 
 
