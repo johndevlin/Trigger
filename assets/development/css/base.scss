@@ -6,16 +6,6 @@
 
 
 
-/*****************
-	Bourbon: Neat
-*/
-
-@import "bourbon/bourbon";
-@import "grid-settings";
-@import "neat/neat";
-
-
-
 /********************
 	Website Settings
 	----------------
@@ -25,6 +15,18 @@
 */
 
 @import "settings";
+
+
+
+/*****************
+	Bourbon: Neat
+*/
+
+@import "bourbon/bourbon";
+@import "grid-settings";
+@import "neat/neat";
+
+
 
 ::-moz-selection { background: $base-colour; color: #ffffff; text-shadow: none; }
 ::selection { background: $base-colour; color: #ffffff; text-shadow: none; }
@@ -46,9 +48,9 @@ body {
 }
 
 a {
+	@include transition (all 0.3s ease-in-out);
 	color: $base-colour;
 	text-decoration: none;
-	@include transition (all 0.3s ease-in-out);
 }
 
 
