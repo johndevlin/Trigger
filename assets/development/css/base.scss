@@ -107,6 +107,7 @@ hr {
 textarea {
 	@include transition (border 0.2s ease-in-out);
 	@include base-font;
+		appearance: none;
 -webkit-appearance: none;
 	background: #ffffff;
 	border: 1px solid transparentize($base-colour, 0.7);
