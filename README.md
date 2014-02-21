@@ -10,7 +10,7 @@ Contents
 
 1. [WFT?](#wft)
 2. [File structure](#structure)
-3. [JaveScript](#javescript)
+3. [JavaScript](#javascript)
 4. [SASS (SCSS)](#sass)
 5. [To-dos](#todos)
 6. [Feedback](#feedback)
@@ -66,7 +66,7 @@ Trigger/
 
 
 
-<a name='javescript'>JavaScript</a>
+<a name='javascript'>JavaScript</a>
 -----------------------------------
 
 I've added in a lot of regularly used jQuery to scripts.js. 
