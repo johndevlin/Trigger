@@ -80,13 +80,6 @@ module.exports = function(grunt) {
 					spawn: false,
 				}
 			},
-			images: {
-				files: ['assets/development/img/*.{png,jpg,gif}'],
-				tasks: ['imagemin'],
-				options: {
-					spawn: false,
-				}
-			},
 			html: {
 				files: ['*.html'],
 				tasks: ['htmlhint'],
@@ -107,7 +100,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-htmlhint');
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-	grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'watch', 'sass', 'htmlhint']);
+	grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass', 'htmlhint']);
 
 };
 
