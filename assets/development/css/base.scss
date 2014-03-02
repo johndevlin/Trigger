@@ -1,0 +1,273 @@
+/*****************
+	Normalise CSS
+*/
+
+@import "normalize";
+
+
+
+/********************
+	Website Settings
+	----------------
+	Colour, and 
+	typography
+
+*/
+
+@import "settings";
+
+
+
+/*****************
+	Bourbon: Neat
+*/
+
+@import "bourbon/bourbon";
+@import "grid-settings";
+@import "neat/neat";
+
+
+
+::-moz-selection { background: $base-colour; color: #ffffff; text-shadow: none; }
+::selection { background: $base-colour; color: #ffffff; text-shadow: none; }
+
+
+* {
+	margin: 0;
+}
+
+html {
+	background-color: $background-colour;
+}
+
+body {
+	color: $body-colour;
+	font-size: 1em;
+	line-height: 1;
+	margin: 0;
+}
+
+a {
+	@include transition (all 0.3s ease-in-out);
+	color: $base-colour;
+	text-decoration: none;
+}
+
+
+
+/************** 
+	Typography
+*/
+
+@import "typography";
+
+
+
+.container {
+	@include outer-container;
+}
+
+
+/**********
+	Header
+*/
+
+@import "header";
+
+
+
+/********
+	Main
+*/
+
+div.main-content {
+	padding: 0 20px;
+
+	article {
+		@include span-columns(8);
+	}
+
+	aside {
+		@include shift(1);
+		@include span-columns(3);
+	}
+}
+
+hr {
+	margin: 1em 0; 
+}
+
+
+/*****************
+	Form Elements
+*/
+
+
+#{$all-text-inputs},
+textarea {
+	@include transition (border 0.2s ease-in-out);
+	@include base-font;
+		appearance: none;
+-webkit-appearance: none;
+	background: #ffffff;
+	border: 1px solid transparentize($base-colour, 0.7);
+	border-radius: 0;
+	color: $base-colour;
+	display: block;
+	font-size: em(18);
+	margin: 0 0 1em;
+	outline: none;
+	padding: 9px 12px;
+	width: 100%;
+	
+	@include placeholder {
+		@include base-font;
+		color: $base-colour;
+	}
+}
+
+textarea {
+	height: 5em;
+	resize: none;
+}
+
+#{$all-text-inputs-focus} {
+	border: 1px solid $base-colour;
+}
+
+input[type="submit"] {
+	@extend .button;
+	font-size: em(18);
+	outline: none;
+}
+
+
+
+/**********
+	Footer
+*/
+
+@import "footer";
+	
+
+	
+/*******************
+	Responsive Guff
+*/
+
+img, object, embed {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+ 
+
+/* Buttons */
+
+.button {
+	@include inline-block;
+	@include heading-font;
+	@include transition (none);
+	background: $base-colour;
+	border: 1px solid $base-colour;
+	color: $white;
+	cursor: pointer;
+	line-height: 1;
+	padding: 9px 12px;
+	
+	&:hover,
+	&:focus {
+		background: transparentize($base-colour, 0.2);
+	}
+	 
+	&:active {
+	}
+}
+
+.button.inactive {
+	background: transparent;
+	border: 1px solid transparentize($base-colour, 0.7);
+	color: $base-colour;
+	
+	&:hover,
+	&:focus {
+		border: 1px solid transparentize($base-colour, 0.1);
+	}
+	 
+	&:active {
+	}
+}
+
+.button.inline {
+	@include inline-block;
+	margin-left: 1em;
+	
+	&:first-child {
+		margin-left: 0;
+	}
+	
+	&:active {
+		
+	}
+}
+
+
+	
+/****************
+	Media Queries 
+*/
+
+/* Landscape tablet and small desktop */
+@import "mq-small-desktop";
+
+/* Tablet (Portrait) */
+@import "mq-tablet";
+
+/* Mobile (Landscape) */
+@import "mq-mobile";
+
+
+
+/***********
+	Helpers
+*/
+
+.mobile {
+	display: none;
+}
+
+.desktop {
+	display: block;
+}
+
+.hidden {
+	display: none !important; visibility: hidden;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix {
+	*zoom: 1;
+
+	&:before, 
+	&:after {
+		content: ""; 
+		display: table; 
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+
+
+/*********
+	Print 
+*/
+
+@import "print";

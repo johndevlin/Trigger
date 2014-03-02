@@ -1,0 +1,35 @@
+
+@include media($mobile) {
+	
+	body {
+		-webkit-text-size-adjust: none;
+	}
+	
+	.mobile {
+		display: block;
+	}
+
+	.desktop {
+		display: none;
+	}
+	
+	div#main-content {
+	
+		article,
+		aside {
+			@include span-columns(1);
+		}
+	
+	}
+
+	.button {
+		display: block;
+		margin-bottom: 1em;
+		text-align: center;
+		width: 100%;
+	}
+
+	.button.inline {
+		margin-left: 0;
+	}
+}

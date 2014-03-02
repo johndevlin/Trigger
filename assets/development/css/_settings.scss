@@ -1,0 +1,64 @@
+
+/*************
+	Variables
+*/
+
+/* Colours */
+
+$white: #ffffff; 
+$light-grey: #777777;
+$grey: #333333;
+
+$red: #dd4433;
+
+$base-colour: $red;
+$body-colour: $light-grey;
+$heading-colour: $grey;
+$background-colour: $white;
+
+
+
+/* Margins */
+
+$site-margin: 30px;
+
+
+
+/* Typography - Typefaces */
+ 
+
+/* Lato */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+$lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, san-serif;
+
+@mixin lato-light {
+	font-family: $lato;
+	font-weight: 300;
+}
+
+@mixin lato-regular {
+	font-family: $lato;
+	font-weight: 400;
+}
+
+@mixin lato-bold {
+	font-family: $lato;
+	font-weight: 700;
+}
+
+
+/* Typography - SASS selectors */
+
+@mixin base-font {
+	@include lato-regular;
+}
+
+@mixin light-heading-font {
+	@include lato-light;
+}
+
+@mixin heading-font {
+	@include lato-bold;
+}

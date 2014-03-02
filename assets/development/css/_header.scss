@@ -1,0 +1,28 @@
+
+header {
+	padding: 50px 20px 0;
+
+	h1 {
+		margin: 0; 
+		text-transform: uppercase;
+	}
+
+	.intro {
+		@include light-heading-font;
+		color: $heading-colour;
+		font-size: em(36);
+		margin: 0; 
+	}
+
+	.logo a {
+		color: $grey;
+		display: block;
+		height: 0px;
+		width: 0px;
+	}
+
+	nav {
+		padding-top: 20px;
+	}
+
+}
