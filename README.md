@@ -1,5 +1,4 @@
-Trigger
-=======
+# Trigger
 
 #### Version: 0.5 <br/> Status: Stable
 
