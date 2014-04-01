@@ -3,6 +3,11 @@
 #### Version: 0.5 <br/> Status: Stable
 
 
+Installation 
+------------
+
+Trigger uses Grunt for a [Number of things](#structure). To install the needed packages, please open Trigger in terminal and type `npm install`.
+
 
 Contents
 --------
