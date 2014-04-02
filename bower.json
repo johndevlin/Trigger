@@ -20,5 +20,10 @@
 		"bower_components",
 		"test",
 		"tests"
-	]
+	],
+	"dependencies": {
+		"jquery-1.9.1": "http://code.jquery.com/jquery-1.9.1.js",
+		"bourbon": "4.0",
+		"neat": "1.6"
+	}
 }
