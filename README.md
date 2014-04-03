@@ -1,6 +1,6 @@
 # Trigger
 
-#### Version: 0.6 <br/> Status: Stable
+#### Version: 0.6 <br/> Status: Pretty unstable, I'd go [Master](https://github.com/johndevlin/Trigger/). 
 
 
 Installation 
