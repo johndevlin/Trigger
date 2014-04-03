@@ -1,6 +1,6 @@
 # Trigger
 
-#### Version: 0.5 <br/> Status: Fucked mate. Try the [Bower branch](https://github.com/johndevlin/Trigger/tree/Bower) for now. 
+#### Version: 0.5 <br/> Status: Stable
 
 
 Installation 
