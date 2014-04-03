@@ -1,6 +1,6 @@
 # Trigger
 
-#### Version: 0.5 <br/> Status: Stable
+#### Version: 0.5 <br/> Status: Fucked mate. In the middle of fixing this. 
 
 
 Installation 
