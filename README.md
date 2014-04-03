@@ -1,6 +1,6 @@
 # Trigger
 
-#### Version: 0.5 <br/> Status: Stable
+#### Version: 0.6 <br/> Status: Stable
 
 
 Installation 
