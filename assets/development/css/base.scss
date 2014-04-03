@@ -22,10 +22,9 @@
 	Bourbon: Neat
 */
 
-@import "bourbon/bourbon";
+@import "../../bower-components/bourbon/dist/bourbon";
 @import "grid-settings";
-@import "neat/neat";
-
+@import "../../bower-components/neat/app/assets/stylesheets/neat";
 
 
 ::-moz-selection { background: $base-colour; color: #ffffff; text-shadow: none; }

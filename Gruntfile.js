@@ -11,9 +11,8 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				src: [
-					'assets/development/js/libs/*.js',
+					'assets/bower-components/jquery-1.9.1/*.js',
 					'assets/development/js/plugins/*.js',
-					'assets/development/js/framework/*.js',
 					'assets/development/js/scripts.js'
 				],
 				dest: 'assets/production/js/production.js',
