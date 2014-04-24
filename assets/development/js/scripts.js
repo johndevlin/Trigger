@@ -11,7 +11,7 @@
 	
 */
 
-
+  
 // Debounced Resize function
 $(window).on("debouncedresize", function( event ) {
 	// Guff
