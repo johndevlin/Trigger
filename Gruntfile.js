@@ -15,7 +15,9 @@ module.exports = function(grunt) {
 					'assets/development/js/libs/*.js',
 				
 					'assets/bower-components/**/*.js',
+					
 					'!assets/bower-components/**/*min.js',
+					'!assets/bower-components/**/test.js',
 					
 					'assets/development/js/plugins/*.js',
 					'assets/development/js/scripts.js'

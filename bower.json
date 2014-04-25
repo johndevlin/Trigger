@@ -23,6 +23,7 @@
 	],
 	"dependencies": {
 		"bourbon": "4.0",
-		"neat": "1.6"
+		"neat": "1.6",
+		"jquery-placeholder": "2.0.8"
 	}
 }
