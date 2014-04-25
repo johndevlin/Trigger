@@ -10335,7 +10335,7 @@ if ( typeof noGlobal === strundefined ) {
 return jQuery;
 
 }));
-;(function(e){var t=e.event,n,r;n=t.special.debouncedresize={setup:function(){e(this).on("resize",n.handler)},teardown:function(){e(this).off("resize",n.handler)},handler:function(e,i){var s=this,o=arguments,u=function(){e.type="debouncedresize";t.dispatch.apply(s,o)};if(r){clearTimeout(r)}i?u():r=setTimeout(u,n.threshold)},threshold:150}})(jQuery);/*! http://mths.be/placeholder v2.0.7 by @mathias */
+;/*! http://mths.be/placeholder v2.0.8 by @mathias */
 ;(function(window, document, $) {
 
 	// Opera Mini v7 doesn’t support placeholder although its DOM seems to indicate so
@@ -10516,11 +10516,11 @@ return jQuery;
 		// https://github.com/mathiasbynens/jquery-placeholder/pull/99
 		try {
 			return document.activeElement;
-		} catch (err) {}
+		} catch (exception) {}
 	}
 
 }(this, document, jQuery));
-;
+;(function(e){var t=e.event,n,r;n=t.special.debouncedresize={setup:function(){e(this).on("resize",n.handler)},teardown:function(){e(this).off("resize",n.handler)},handler:function(e,i){var s=this,o=arguments,u=function(){e.type="debouncedresize";t.dispatch.apply(s,o)};if(r){clearTimeout(r)}i?u():r=setTimeout(u,n.threshold)},threshold:150}})(jQuery);
 
 /********************************
 
