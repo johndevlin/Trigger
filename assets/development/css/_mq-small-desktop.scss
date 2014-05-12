@@ -1,7 +1,7 @@
 
 @include media($small-desktop) {
 
-	div#main-content {
+	div.main-content {
 
 		article {
 			@include span-columns(5);
