@@ -12,8 +12,8 @@ p {
 	@include base-font;
 	color: $body-colour;
 	font-size: em(18);
-	line-height: 1.5;
-	margin: 1em 0; 
+	line-height: 1.75;
+	margin: 1.5em 0; 
 }
 
 p a {
@@ -56,12 +56,12 @@ h6 {
 
 ul {
 	font-size: em(18);
-	margin: 1em 0;
+	margin: 1.5em 0;
 	
 	li {
 		@include base-font;
 		color: $body-colour;
 		line-height: 1;
-		margin: 0 0 1em;
+		margin: 0 0 1.25em;
 	}
 }

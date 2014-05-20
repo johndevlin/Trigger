@@ -7,7 +7,7 @@
 #{$all-text-inputs},
 textarea {
 	@include transition (border 0.2s ease-in-out); 
-	@include base-font;
+	@include form-font;
 		appearance: none;
 -webkit-appearance: none;
 	background: #ffffff;
@@ -16,13 +16,13 @@ textarea {
 	color: $base-colour;
 	display: block;
 	font-size: em(18);
-	margin: 0 0 1em;
+	margin: 0 0 1.5em;
 	outline: none;
 	padding: 9px 12px;
 	width: 100%;
 	
 	@include placeholder {
-		@include base-font;
+		@include form-font;
 		color: $base-colour;
 	}
 }
@@ -32,7 +32,8 @@ textarea {
 	resize: none;
 }
 
-#{$all-text-inputs-focus} {
+#{$all-text-inputs-focus},
+textarea:focus { 
 	border: 1px solid $base-colour;
 }
 

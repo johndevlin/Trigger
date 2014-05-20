@@ -50,9 +50,25 @@ $lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, san-serif;
 }
 
 
+/* Merriweather */
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300);
+
+$merriweather: 'Merriweather', serif;
+
+@mixin merriweather-light {
+	font-family: $merriweather;
+	font-weight: 300;
+}
+
+
 /* Typography - SASS selectors */
 
 @mixin base-font {
+	@include merriweather-light;
+}
+
+@mixin form-font {
 	@include lato-regular;
 }
 
