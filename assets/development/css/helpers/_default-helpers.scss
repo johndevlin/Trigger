@@ -1,0 +1,35 @@
+
+/*******************
+	Default Helpers
+*/
+
+
+.mobile {
+	display: none;
+}
+ 
+.desktop {
+	display: block;
+}
+
+.hidden {
+	display: none !important; visibility: hidden;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix {
+	*zoom: 1;
+
+	&:before, 
+	&:after {
+		content: ""; 
+		display: table; 
+	}
+
+	&:after {
+		clear: both;
+	}
+}

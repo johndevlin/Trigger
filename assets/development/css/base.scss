@@ -104,51 +104,6 @@ hr {
 
 @import "footer";
 
-
-
-/*****************
-	Form Elements
-*/
-
-
-#{$all-text-inputs},
-textarea {
-	@include transition (border 0.2s ease-in-out); 
-	@include base-font;
-		appearance: none;
--webkit-appearance: none;
-	background: #ffffff;
-	border: 1px solid transparentize($base-colour, 0.7);
-	border-radius: 0;
-	color: $base-colour;
-	display: block;
-	font-size: em(18);
-	margin: 0 0 1em;
-	outline: none;
-	padding: 9px 12px;
-	width: 100%;
-	
-	@include placeholder {
-		@include base-font;
-		color: $base-colour;
-	}
-}
-
-textarea {
-	height: 5em;
-	resize: none;
-}
-
-#{$all-text-inputs-focus} {
-	border: 1px solid $base-colour;
-}
-
-input[type="submit"] {
-	@extend .button;
-	outline: none;
-}
-	
-
 	
 /*******************
 	Responsive Guff
@@ -163,59 +118,6 @@ img {
 }
  
 
-/* Buttons */
-
-.button {
-	@include inline-block;
-	@include heading-font;
-	@include transition (none);
-	background: $base-colour;
-	border: 1px solid $base-colour;
-	color: $white;
-	cursor: pointer;
-	font-size: em(18);
-	line-height: 1;
-	padding: 9px 12px;
-	
-	&:hover,
-	&:focus {
-		background: transparentize($base-colour, 0.2);
-	}
-	 
-	&:active {
-	}
-}
-
-.button.inactive {
-	background: transparent;
-	border: 1px solid transparentize($base-colour, 0.7);
-	color: $base-colour;
-	
-	&:hover,
-	&:focus {
-		border: 1px solid transparentize($base-colour, 0.1);
-	}
-	 
-	&:active {
-	}
-}
-
-.button.inline {
-	@include inline-block;
-	margin-left: 1em;
-	
-	&:first-child {
-		margin-left: 0;
-	}
-	
-	&:active {
-		
-	}
-}
-
-.btn-row {
-	@include clearfix;
-}
 
 
 	
@@ -238,35 +140,8 @@ img {
 	Helpers
 */
 
-.mobile {
-	display: none;
-}
+@import "helpers/helpers"; 
 
-.desktop {
-	display: block;
-}
-
-.hidden {
-	display: none !important; visibility: hidden;
-}
-
-.invisible {
-	visibility: hidden;
-}
-
-.clearfix {
-	*zoom: 1;
-
-	&:before, 
-	&:after {
-		content: ""; 
-		display: table; 
-	}
-
-	&:after {
-		clear: both;
-	}
-}
 
 
 
