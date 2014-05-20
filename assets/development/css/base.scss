@@ -47,6 +47,10 @@ body {
 	margin: 0;
 }
 
+.container {
+	@include outer-container;
+}
+
 a {
 	@include transition (all 0.3s ease-in-out);
 	color: $base-colour;
@@ -61,11 +65,6 @@ a {
 
 @import "typography";
 
-
-
-.container {
-	@include outer-container;
-}
 
 
 /**********
@@ -96,6 +95,15 @@ div.main-content {
 hr {
 	margin: 1em 0; 
 }
+
+
+
+/**********
+	Footer
+*/
+
+@import "footer";
+
 
 
 /*****************
@@ -137,17 +145,8 @@ textarea {
 
 input[type="submit"] {
 	@extend .button;
-	font-size: em(18);
 	outline: none;
 }
-
-
-
-/**********
-	Footer
-*/
-
-@import "footer";
 	
 
 	
@@ -174,6 +173,7 @@ img {
 	border: 1px solid $base-colour;
 	color: $white;
 	cursor: pointer;
+	font-size: em(18);
 	line-height: 1;
 	padding: 9px 12px;
 	
@@ -211,6 +211,10 @@ img {
 	&:active {
 		
 	}
+}
+
+.btn-row {
+	@include clearfix;
 }
 
 
