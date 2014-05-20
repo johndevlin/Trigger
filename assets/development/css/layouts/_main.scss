@@ -1,0 +1,22 @@
+
+/********
+	Main
+*/
+
+div.main-content {
+	padding: 0 $container-padding;
+
+	article {
+		@include span-columns(8);
+	}
+
+	aside {
+		@include shift(1);
+		@include span-columns(3);
+	}
+}
+
+hr {
+	margin: 1em 0; 
+}
+

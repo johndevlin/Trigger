@@ -2,7 +2,7 @@
 	Normalise CSS
 */
 
-@import "normalize";
+@import "helpers/normalize";
 
 
 
@@ -18,18 +18,17 @@
 
 
 
-/*****************
-	Bourbon: Neat
+/***************************
+	Bourbon
+	------------------------
+	Import Bourbon and 
+	Bourbon Neat (for grids)
+	
 */
 
 @import "bourbon/bourbon";
 @import "grid-settings";
 @import "neat/neat";
-
-
-
-::-moz-selection { background: $base-colour; color: #ffffff; text-shadow: none; }
-::selection { background: $base-colour; color: #ffffff; text-shadow: none; }
 
 
 * {
@@ -59,65 +58,28 @@ a {
 
 
 
-/************** 
+/************************
 	Typography
+	---------------------
+	Set all of your sites 
+	typography here
+	
 */
 
 @import "typography";
 
 
 
-/**********
-	Header
-*/
-
-@import "header";
-
-
-
-/********
-	Main
-*/
-
-div.main-content {
-	padding: 0 20px;
-
-	article {
-		@include span-columns(8);
-	}
-
-	aside {
-		@include shift(1);
-		@include span-columns(3);
-	}
-}
-
-hr {
-	margin: 1em 0; 
-}
-
-
-
-/**********
-	Footer
-*/
-
-@import "footer";
-
+/************************
+	Layouts
+	---------------------
+	Edit your header, 
+	footer, and main 
+	page styles here
 	
-/*******************
-	Responsive Guff
 */
 
-img, object, embed {
-	max-width: 100%;
-}
-
-img {
-	height: auto;
-}
- 
-
+@import "layouts/layouts"; 
 
 
 	
@@ -125,14 +87,7 @@ img {
 	Media Queries 
 */
 
-/* Landscape tablet and small desktop */
-@import "mq-small-desktop";
-
-/* Tablet (Portrait) */
-@import "mq-tablet";
-
-/* Mobile (Landscape) */
-@import "mq-mobile";
+@import "media-queries/media-queries"; 
 
 
 
@@ -149,4 +104,4 @@ img {
 	Print 
 */
 
-@import "print";
+@import "helpers/print";

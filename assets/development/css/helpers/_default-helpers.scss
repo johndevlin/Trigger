@@ -4,6 +4,22 @@
 */
 
 
+// Text highlights 
+
+::-moz-selection {
+	background: $base-colour; 
+	color: #ffffff; 
+	text-shadow: none;
+}
+
+::selection {
+	background: $base-colour; 
+	color: #ffffff; 
+	text-shadow: none;
+}
+
+
+
 .mobile {
 	display: none;
 }

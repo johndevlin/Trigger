@@ -1,0 +1,26 @@
+
+/****************************
+	Import all media queries
+*/
+
+
+// Responsive image fixes
+
+img, object, embed {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+ 
+
+
+/* Landscape tablet and small desktop */
+@import "small-desktop"; 
+
+/* Tablet (Portrait) */
+@import "tablet";
+
+/* Mobile (Landscape) */
+@import "mobile"; 
