@@ -8,7 +8,7 @@ A Front-End [SASS](http://sass-lang.com/) & [Grunt](http://gruntjs.com/) framewo
 Contents
 --------
 
-1. [WFT?](https://github.com/johndevlin/Trigger#wft)
+1. [WTF?](#wtf)
 2. [Installation](#installation)
 3. [File structure](#structure)
 4. [JavaScript](#javascript)
