@@ -10,10 +10,10 @@ Contents
 
 1. [WTF?](#wtf)
 2. [Installation](#installation)
-3. [File structure](#structure)
+3. [File structure](#file-structure)
 4. [JavaScript](#javascript)
-5. [SASS (SCSS)](#sass)
-6. [To-dos](#todos)
+5. [SASS (SCSS)](#sass-scss)
+6. [To-dos](#to-dos)
 7. [Feedback](#feedback)
 
 
@@ -26,16 +26,16 @@ Trigger is a lightweight front-end SASS that uses [Grunt](http://gruntjs.com/) t
 
 
 
-## <a name='installation'>Installation</a>
+## Installation
 
-Trigger relies heavily on Grunt for a [Number of things](#grunt). If you haven't used Grunt before, check out the [get started guide](http://gruntjs.com/getting-started). To install the needed packages, please open Trigger in terminal and type `npm install`. Then running `grunt` in terminal will run [Trigger's defaults plugins](#grunt). 
-
-
+Trigger relies heavily on Grunt for a [Number of things](#gruntjs). If you haven't used Grunt before, check out the [get started guide](http://gruntjs.com/getting-started). To install the needed packages, please open Trigger in terminal and type `npm install`. Then running `grunt` in terminal will run [Trigger's defaults plugins](#gruntjs). 
 
 
-## <a name='structure'>File structure</a>
 
-Trigger's file structure is pretty self-explanatory for the more part. The only unusual thing is `assets` being split out into `development/` and `production/`. Development contains your SASS, full resolution images and un-minified JavaScript files. Production is where [Grunt](#javescript) outputs these files. 
+
+## File structure
+
+Trigger's file structure is pretty self-explanatory for the more part. The only unusual thing is `assets` being split out into `development/` and `production/`. Development contains your SASS, full resolution images and un-minified JavaScript files. Production is where [Grunt](#gruntjs) outputs these files. 
 
 Splitting this up into two different files makes it a lot easier when uploading to a server. 
 
