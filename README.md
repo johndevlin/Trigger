@@ -28,7 +28,7 @@ Trigger is a lightweight front-end SASS that uses [Grunt](http://gruntjs.com/) t
 
 ## Installation
 
-Trigger relies heavily on Grunt for a [Number of things](#gruntjs). If you haven't used Grunt before, check out the [get started guide](http://gruntjs.com/getting-started). 
+Trigger relies heavily on Grunt for a [number of things](#gruntjs). If you haven't used Grunt before, check out the [get started guide](http://gruntjs.com/getting-started). 
 
 To install the needed packages, please open Trigger in terminal and type `npm install`. Then running `grunt` in terminal will run [Trigger's defaults plugins](#gruntjs). To optimize your images, run `grunt imagemin` in terminal. 
 
