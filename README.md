@@ -1,35 +1,39 @@
 # Trigger
 
+A Front-End [SASS](http://sass-lang.com/) & [Grunt](http://gruntjs.com/) framework. 
+
 #### Version: 0.5 <br/> Status: Stable
-
-
-Installation 
-------------
-
-Trigger uses Grunt for a [Number of things](#structure). To install the needed packages, please open Trigger in terminal and type `npm install`.
 
 
 Contents
 --------
 
 1. [WFT?](#wft)
-2. [File structure](#structure)
-3. [JavaScript](#javascript)
-4. [SASS (SCSS)](#sass)
-5. [To-dos](#todos)
-6. [Feedback](#feedback)
+2. [Installation](#installation)
+3. [File structure](#structure)
+4. [JavaScript](#javascript)
+5. [SASS (SCSS)](#sass)
+6. [To-dos](#todos)
+7. [Feedback](#feedback)
 
 
 
-<a name='wft'>WTF?</a>
----
 
-Trigger is a lightweight front-end framework sitting on top of [Grunt.js](http://gruntjs.com/) to automatically combine and minify all JavaScript, optimise images, and run SASS.
+## <a name='wft'>WTF?</a>
+
+Trigger is a lightweight front-end SASS that uses [Grunt](http://gruntjs.com/) to automatically combine and minify all of your JavaScript, optimise your images, and run SASS. Trigger comes with [Bourbon](http://bourbon.io/) and [Bourbon Neat](http://neat.bourbon.io/) installed. 
 
 
 
-<a name='structure'>File structure</a>
----------------------------------
+
+## <a name='installation'>Installation</a>
+
+Trigger relies heavily on Grunt for a [Number of things](#grunt). If you haven't used Grunt before, check out the [get started guide](http://gruntjs.com/getting-started). To install the needed packages, please open Trigger in terminal and type `npm install`. Then running `grunt` in terminal will run [Trigger's defaults plugins](#grunt). 
+
+
+
+
+## <a name='structure'>File structure</a>
 
 Trigger's file structure is pretty self-explanatory for the more part. The only unusual thing is `assets` being split out into `development/` and `production/`. Development contains your SASS, full resolution images and un-minified JavaScript files. Production is where [Grunt](#javescript) outputs these files. 
 
@@ -40,10 +44,8 @@ Trigger/
 ├── assets/
 │   ├── development/
 │   │   ├── css/
-│   │   │   ├── bourbon/
-│   │   │   ├── neat/
+│   │   │   ├── includes/
 │   │   │   ├── base.scss
-│   │   │   └── _include-sass-file.scss
 │   │   │
 │   │   ├── js/
 │   │   │   ├── libs/
@@ -63,15 +65,12 @@ Trigger/
 │       └── img/
 │           └── optimized.jpg/png/gif
 │
-├── node_modules/
-├── Gruntfile.js
 └── index.html
 ```
 
 
 
-<a name='javascript'>JavaScript</a>
------------------------------------
+## <a name='javascript'>JavaScript</a>
 
 I've added in a lot of regularly used jQuery to scripts.js. 
 
@@ -91,7 +90,7 @@ I've added in a lot of regularly used jQuery to scripts.js.
 * [HTML5 Placeholder jQuery Plugin](https://github.com/mathiasbynens/jquery-placeholder) - Adding placeholder support for < IE9
 
 
-### Grunt.js
+### <a name='grunt'>Grunt.js</a>
 
 Trigger relays heavily on [Grunt](http://gruntjs.com/) to automate tasks. If you haven't used Grunt before, check out their [get started guide](http://gruntjs.com/getting-started), or [Chris Coyier's article on Grunt](http://24ways.org/2013/grunt-is-not-weird-and-hard/).
 
@@ -106,8 +105,7 @@ Trigger contains the following Grunt plugins:
 
 
 
-<a name='sass'>SASS (SCSS)</a>
-------------------------------
+## <a name='sass'>SASS (SCSS)</a>
 
 Trigger uses [SASS](http://sass-lang.com/) for all of it's style sheets. SASS is run and minified using [Grunt's SASS plug-in](https://github.com/gruntjs/grunt-contrib-sass). 
 
@@ -145,8 +143,7 @@ aside {
 
 
 
-<a name='todos'>To-dos</a>
---------------------------
+## <a name='todos'>To-dos</a>
 
 This is (and probably always will be) a work in progress. Here are some features I'll be adding in.
 
@@ -157,8 +154,7 @@ This is (and probably always will be) a work in progress. Here are some features
 
 
 
-<a name='feedback'>Feedback</a>
--------------------------------
+## <a name='feedback'>Feedback</a>
 
 If you have any ideas on how to improve this project please give me a shout on Twitter - [@john_devlin](https://twitter.com/john_devlin).
 
