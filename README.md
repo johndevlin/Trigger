@@ -149,10 +149,10 @@ aside {
 
 This is (and probably always will be) a work in progress. Here are some features I'll be adding in.
 
-* Look into hashing JS & CSS file names with Grunt
-* Test iOS icon size
-* Add Windows 8 icon
-* 404 page
+* [ ] Look into hashing JS & CSS file names with Grunt
+* [ ] Test iOS icon size
+* [ ] Add Windows 8 icon
+* [ ] 404 page
 
 
 
