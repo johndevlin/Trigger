@@ -149,6 +149,8 @@ aside {
 
 This is (and probably always will be) a work in progress. Here are some features I'll be adding in.
 
+* [ ] Bower
+* [ ] A configuration file for customising the framework
 * [ ] Look into hashing JS & CSS file names with Grunt
 * [ ] Test iOS icon size
 * [ ] Add Windows 8 icon
