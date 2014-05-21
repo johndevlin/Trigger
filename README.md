@@ -88,6 +88,8 @@ I've added in a lot of regularly used jQuery to scripts.js.
 
 * [jQuery Smartresize](https://github.com/louisremi/jquery-smartresize) - Debounced resize events for jQuery
 * [HTML5 Placeholder jQuery Plugin](https://github.com/mathiasbynens/jquery-placeholder) - Adding placeholder support for < IE9
+* [Selectivizr](http://selectivizr.com/) - Emulates CSS3 pseudo-classes in IE8 and below
+* [Modernizr](http://modernizr.com/) - Y'all know what Modernizr does
 
 
 ### <a name='grunt'>Grunt.js</a>
