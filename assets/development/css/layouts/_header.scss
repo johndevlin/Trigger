@@ -8,7 +8,7 @@ header {
 	}
 
 	.intro {
-		@include light-heading-font;
+		@extend %light-heading-typeface;
 		color: $heading-colour;
 		font-size: em(36);
 		margin: 0; 

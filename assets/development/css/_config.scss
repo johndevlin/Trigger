@@ -1,0 +1,141 @@
+
+/**********************\
+	Trigger Options
+	---------------
+	
+	Update the relevant
+	values below. 
+	
+\**********************/
+
+
+/************
+	1. Grids
+*/
+
+
+/* A.1: Do you want to use Bourbon Neat for grids? */
+
+$bourbon-neat: false!default; 
+// If false, ignore A2, and go straight to B. 
+
+
+/* A.2: Fill out the maximum width, and number of grids for Desktop, Tablet and Mobile */ 
+
+$desktop-width: 1140px!default;
+$desktop-grids: 12!default;
+
+$small-desktop-width: 1139px!default;
+$small-desktop-grids: 8!default;
+
+$tablet-width: 1023px!default;
+$tablet-grids: 6!default;
+
+$mobile-width: 767px!default;
+$mobile-grids: 1!default; 
+
+
+
+/* B: If you aren't going to use Bourbon Neat what width is your site? */
+
+$non-responsive-width: 960px!default; 
+// If false, ignore B-C, and go straight to D. 
+
+
+
+
+
+/*******************
+	Colour settings
+*/
+
+/* Brand colours */
+
+$white: #ffffff; 
+$light-grey: #777777;
+$grey: #333333;
+
+$red: #dd4433;
+
+
+/* SASS colour calls */
+
+$base-colour: $red;
+$body-colour: $light-grey;
+$heading-colour: $grey;
+$background-colour: $white;
+
+
+
+
+
+/*******************
+	Website margins 
+	& paddings
+*/
+
+/* Margins & Padding */
+
+$site-margin: 30px;
+$container-padding: 20px;
+ 
+
+
+
+/***********************
+	Typography settings
+*/
+ 
+
+/* Lato */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+$lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, san-serif;
+
+ 
+/* Merriweather */
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300);
+
+$merriweather: 'Merriweather', serif;
+
+@mixin merriweather-light {
+	font-family: $merriweather;
+	font-weight: 300;
+}
+
+ 
+/* Typography - SASS calls */
+
+%default-typeface,
+%base-typeface {
+	font-family: $merriweather;
+	font-weight: 400;
+}
+
+%form-typeface {
+	font-family: $lato;
+	font-weight: 400;
+}
+
+%heading-typeface {
+	font-family: $lato;
+	font-weight: 700;
+}
+
+%light-heading-typeface {
+	font-family: $lato;
+	font-weight: 300;
+}
+
+
+
+
+@import "functions";
+
+
+
+
+
+

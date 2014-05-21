@@ -1,0 +1,49 @@
+
+/***************************
+	Bourbon
+	------------------------
+	Import Bourbon and 
+	Bourbon Neat (for grids)
+	
+*/
+
+@import "bourbon/bourbon";
+@import "grid-settings";
+@import "neat/neat";
+
+
+
+
+
+/***********************************
+
+	This file should NOT be changed
+	--------------------------------
+	All settings for the site should
+	be configured in _config.scss
+	
+*/
+
+
+/***************************************************
+	A.1: Do you want to use Bourbon Neat for grids?
+	
+*/
+
+@if $bourbon-neat == true {
+	
+	.container {
+		@include outer-container;
+	}
+	
+}
+
+@else if $bourbon-neat == false {
+	
+	.container {
+		@include clearfix;
+		margin-left: auto;
+		margin-right: auto;
+		width: $non-responsive-width;
+	}
+}

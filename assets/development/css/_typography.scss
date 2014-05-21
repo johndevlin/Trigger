@@ -1,6 +1,6 @@
 
 body {
-	@include base-font;
+	@extend %base-typeface;
 }
 
 * {
@@ -9,7 +9,7 @@ body {
 }
 
 p {
-	@include base-font;
+	@extend %base-typeface;
 	color: $body-colour;
 	font-size: em(18);
 	line-height: 1.75;
@@ -21,7 +21,7 @@ p a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	@include heading-font;
+	@extend %heading-typeface;
 	color: $heading-colour;
 	line-height: 1.2;
 	margin: 1em 0 0.5em; 
@@ -50,7 +50,7 @@ h5 {
 }
 
 h6 {
-	@include base-font;
+	@extend %base-typeface; 
 	font-size: em(18);
 }
 
@@ -59,7 +59,7 @@ ul {
 	margin: 1.5em 0;
 	
 	li {
-		@include base-font;
+		@extend %base-typeface; 
 		color: $body-colour;
 		line-height: 1;
 		margin: 0 0 1.25em;

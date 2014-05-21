@@ -14,21 +14,7 @@
 
 */
 
-@import "settings";
-
-
-
-/***************************
-	Bourbon
-	------------------------
-	Import Bourbon and 
-	Bourbon Neat (for grids)
-	
-*/
-
-@import "bourbon/bourbon";
-@import "grid-settings";
-@import "neat/neat";
+@import "config"; 
 
 
 * {
@@ -44,10 +30,6 @@ body {
 	font-size: 1em;
 	line-height: 1;
 	margin: 0;
-}
-
-.container {
-	@include outer-container;
 }
 
 a {

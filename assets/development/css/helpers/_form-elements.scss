@@ -6,8 +6,8 @@
 
 #{$all-text-inputs},
 textarea {
+	@extend %form-typeface; 
 	@include transition (border 0.2s ease-in-out); 
-	@include form-font;
 		appearance: none;
 -webkit-appearance: none;
 	background: #ffffff;
@@ -22,7 +22,7 @@ textarea {
 	width: 100%;
 	
 	@include placeholder {
-		@include form-font;
+		@extend %form-typeface; 
 		color: $base-colour;
 	}
 }
