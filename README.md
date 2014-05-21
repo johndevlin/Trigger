@@ -45,7 +45,7 @@ Trigger/
 │   ├── development/
 │   │   ├── css/
 │   │   │   ├── includes/
-│   │   │   ├── base.scss
+│   │   │   └── base.scss
 │   │   │
 │   │   ├── js/
 │   │   │   ├── libs/
@@ -59,7 +59,6 @@ Trigger/
 │       │   └── style.css
 │       │
 │       ├── js/
-│       │   ├── modernizer.js
 │       │   └── production.min.js
 │       │
 │       └── img/
