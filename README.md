@@ -19,7 +19,7 @@ Contents
 
 
 
-## <a name='wft'>WTF?</a>
+## <a class="anchor" name='wft'>WTF?</a>
 
 Trigger is a lightweight front-end SASS that uses [Grunt](http://gruntjs.com/) to automatically combine and minify all of your JavaScript, optimise your images, and run SASS. Trigger comes with [Bourbon](http://bourbon.io/) and [Bourbon Neat](http://neat.bourbon.io/) installed. 
 
