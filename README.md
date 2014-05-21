@@ -70,7 +70,7 @@ Trigger/
 
 
 
-## <a name='javascript'>JavaScript</a>
+## JavaScript
 
 I've added in a lot of regularly used jQuery to scripts.js. 
 
@@ -92,7 +92,7 @@ I've added in a lot of regularly used jQuery to scripts.js.
 * [Modernizr](http://modernizr.com/) - Y'all know what Modernizr does
 
 
-### <a name='grunt'>Grunt.js</a>
+### Grunt.js
 
 Trigger relays heavily on [Grunt](http://gruntjs.com/) to automate tasks. If you haven't used Grunt before, check out their [get started guide](http://gruntjs.com/getting-started), or [Chris Coyier's article on Grunt](http://24ways.org/2013/grunt-is-not-weird-and-hard/).
 
@@ -107,7 +107,7 @@ Trigger contains the following Grunt plugins:
 
 
 
-## <a name='sass'>SASS (SCSS)</a>
+## SASS (SCSS)
 
 Trigger uses [SASS](http://sass-lang.com/) for all of it's style sheets. SASS is run and minified using [Grunt's SASS plug-in](https://github.com/gruntjs/grunt-contrib-sass). 
 
@@ -145,7 +145,7 @@ aside {
 
 
 
-## <a name='todos'>To-dos</a>
+## To-dos
 
 This is (and probably always will be) a work in progress. Here are some features I'll be adding in.
 
@@ -156,7 +156,7 @@ This is (and probably always will be) a work in progress. Here are some features
 
 
 
-## <a name='feedback'>Feedback</a>
+## Feedback
 
 If you have any ideas on how to improve this project please give me a shout on Twitter - [@john_devlin](https://twitter.com/john_devlin).
 
