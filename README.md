@@ -163,7 +163,5 @@ This is (and probably always will be) a work in progress. Here are some features
 
 If you have any ideas on how to improve this project please give me a shout on Twitter - [@john_devlin](https://twitter.com/john_devlin).
 
-[Cheers](https://dl.dropboxusercontent.com/u/5265846/GIFs/cheers.gif).
-
 
 
