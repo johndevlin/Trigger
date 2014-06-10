@@ -26,33 +26,6 @@ module.exports = function(grunt) {
 				dest: 'assets/production/js/production.min.js'
 			}
 		},
-		
-		imagemin: {
-			dynamic: {
-				files: [{
-					expand: true,
-					cwd: 'assets/development/img/',
-					src: ['**/*.{png,jpg,gif}'],
-					dest: 'assets/production/img/'
-				}]
-			}
-		},
-		
-		htmlhint: {
-			build: {
-				options: {
-		            'tag-pair': true,
-		            'tagname-lowercase': true,
-		            'attr-lowercase': true,
-		            'attr-value-double-quotes': true,
-		            'doctype-first': true,
-		            'spec-char-escape': true,
-		            'id-unique': true,
-		            'style-disabled': true
-		        },
-				src: ['*.html']
-			}
-		},
 
 		sass: {
 			dist: {
@@ -86,7 +59,48 @@ module.exports = function(grunt) {
 				options: {
 					spawn: false,
 				}
+			},
+			images: {
+				files: ['assets/development/img/*'],
+				tasks: ['imagemin'],
+				options: {
+					spawn: false,
+				}
 			}
+		},
+		
+		imagemin: {
+			dynamic: {
+				files: [{
+					expand: true,
+					cwd: 'assets/development/img/',
+					src: ['**/*.{png,jpg,gif}'],
+					dest: 'assets/production/img/'
+				}]
+			}
+		},
+		
+		htmlhint: {
+			build: {
+				options: {
+		            'tag-pair': true,
+		            'tagname-lowercase': true,
+		            'attr-lowercase': true,
+		            'attr-value-double-quotes': true,
+		            'doctype-first': true,
+		            'spec-char-escape': true,
+		            'id-unique': true,
+		            'style-disabled': true
+		        },
+				src: ['*.html']
+			}
+		},
+		
+		jshint: {
+			all: [
+				'Gruntfile.js', 
+				'assets/development/js/*.js'
+			]
 		}
 
 	});
@@ -98,9 +112,14 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-htmlhint');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-	grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass', 'htmlhint']);
+	grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass']);
+	
+	grunt.registerTask('hint', ['htmlhint', 'jshint']);
+	
+	grunt.registerTask('img', ['imagemin', 'watch']);
 
 };
 
