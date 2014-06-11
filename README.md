@@ -43,28 +43,27 @@ Splitting this up into two different files makes it a lot easier when uploading 
 
 ```
 Trigger/
-├── assets/
-│   ├── development/
-│   │   ├── css/
-│   │   │   ├── includes/
-│   │   │   └── base.scss
-│   │   │
-│   │   ├── js/
-│   │   │   ├── libs/
-│   │   │   └── scripts.js
-│   │   │
-│   │   └── img/
-│   │       └── highres.jpg/png/gif
+│
+├── development/
+│   ├── css/
+│   │   ├── includes/
+│   │   └── base.scss
 │   │
-│   └── production/
-│       ├── css/
-│       │   └── style.css
-│       │
-│       ├── js/
-│       │   └── production.min.js
-│       │
-│       └── img/
-│           └── optimized.jpg/png/gif
+│   ├── js/
+│   │   ├── libs/
+│   │   └── scripts.js
+│   │
+│   └── img/
+│  		 └── highres.jpg/png/gif
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── production.min.js
+│
+├── img/
+│   └── optimized.jpg/png/gif
 │
 └── index.html
 ```
