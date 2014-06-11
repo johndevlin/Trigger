@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 					'development/js/framework/*.js',
 					'development/js/scripts.js'
 				],
-				dest: 'production/js/production.js',
+				dest: 'js/production.js',
 			}
 		},
 		
