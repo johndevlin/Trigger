@@ -50,7 +50,7 @@ Trigger/
 │   │   └── scripts.js
 │   │
 │   └── img/
-│		└── highres.jpg/png/gif
+│       └──  highres.jpg/png/gif
 │
 ├── css/
 │   └── style.css
