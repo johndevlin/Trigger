@@ -1,0 +1,44 @@
+
+/*****************
+	Form Elements
+*/
+
+
+#{$all-text-inputs},
+textarea {
+	@extend %form-typeface; 
+	@include transition (border 0.2s ease-in-out); 
+		appearance: none;
+-webkit-appearance: none;
+	background: #ffffff;
+	border: 1px solid transparentize($base-colour, 0.7);
+	border-radius: 0;
+	color: $base-colour;
+	display: block;
+	font-size: em(18);
+	margin: 0 0 1.5em;
+	outline: none;
+	padding: 9px 12px;
+	width: 100%;
+	
+	@include placeholder {
+		@extend %form-typeface; 
+		color: $base-colour;
+	}
+}
+
+textarea {
+	height: 5em;
+	resize: none;
+}
+
+#{$all-text-inputs-focus},
+textarea:focus { 
+	border: 1px solid $base-colour;
+}
+
+input[type="submit"] {
+	@extend .button;
+	outline: none;
+}
+	

@@ -1,0 +1,57 @@
+
+/***********
+	Buttons
+*/
+
+
+.button {
+	@extend %heading-typeface; 
+	@include inline-block;
+	@include transition (none);
+	background: $base-colour;
+	border: 1px solid $base-colour;
+	color: $white;
+	cursor: pointer;
+	font-size: em(18);
+	line-height: 1;
+	padding: 9px 12px;
+	
+	&:hover,
+	&:focus {
+		background: transparentize($base-colour, 0.2);
+	}
+	 
+	&:active {
+	}
+}
+
+.button.inactive {
+	background: transparent;
+	border: 1px solid transparentize($base-colour, 0.7);
+	color: $base-colour;
+	
+	&:hover,
+	&:focus {
+		border: 1px solid transparentize($base-colour, 0.1);
+	}
+	 
+	&:active {
+	}
+}
+
+.button.inline {
+	@include inline-block;
+	margin-left: 1em;
+	
+	&:first-child {
+		margin-left: 0;
+	}
+	
+	&:active {
+		
+	}
+}
+
+.btn-row {
+	@include clearfix;
+}

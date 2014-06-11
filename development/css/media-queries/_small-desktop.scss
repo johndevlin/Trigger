@@ -1,0 +1,17 @@
+@if $bourbon-neat == true {
+	@include media($small-desktop) {
+
+		div.main-content {
+
+			article {
+				@include span-columns(5);
+			}
+
+			aside {
+				@include shift(0);
+				@include span-columns(3);
+			}
+		}
+
+	}
+}

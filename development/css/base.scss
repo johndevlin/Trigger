@@ -1,0 +1,89 @@
+/*****************
+	Normalise CSS
+*/
+ 
+@import "helpers/normalize";
+
+
+
+/********************
+	Website Settings
+	----------------
+	Colour, and 
+	typography
+
+*/
+
+@import "config"; 
+
+
+* {
+	margin: 0;
+}
+
+html {
+	background-color: $background-colour;
+}
+
+body {
+	color: $body-colour;
+	font-size: 1em;
+	line-height: 1;
+	margin: 0;
+}
+
+a {
+	@include transition (all 0.3s ease-in-out);
+	color: $base-colour;
+	text-decoration: none;
+}
+
+
+
+/************************
+	Typography
+	---------------------
+	Set all of your sites 
+	typography here
+	
+*/
+
+@import "typography";
+
+
+
+/************************
+	Layouts
+	---------------------
+	Edit your header, 
+	footer, and main 
+	page styles here
+	
+*/
+
+@import "elements/elements"; 
+
+
+	
+/****************
+	Media Queries 
+*/
+
+@import "media-queries/media-queries"; 
+
+
+
+/***********
+	Helpers
+*/
+
+@import "helpers/helpers"; 
+
+
+
+
+/*********
+	Print 
+*/
+
+@import "helpers/print";

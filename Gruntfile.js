@@ -11,19 +11,19 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				src: [
-					'assets/development/js/libs/*.js',
-					'assets/development/js/plugins/*.js',
-					'assets/development/js/framework/*.js',
-					'assets/development/js/scripts.js'
+					'development/js/libs/*.js',
+					'development/js/plugins/*.js',
+					'development/js/framework/*.js',
+					'development/js/scripts.js'
 				],
-				dest: 'assets/production/js/production.js',
+				dest: 'production/js/production.js',
 			}
 		},
 		
 		uglify: {
 			build: {
-				src: 'assets/production/js/production.js',
-				dest: 'assets/production/js/production.min.js'
+				src: 'js/production.js',
+				dest: 'js/production.min.js'
 			}
 		},
 
@@ -33,21 +33,21 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'assets/production/css/style.css': 'assets/development/css/base.scss'
+					'css/style.css': 'development/css/base.scss'
 				}
 			} 
 		},
 		
 		watch: {
 			scripts: {
-				files: ['assets/development/js/*.js'],
+				files: ['development/js/*.js'],
 				tasks: ['concat', 'uglify'],
 				options: {
 					spawn: false,
 				},
 			},
 			css: {
-				files: ['assets/development/css/**/*.scss'],
+				files: ['development/css/**/*.scss'],
 				tasks: ['sass'],
 				options: {
 					spawn: false,
@@ -61,14 +61,14 @@ module.exports = function(grunt) {
 				}
 			},
 			clearimages: {
-				files: ['assets/development/img/*'],
+				files: ['development/img/*'],
 				tasks: ['clean'],
 				options: {
 					spawn: false,
 				}
 			},
 			images: {
-				files: ['assets/development/img/*'],
+				files: ['development/img/*'],
 				tasks: ['imagemin'],
 				options: {
 					spawn: false,
@@ -80,9 +80,9 @@ module.exports = function(grunt) {
 			dynamic: {
 				files: [{
 					expand: true,
-					cwd: 'assets/development/img/',
+					cwd: 'development/img/',
 					src: ['**/*.{png,jpg,gif}'],
-					dest: 'assets/production/img/'
+					dest: 'img/'
 				}]
 			}
 		},
@@ -106,11 +106,11 @@ module.exports = function(grunt) {
 		jshint: {
 			all: [
 				'Gruntfile.js', 
-				'assets/development/js/*.js'
+				'development/js/*.js'
 			]
 		},
 		
-		clean: ["assets/production/img/*"]
+		clean: ["img/*"]
 
 	});
 

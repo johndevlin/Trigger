@@ -1,0 +1,19 @@
+@import "neat/neat-helpers"; 
+
+
+/*****************
+	Grid settings
+*/
+
+$grid-columns: $desktop-grids;
+$max-width: $desktop-width;
+
+
+
+/***************
+	Breakpoints
+*/
+
+$small-desktop: new-breakpoint(max-width $small-desktop-width $small-desktop-grids);
+$tablet: new-breakpoint(max-width $tablet-width $tablet-grids);
+$mobile: new-breakpoint(max-width $mobile-width $mobile-grids);
