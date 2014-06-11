@@ -60,6 +60,13 @@ module.exports = function(grunt) {
 					spawn: false,
 				}
 			},
+			clearimages: {
+				files: ['assets/development/img/*'],
+				tasks: ['clean'],
+				options: {
+					spawn: false,
+				}
+			},
 			images: {
 				files: ['assets/development/img/*'],
 				tasks: ['imagemin'],
@@ -101,7 +108,9 @@ module.exports = function(grunt) {
 				'Gruntfile.js', 
 				'assets/development/js/*.js'
 			]
-		}
+		},
+		
+		clean: ["assets/production/img/*"]
 
 	});
 
@@ -113,13 +122,14 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-htmlhint');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass']);
 	
 	grunt.registerTask('hint', ['htmlhint', 'jshint']);
 	
-	grunt.registerTask('img', ['imagemin', 'watch']);
+	grunt.registerTask('img', ['clean', 'imagemin', 'watch']);
 
 };
 
