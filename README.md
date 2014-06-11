@@ -37,10 +37,6 @@ To install the needed packages, please open Trigger in terminal and type `npm in
 
 ## File structure
 
-Trigger's file structure is pretty self-explanatory for the more part. The only unusual thing is `assets` being split out into `development/` and `production/`. Development contains your SASS, full resolution images and un-minified JavaScript files. Production is where [Grunt](#gruntjs) outputs these files. 
-
-Splitting this up into two different files makes it a lot easier when uploading to a server. 
-
 ```
 Trigger/
 │
