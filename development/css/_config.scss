@@ -10,15 +10,21 @@ $white: #ffffff;
 $light-grey: #777777;
 $grey: #333333;
 
-$red: #dd4433;
+
+$navy: #3f4854;
+$darknavy: darken($navy, 0.2);
+$lightnavy: lighten($navy, 0.2);
+
+$red: #cc6263;
+$green: #4ec29e;
 
 
 /* SASS colour calls */
 
-$base-colour: $red;
-$body-colour: $light-grey;
-$heading-colour: $grey;
-$background-colour: $white;
+$base-colour: $navy;
+$body-colour: $navy;
+$heading-colour: $navy;
+$background-colour: $green;
 
 
 
@@ -49,23 +55,11 @@ $container-padding: 20px;
 $lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, san-serif;
 
  
-/* Merriweather */
-
-@import url(http://fonts.googleapis.com/css?family=Merriweather:300);
-
-$merriweather: 'Merriweather', serif;
-
-@mixin merriweather-light {
-	font-family: $merriweather;
-	font-weight: 300;
-}
-
- 
 /* Typography - SASS calls */
 
 %default-typeface,
 %base-typeface {
-	font-family: $merriweather;
+	font-family: $lato;
 	font-weight: 400;
 }
 

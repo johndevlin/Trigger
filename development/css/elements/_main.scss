@@ -3,20 +3,54 @@
 	Main
 */
 
+// Main layout
+
+.wrapper {
+	position: absolute;
+	@include size(100%);
+}
+
+.wrapper nav {
+	@include position(absolute, 0px 0 0 -250px);
+	@include size(250px 100%);
+	@include transition (all 0.3s ease-in-out);
+	background: $base-colour;
+	padding: $container-padding $container-padding 0;
+	
+	li {
+		color: $green;
+	}
+}
+
+.wrapper nav.the-nav-is-open {
+	left: 0px;
+}
+
+.main-content-wrapper {
+	
+}
+
+a[data-navigation="open-navigation"] {
+	@extend %ir; 
+	@include position(absolute, $container-padding 0 0 $container-padding);
+	@include size(30);
+	@include transition (all 0.3s ease-in-out);
+	background: $navy;
+	cursor: pointer;
+}
+
+a[data-navigation="open-navigation"].the-nav-is-open {
+	left: 270px
+}
+
+
+
 div.main-content {
 	padding: 0 $container-padding;
-
-	article {
-		@include span-columns(8);
-	}
-
-	aside {
-		@include shift(1);
-		@include span-columns(3);
-	}
 }
 
-hr {
-	margin: 1em 0; 
+ul.reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
-

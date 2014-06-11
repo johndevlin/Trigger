@@ -11,6 +11,48 @@
 	
 */
 
+$('a[data-navigation="open-navigation"]').click(function() { 
+
+	$('.slide-me').toggleClass('the-nav-is-open');
+	$('.slide-me').css('margin-left', '0px');
+	
+});
+
+
+
+$('a[data-navigation="open-navigation').mouseenter(function() {
+	
+	if (
+		!$('a[data-navigation="open-navigation"').hasClass('the-nav-is-open')
+	)
+	{
+		$('.slide-me').css('margin-left', '10px');
+	}
+	
+});
+
+$('a[data-navigation="open-navigation').mouseleave(function() {
+	
+	$('.slide-me').css('margin-left', '0px');
+	
+});
+
+
+// if (
+// 	$('a[data-navigation="open-navigation').is(":hover"); &&
+	
+// 	!$('a[data-navigation="open-navigation"').hasClass('the-nav-is-open'); 
+// )
+
+// {
+// 	$('.slide-me').css('margin-left', '20px');
+// }
+
+
+
+
+
+
 // Debounced Resize function
 $(window).on("debouncedresize", function( event ) {
 	// Guff
