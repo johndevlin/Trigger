@@ -125,11 +125,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-	grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass']);
+	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'clean', 'imagemin', 'watch']);
 	
 	grunt.registerTask('debug', ['htmlhint', 'jshint']);
 	
-	grunt.registerTask('img', ['clean', 'imagemin', 'watch']);
+	grunt.registerTask('img', ['clean', 'imagemin']);
 
 };
 
