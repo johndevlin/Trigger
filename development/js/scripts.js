@@ -11,6 +11,12 @@
 	
 */
 
+
+/*********************
+	Navigation Drawer
+*/
+
+// Open nav 
 $('a[data-navigation="open-navigation"]').click(function() { 
 
 	$('.slide-me').toggleClass('the-nav-is-open');
@@ -18,8 +24,7 @@ $('a[data-navigation="open-navigation"]').click(function() {
 	
 });
 
-
-
+// Move button and nav over 10px on hover of button
 $('a[data-navigation="open-navigation').mouseenter(function() {
 	
 	if (
@@ -31,6 +36,7 @@ $('a[data-navigation="open-navigation').mouseenter(function() {
 	
 });
 
+// Move button and nav back to default position after hover
 $('a[data-navigation="open-navigation').mouseleave(function() {
 	
 	$('.slide-me').css('margin-left', '0px');
@@ -38,16 +44,14 @@ $('a[data-navigation="open-navigation').mouseleave(function() {
 });
 
 
-// if (
-// 	$('a[data-navigation="open-navigation').is(":hover"); &&
+
+/***************
+	Main Slider
+*/
+
+$('.main-slider').bxSlider({
 	
-// 	!$('a[data-navigation="open-navigation"').hasClass('the-nav-is-open'); 
-// )
-
-// {
-// 	$('.slide-me').css('margin-left', '20px');
-// }
-
+});
 
 
 
@@ -65,18 +69,18 @@ $('.return-false').click(function() {
 });
 
 
-// jQuery placeholder listener 
-$('input, textarea').placeholder();
-
-
 // Do X ESC 
 $(document).keyup(function(e) {
 	
 	if (e.keyCode == 27) { 
-		// Guff
+		$('.slide-me').removeClass('the-nav-is-open');
 	}
 	
 }); 
+
+
+// jQuery placeholder listener 
+$('input, textarea').placeholder();
 
 
 // Add current year to .current-year

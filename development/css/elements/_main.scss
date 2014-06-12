@@ -10,11 +10,15 @@
 	@include size(100%);
 }
 
+
+
+// Navigation
+
 .wrapper nav {
 	@include position(absolute, 0px 0 0 -250px);
 	@include size(250px 100%);
 	@include transition (all 0.3s ease-in-out);
-	background: $base-colour;
+	background: transparentize($navy, 0.6);
 	padding: $container-padding $container-padding 0;
 	
 	li {
@@ -23,11 +27,15 @@
 }
 
 .wrapper nav.the-nav-is-open {
+	background: $navy;
 	left: 0px;
 }
 
+
+// Main content
+
 .main-content-wrapper {
-	
+	height: 100%;
 }
 
 a[data-navigation="open-navigation"] {
@@ -40,9 +48,60 @@ a[data-navigation="open-navigation"] {
 }
 
 a[data-navigation="open-navigation"].the-nav-is-open {
+	background: transparentize($navy, 0.6);
 	left: 270px
 }
 
+
+
+// Main Slider
+
+.main-slider {
+	height: 100%;
+	
+	li {
+		height: 100%
+	}
+}
+
+.bx-wrapper {
+	height: 100%;
+	position: relative;
+}
+
+.bx-controls {
+	display: flex;
+	display: -webkit-flex;
+		justify-content: center;
+-webkit-justify-content: center;
+		align-items: center; 
+-webkit-align-items: center;
+}
+
+.bx-pager {
+	@include position(absolute, 0 0 20px 0);
+	@include clearfix;
+}
+
+.bx-pager-item {
+	float: left;
+	margin: 0 5px;
+	
+	a {
+		@extend %ir;
+		@include size(10);
+		background: $navy;
+		border-radius: 10px;
+	}
+}
+
+.bx-prev {
+	@include position(absolute, 50% 0 0 20px);
+}
+
+.bx-next {
+	@include position(absolute, 50% 20px 0 0);
+}
 
 
 div.main-content {
