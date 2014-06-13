@@ -20,6 +20,7 @@
 	@include transition (all 0.3s ease-in-out);
 	background: transparentize($navy, 0.6);
 	padding: $container-padding $container-padding 0;
+	z-index: 3;
 	
 	li {
 		color: $green;
@@ -36,6 +37,7 @@
 
 .main-content-wrapper {
 	height: 100%;
+	z-index: 1;
 }
 
 a[data-navigation="open-navigation"] {
@@ -45,6 +47,7 @@ a[data-navigation="open-navigation"] {
 	@include transition (all 0.3s ease-in-out);
 	background: $navy;
 	cursor: pointer;
+	z-index: 2;
 }
 
 a[data-navigation="open-navigation"].the-nav-is-open {
@@ -57,10 +60,21 @@ a[data-navigation="open-navigation"].the-nav-is-open {
 // Main Slider
 
 .main-slider {
-	height: 100%;
+	@include clearfix;
 	
 	li {
-		height: 100%
+	}
+	
+	li.green {
+		background: $green;
+	}
+	
+	li.red {
+		background: $red;
+	}
+	
+	li.navy {
+		background: $navy;
 	}
 }
 
@@ -89,9 +103,14 @@ a[data-navigation="open-navigation"].the-nav-is-open {
 	
 	a {
 		@extend %ir;
-		@include size(10);
-		background: $navy;
-		border-radius: 10px;
+		@include size(14);
+		background: transparent;
+		border: 3px solid transparentize($white, 0.7);
+		border-radius: 7px;
+	}
+	
+	a.active {
+		border: 7px solid transparentize($white, 0.7);
 	}
 }
 

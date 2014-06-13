@@ -249,7 +249,7 @@ $('a[data-navigation="open-navigation').mouseleave(function() {
 */
 
 $('.main-slider').bxSlider({
-	
+	easing: 'ease-in-out'
 });
 
 
