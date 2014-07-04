@@ -23,7 +23,6 @@ $background-colour: $white;
 
 
 
-
 /*******************
 	Website margins 
 	& paddings
@@ -86,11 +85,51 @@ $merriweather: 'Merriweather', serif;
 
 
 
-@import "options";
+
+/**********************\
+	Trigger Options
+	---------------
+	
+	Update the relevant
+	values below. 
+	
+\**********************/
+
+
+
+/************
+	1. Grids
+*/
+
+
+/* A.1: Do you want to use Bourbon Neat for grids? */
+
+$bourbon-neat: true!default; 
+// If false, ignore A2, and go straight to B. 
+
+
+/* A.2: Fill out the maximum width, and number of grids for Desktop, Tablet and Mobile */ 
+
+$desktop-width: 1140px!default;
+$desktop-grids: 12!default;
+
+$small-desktop-width: 1139px!default;
+$small-desktop-grids: 8!default;
+
+$tablet-width: 1023px!default;
+$tablet-grids: 6!default;
+
+$mobile-width: 767px!default;
+$mobile-grids: 1!default; 
+
+
+
+/* B: If you aren't going to use Bourbon Neat what width is your site? */
+
+$non-responsive-width: 960px!default; 
+
+
+
+
+
 @import "functions";
-
-
-
-
-
-
