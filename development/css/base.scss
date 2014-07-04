@@ -38,6 +38,10 @@ a {
 	text-decoration: none;
 }
 
+.foo {
+	@include inline-block; 
+	@include backface-visibility(visible);
+}
 
 
 /************************
