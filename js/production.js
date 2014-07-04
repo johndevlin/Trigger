@@ -215,32 +215,54 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
 	Navigation Drawer
 */
 
-// Open nav 
+// Open / Close nav drawer 
 $('a[data-navigation="open-navigation"]').click(function() { 
 
-	$('.slide-me').toggleClass('the-nav-is-open');
-	$('.slide-me').css('margin-left', '0px');
+	$('html').toggleClass('the-nav-is-open');
 	
 });
 
-// Move button and nav over 10px on hover of button
-$('a[data-navigation="open-navigation').mouseenter(function() {
+
+// Close nav drawer on ESC
+$(document).keyup(function(e) {
 	
-	if (
-		!$('a[data-navigation="open-navigation"').hasClass('the-nav-is-open')
-	)
-	{
-		$('.slide-me').css('margin-left', '10px');
+	if (e.keyCode == 27) { 
+		$('html').removeClass('the-nav-is-open');
 	}
 	
-});
+}); 
 
-// Move button and nav back to default position after hover
-$('a[data-navigation="open-navigation').mouseleave(function() {
+// $('.bx-wrapper').click(function() {
+// 	alert('Clicked');
+
+// 	if (
+// 		$('html').hasClass('the-nav-is-open');
+// 	)
+// 	{
+// 		alert('Clicked & IF');
+// 		$('html').removeClass('the-nav-is-open');
+// 	}
+
+// });
+
+// // Move button and nav over 10px on hover of button
+// $('a[data-navigation="open-navigation').mouseenter(function() {
 	
-	$('.slide-me').css('margin-left', '0px');
+// 	if (
+		
+// 	)
+// 	{
+		
+// 	}
 	
-});
+// });
+
+// // Move button and nav back to default position after hover
+// $('a[data-navigation="open-navigation').mouseleave(function() {
+	
+	
+	
+// });
 
 
 
@@ -266,16 +288,6 @@ $(window).on("debouncedresize", function( event ) {
 $('.return-false').click(function() {
 	return false; 
 });
-
-
-// Do X ESC 
-$(document).keyup(function(e) {
-	
-	if (e.keyCode == 27) { 
-		$('.slide-me').removeClass('the-nav-is-open');
-	}
-	
-}); 
 
 
 // jQuery placeholder listener 

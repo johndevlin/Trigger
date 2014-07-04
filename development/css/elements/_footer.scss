@@ -1,6 +1,7 @@
 
 footer {
-	@include position(absolute, 0 20px 20px 0); 
+	@include transition (all 0.3s ease-in-out);
+	@include position(absolute, null 20px 20px null); 
 
 	p {
 		font-size: 0.75em;

@@ -7,7 +7,7 @@
 
 .wrapper {
 	position: absolute;
-	@include size(100%);
+	@include size(100% 100%);
 }
 
 
@@ -15,7 +15,7 @@
 // Navigation
 
 .wrapper nav {
-	@include position(absolute, 0px 0 0 -250px);
+	@include position(absolute, 0px null null -250px);
 	@include size(250px 100%);
 	@include transition (all 0.3s ease-in-out);
 	background: transparentize($navy, 0.6);
@@ -27,8 +27,8 @@
 	}
 }
 
-.wrapper nav.the-nav-is-open {
-	background: $navy;
+.the-nav-is-open .wrapper nav{
+	background: transparentize($navy, 0.1);
 	left: 0px;
 }
 
@@ -42,17 +42,35 @@
 
 a[data-navigation="open-navigation"] {
 	@extend %ir; 
-	@include position(absolute, $container-padding 0 0 $container-padding);
-	@include size(30);
+	@include position(absolute, $container-padding null null $container-padding);
+	@include size(30px 30px);
 	@include transition (all 0.3s ease-in-out);
 	background: $navy;
 	cursor: pointer;
 	z-index: 2;
+	
+	&:hover {
+		background: transparentize($navy, 0.3);
+	}
 }
 
-a[data-navigation="open-navigation"].the-nav-is-open {
-	background: transparentize($navy, 0.6);
-	left: 270px
+// If hamburger has been pressed
+.the-nav-is-open { 
+	
+	a[data-navigation="open-navigation"] {
+		background: transparentize($navy, 0.6);
+		left: 270px;
+		
+		&:hover {
+			background: transparentize($navy, 0.3);
+		}
+	}
+	
+	.bx-wrapper,
+	footer {
+		@include filter(blur(4px));
+		@include transform(translate3d(150px, 0, 0));
+	}
 }
 
 
@@ -79,6 +97,7 @@ a[data-navigation="open-navigation"].the-nav-is-open {
 }
 
 .bx-wrapper {
+	@include transition (all 0.3s ease-in-out);
 	height: 100%;
 	position: relative;
 }
@@ -93,7 +112,7 @@ a[data-navigation="open-navigation"].the-nav-is-open {
 }
 
 .bx-pager {
-	@include position(absolute, 0 0 20px 0);
+	@include position(absolute, null null 20px null);
 	@include clearfix;
 }
 
@@ -103,7 +122,7 @@ a[data-navigation="open-navigation"].the-nav-is-open {
 	
 	a {
 		@extend %ir;
-		@include size(14);
+		@include size(14px 14px);
 		background: transparent;
 		border: 3px solid transparentize($white, 0.7);
 		border-radius: 7px;
@@ -115,11 +134,11 @@ a[data-navigation="open-navigation"].the-nav-is-open {
 }
 
 .bx-prev {
-	@include position(absolute, 50% 0 0 20px);
+	@include position(absolute, 50% null null 20px);
 }
 
 .bx-next {
-	@include position(absolute, 50% 20px 0 0);
+	@include position(absolute, 50% 20px null null);
 }
 
 
