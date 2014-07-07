@@ -22,7 +22,6 @@ textarea {
 	width: 100%;
 	
 	@include placeholder {
-		@extend %form-typeface; 
 		color: $base-colour;
 	}
 }
