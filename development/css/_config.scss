@@ -7,8 +7,8 @@
 /* Brand colours */
 
 $white: #ffffff; 
-$light-grey: #777777;
-$grey: #333333;
+$light-grey: #999999;
+$grey: #444444;
 
 $red: #dd4433;
 
@@ -46,29 +46,11 @@ $container-padding: 20px;
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 $lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, san-serif;
-
- 
-/* Merriweather */
-
-@import url(http://fonts.googleapis.com/css?family=Merriweather:300);
-
-$merriweather: 'Merriweather', serif;
-
-@mixin merriweather-light {
-	font-family: $merriweather;
-	font-weight: 300;
-}
-
  
 /* Typography - SASS calls */
 
 %default-typeface,
 %base-typeface {
-	font-family: $merriweather;
-	font-weight: 400;
-}
-
-%form-typeface {
 	font-family: $lato;
 	font-weight: 400;
 }

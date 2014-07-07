@@ -3,10 +3,9 @@
 	Form Elements
 */
 
-
 #{$all-text-inputs},
 textarea {
-	@extend %form-typeface; 
+	@extend %base-typeface; 
 	@include transition (border 0.2s ease-in-out); 
 -webkit-appearance: none;
 		appearance: none;
