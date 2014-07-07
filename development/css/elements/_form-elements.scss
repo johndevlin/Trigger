@@ -8,9 +8,9 @@
 textarea {
 	@extend %form-typeface; 
 	@include transition (border 0.2s ease-in-out); 
-		appearance: none;
 -webkit-appearance: none;
-	background: #ffffff;
+		appearance: none;
+	background: $white;
 	border: 1px solid transparentize($base-colour, 0.7);
 	border-radius: 0;
 	color: $base-colour;
@@ -41,4 +41,3 @@ input[type="submit"] {
 	@extend .button;
 	outline: none;
 }
-	

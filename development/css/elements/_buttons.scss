@@ -40,7 +40,6 @@
 }
 
 .button.inline {
-	@include inline-block;
 	margin-left: 1em;
 	
 	&:first-child {
