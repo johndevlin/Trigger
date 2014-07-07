@@ -41,3 +41,14 @@ $(document).keyup(function(e) {
 var currentYear = new Date().getFullYear();
 $('.current-year').text(currentYear);
 
+
+// Form validation
+ $('.some-form').validate({
+ 	rules: {
+ 		inputname: {
+ 			required: true,
+ 			email: true,
+ 			minlength: 10
+ 		},
+ 	}
+ });
