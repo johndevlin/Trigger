@@ -2,7 +2,7 @@
 
 A Front-End [SASS](http://sass-lang.com/) & [Grunt](http://gruntjs.com/) framework. 
 
-#### Version: 0.5 <br/> Status: Stable
+#### Version: 0.6 <br/> Status: Stable
 
 
 Contents
@@ -30,7 +30,7 @@ Trigger is a lightweight front-end SASS that uses [Grunt](http://gruntjs.com/) t
 
 Trigger relies heavily on Grunt for a [number of things](#gruntjs). If you haven't used Grunt before, check out the [get started guide](http://gruntjs.com/getting-started). 
 
-To install the needed packages, please open Trigger in terminal and type `npm install`. Then running `grunt` in terminal will run [Trigger's defaults plugins](#gruntjs). To optimize your images, run `grunt imagemin` in terminal. 
+To install the needed packages, please open Trigger in terminal and type `npm install`. Then running `grunt` in terminal will run [Trigger's defaults plugins](#gruntjs). To optimize your images, run `grunt img` in terminal. 
 
 
 
@@ -72,7 +72,6 @@ I've added in a lot of regularly used jQuery to scripts.js.
 
 * Date injection - For the footer's copyright
 * ESC Key listener
-* Form validation
 
 
 ### Libraries
