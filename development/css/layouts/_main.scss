@@ -1,0 +1,44 @@
+
+/********
+	Main
+*/
+
+
+* {
+	margin: 0;
+}
+
+html {
+	background-color: $background-colour;
+}
+
+body {
+	color: $body-colour;
+	font-size: 1em;
+	line-height: 1;
+	margin: 0;
+}
+
+a {
+	@include transition (all 0.3s ease-in-out);
+	color: $base-colour;
+	text-decoration: none;
+}
+
+div.main-content {
+	padding: 0 $container-padding;
+
+	article {
+		@include span-columns(8);
+	}
+
+	aside {
+		@include shift(1);
+		@include span-columns(3);
+	}
+}
+
+hr {
+	margin: 1em 0; 
+}
+
