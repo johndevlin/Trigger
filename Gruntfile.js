@@ -59,20 +59,6 @@ module.exports = function(grunt) {
 				options: {
 					spawn: false,
 				}
-			},
-			clearimages: {
-				files: ['development/img/*'],
-				tasks: ['clean'],
-				options: {
-					spawn: false,
-				}
-			},
-			images: {
-				files: ['development/img/*'],
-				tasks: ['imagemin'],
-				options: {
-					spawn: false,
-				}
 			}
 		},
 		
@@ -125,7 +111,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'clean', 'imagemin', 'watch']);
+	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'watch']);
 	
 	grunt.registerTask('debug', ['htmlhint', 'jshint']);
 	
