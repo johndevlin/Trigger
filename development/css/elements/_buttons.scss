@@ -42,15 +42,3 @@
 .button + .button {
 	margin-left: 1em;
 }
-
-.button.inline {
-	margin-left: 1em;
-	
-	&:first-child {
-		margin-left: 0;
-	}
-	
-	&:active {
-		
-	}
-}
