@@ -39,6 +39,10 @@
 	}
 }
 
+.button + .button {
+	margin-left: 1em;
+}
+
 .button.inline {
 	margin-left: 1em;
 	
@@ -49,8 +53,4 @@
 	&:active {
 		
 	}
-}
-
-.btn-row {
-	@include clearfix;
 }
