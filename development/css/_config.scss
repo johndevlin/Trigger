@@ -46,11 +46,28 @@ $container-padding: 20px;
 /***********************
 	Typography settings
 */
- 
+
+// Bariol
+
+@font-face {
+    font-family: 'Bariol';
+    src: url('../fonts/bariol_regular-webfont.eot');
+    src: url('../fonts/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol_regular-webfont.woff') format('woff'),
+         url('../fonts/bariol_regular-webfont.ttf') format('truetype'),
+         url('../fonts/bariol_regular-webfont.svg#bariol_regularregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$bariol: 'Bariol', 'Helvetica Neue', Helvetica, Arial, san-serif;
+
 
 /* Lato */
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
 
 $lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, san-serif;
 
@@ -59,23 +76,23 @@ $lato: 'Lato', 'Helvetica Neue', Helvetica, Arial, san-serif;
 
 %default-typeface,
 %base-typeface {
-	font-family: $lato;
+	font-family: $bariol;
 	font-weight: 400;
 }
 
 %form-typeface {
-	font-family: $lato;
+	font-family: $bariol;
 	font-weight: 400;
 }
 
 %heading-typeface {
-	font-family: $lato;
+	font-family: $bariol;
 	font-weight: 700;
 }
 
 %light-heading-typeface {
-	font-family: $lato;
-	font-weight: 300;
+	font-family: $bariol;
+	font-weight: 400;
 }
 
 
