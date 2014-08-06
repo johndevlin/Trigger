@@ -12,7 +12,6 @@
 */
 
 
-
 /*********************
 	Navigation Drawer
 */
@@ -24,6 +23,7 @@ $('a[data-navigation="open-navigation"]').click(function() {
 	
 });
 
+
 // Close nav drawer on ESC
 $(document).keyup(function(e) {
 	
@@ -32,7 +32,7 @@ $(document).keyup(function(e) {
 	}
 	
 }); 
-
+	
 
 
 /***************
@@ -42,6 +42,8 @@ $(document).keyup(function(e) {
 $('.main-slider').bxSlider({
 	easing: 'ease-in-out'
 });
+
+
 
 
 
