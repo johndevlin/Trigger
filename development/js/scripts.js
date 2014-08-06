@@ -12,6 +12,7 @@
 */
 
 
+
 /*********************
 	Navigation Drawer
 */
@@ -23,7 +24,6 @@ $('a[data-navigation="open-navigation"]').click(function() {
 	
 });
 
-
 // Close nav drawer on ESC
 $(document).keyup(function(e) {
 	
@@ -32,38 +32,6 @@ $(document).keyup(function(e) {
 	}
 	
 }); 
-
-// $('.bx-wrapper').click(function() {
-// 	alert('Clicked');
-
-// 	if (
-// 		$('html').hasClass('the-nav-is-open');
-// 	)
-// 	{
-// 		alert('Clicked & IF');
-// 		$('html').removeClass('the-nav-is-open');
-// 	}
-
-// });
-
-// // Move button and nav over 10px on hover of button
-// $('a[data-navigation="open-navigation').mouseenter(function() {
-	
-// 	if (
-		
-// 	)
-// 	{
-		
-// 	}
-	
-// });
-
-// // Move button and nav back to default position after hover
-// $('a[data-navigation="open-navigation').mouseleave(function() {
-	
-	
-	
-// });
 
 
 
@@ -74,8 +42,6 @@ $(document).keyup(function(e) {
 $('.main-slider').bxSlider({
 	easing: 'ease-in-out'
 });
-
-
 
 
 

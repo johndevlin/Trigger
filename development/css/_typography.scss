@@ -17,7 +17,8 @@ p {
 }
 
 p a {
-	color: $base-colour;
+	border-bottom: 2px solid $red;
+	color: $red;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,3 +66,11 @@ ul {
 		margin: 0 0 1.25em;
 	}
 }
+
+
+// Margins
+
+li p:last-child {
+	margin-bottom: 0;
+}
+
