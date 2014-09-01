@@ -15,7 +15,7 @@
 // Navigation
 
 .wrapper nav {
-	@include position(absolute, 0px null null -250px);
+	@include position(fixed, 0px null null -250px);
 	@include size(250px 100%);
 	@include transition (all 0.3s ease-in-out);
 	background: transparentize($navy, 0.6);
@@ -42,7 +42,7 @@
 
 a[data-navigation="open-navigation"] {
 	@extend %ir; 
-	@include position(absolute, $container-padding null null $container-padding);
+	@include position(fixed, $container-padding null null $container-padding);
 	@include size(30px 30px);
 	@include transition (background-color 0.3s ease-in-out, left 0.3s ease-in-out);
 	background: url('../img/nav.png') 3px center no-repeat $navy;
@@ -54,7 +54,7 @@ a[data-navigation="open-navigation"] {
 	}
 }
 
-// If hamburger has been pressed
+// If the wee hamburger has been pressed
 .the-nav-is-open { 
 	
 	a[data-navigation="open-navigation"] {
@@ -84,18 +84,6 @@ a[data-navigation="open-navigation"] {
 	li {
 		text-align: center;
 	}
-	
-	li.green {
-		background: $green;
-	}
-	
-	li.red {
-		background: $red;
-	}
-	
-	li.navy {
-		background: $navy;
-	}
 }
 
 .bx-wrapper {
@@ -114,7 +102,7 @@ a[data-navigation="open-navigation"] {
 }
 
 .bx-pager {
-	@include position(absolute, null null 20px null);
+	@include position(fixed, null null 20px null);
 	@include clearfix;
 }
 
@@ -135,12 +123,24 @@ a[data-navigation="open-navigation"] {
 	}
 }
 
+.bx-controls-direction a {
+	@include size(9px 17px);
+	display: block;
+	text-indent: -9999px;
+	
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
 .bx-prev {
-	@include position(absolute, 50% null null 20px);
+	@include position(fixed, 50% null null 20px);
+	background-image: url('../img/prev.png');
 }
 
 .bx-next {
-	@include position(absolute, 50% 20px null null);
+	@include position(fixed, 50% 20px null null);
+	background-image: url('../img/next.png');
 }
 
 

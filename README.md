@@ -5,8 +5,7 @@ A Front-End [SASS](http://sass-lang.com/) & [Grunt](http://gruntjs.com/) framewo
 #### Version: 0.5 <br/> Status: Stable
 
 
-Contents
---------
+## Contents
 
 1. [WTF?](#wtf)
 2. [Installation](#installation)
