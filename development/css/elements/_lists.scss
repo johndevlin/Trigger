@@ -1,0 +1,28 @@
+
+
+ul {
+	font-size: em(18);
+	margin: 1.5em 0;
+	
+	li {
+		@extend %base-typeface; 
+		color: $body-colour;
+		line-height: 1;
+		margin: 0 0 1.25em;
+	}
+}
+
+.unstyled-list,
+.inline-list  {
+	list-style-type: none;
+	padding: 0;
+}
+
+.inline-list {
+	@include clearfix;
+	margin: 0;
+	
+	li {
+		float: left;
+	}
+}

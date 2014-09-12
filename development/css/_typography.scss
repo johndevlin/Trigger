@@ -53,15 +53,3 @@ h6 {
 	@extend %base-typeface; 
 	font-size: em(18);
 }
-
-ul {
-	font-size: em(18);
-	margin: 1.5em 0;
-	
-	li {
-		@extend %base-typeface; 
-		color: $body-colour;
-		line-height: 1;
-		margin: 0 0 1.25em;
-	}
-}
