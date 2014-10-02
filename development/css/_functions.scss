@@ -2,9 +2,9 @@
 /***************************
 	Bourbon
 	------------------------
-	Import Bourbon and 
+	Import Bourbon and
 	Bourbon Neat (for grids)
-	
+
 */
 
 @import "libraries/bourbon/bourbon";
@@ -20,25 +20,25 @@
 	--------------------------------
 	All settings for the site should
 	be configured in _config.scss
-	
+
 */
 
 
 /***************************************************
 	A.1: Do you want to use Bourbon Neat for grids?
-	
+
 */
 
 @if $bourbon-neat == true {
-	
+
 	.container {
 		@include outer-container;
 	}
-	
+
 }
 
 @else if $bourbon-neat == false {
-	
+
 	.container {
 		@include clearfix;
 		margin-left: auto;
