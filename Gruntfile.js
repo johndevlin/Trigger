@@ -96,7 +96,9 @@ module.exports = function(grunt) {
 			]
 		},
 		
-		clean: ["img/*"]
+		clean: {
+			img: ["!img/*.svg", "!img/svg/*", "img/*.{png,jpg,gif}", "img/**/*.{png,jpg,gif}"]
+		}
 
 	});
 
