@@ -1,7 +1,7 @@
 @if $bourbon-neat == true {
 	@include media($tablet) {
 		
-		div.main-content {
+		div.main-wrapper {
 			
 			article {
 				@include span-columns(6);

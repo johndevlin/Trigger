@@ -1,7 +1,7 @@
 @if $bourbon-neat == true {
 	@include media($small-desktop) {
 
-		div.main-content {
+		div.main-wrapper {
 
 			article {
 				@include span-columns(5);
