@@ -153,6 +153,14 @@ small {
 }
 
 /**
+* Remove italics from address
+*/
+
+address {
+	font-style: normal;
+}
+
+/**
 * Prevent `sub` and `sup` affecting `line-height` in all browsers.
 */
 
@@ -199,7 +207,7 @@ svg:not(:root) {
 */
 
 figure {
-	margin: 1em 40px;
+	margin: 1em 0;
 }
 
 /**
@@ -386,8 +394,8 @@ fieldset {
 */
 
 legend {
-border: 0; /* 1 */
-padding: 0; /* 2 */
+	border: 0; /* 1 */
+	padding: 0; /* 2 */
 }
 
 /**
