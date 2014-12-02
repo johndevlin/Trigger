@@ -37,5 +37,6 @@ textarea:focus {
 
 input[type="submit"] {
 	@extend .button;
+	border: none;
 	outline: none;
 }
