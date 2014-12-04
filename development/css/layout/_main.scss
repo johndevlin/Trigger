@@ -20,7 +20,7 @@ body {
 }
 
 a {
-	@include transition (all 0.3s ease-in-out);
+	@include transition(all 0.3s ease-in-out);
 	color: $base-colour;
 	text-decoration: none;
 }
