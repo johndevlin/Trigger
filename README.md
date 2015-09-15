@@ -6,6 +6,10 @@ A Front-End [SASS](http://sass-lang.com/) & [Grunt](http://gruntjs.com/) framewo
 
 If you name isn't Shane O'Neil fuck off.
 
+## Get started
+
+`sass --watch development/css/base.scss:css/style.css`
+
 
 
 

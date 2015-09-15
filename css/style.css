@@ -1,2 +1,1397 @@
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}address{font-style:normal}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 0}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:none;margin:1em 0;padding:0}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}body,p,h6,input[type="email"],input[type="number"],input[type="password"],input[type="search"],input[type="tel"],input[type="text"],input[type="url"],input[type="color"],input[type="date"],input[type="datetime"],input[type="datetime-local"],input[type="month"],input[type="time"],input[type="week"],textarea,ul li{font-family:"Lato","Helvetica Neue",Helvetica,Arial,san-serif;font-weight:400}h1,h2,h3,h4,h5,h6,.button,input[type="submit"]{font-family:"Lato","Helvetica Neue",Helvetica,Arial,san-serif;font-weight:700}header .intro{font-family:"Lato","Helvetica Neue",Helvetica,Arial,san-serif;font-weight:300}html{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*,*:before,*:after{-webkit-box-sizing:inherit;-moz-box-sizing:inherit;box-sizing:inherit}.container{max-width:1140px;margin-left:auto;margin-right:auto}.container:after{content:"";display:table;clear:both}*{-webkit-font-smoothing:antialiased;font-smoothing:antialiased}p{color:#999;font-size:1.125em;line-height:1.6;margin:1.5em 0}p a{color:#d43}h1,h2,h3,h4,h5,h6{color:#444;line-height:1.2;margin:1em 0 0.5em;padding:0;text-rendering:optimizeLegibility}h1{font-size:4.5em}h2{font-size:3.125em}h3{font-size:2.25em}h4{font-size:1.5em}h5{font-size:1.125em}h6{font-size:1.125em}header{padding:50px 20px 0}header h1{margin:0;text-transform:uppercase}header .intro{color:#444;font-size:2.25em;margin:0}header .logo a{color:#444;display:block;height:0px;width:0px}header nav{padding-top:20px}*{margin:0}html{background-color:#fff}body{color:#999;font-size:1em;line-height:1;margin:0}a{-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;color:#d43;text-decoration:none}div.main-wrapper{padding:0 20px}div.main-wrapper article{float:left;display:block;margin-right:2.35765%;width:65.88078%}div.main-wrapper article:last-child{margin-right:0}div.main-wrapper aside{margin-left:8.5298%;float:left;display:block;margin-right:2.35765%;width:23.23176%}div.main-wrapper aside:last-child{margin-right:0}hr{margin:1em 0}footer{margin:0 0 30px;padding:0 20px}footer p{font-size:0.75em;font-weight:bold}.button,input[type="submit"]{display:inline-block;-webkit-transition:none;-moz-transition:none;transition:none;background:#d43;border:1px solid #d43;color:#fff;cursor:pointer;font-size:1.125em;line-height:1;padding:9px 12px}.button:hover,input[type="submit"]:hover,.button:focus,input[type="submit"]:focus{background:rgba(221,68,51,0.8)}.button.inactive,input.inactive[type="submit"]{background:transparent;border:1px solid rgba(221,68,51,0.3);color:#d43}.button.inactive:hover,input.inactive[type="submit"]:hover,.button.inactive:focus,input.inactive[type="submit"]:focus{border:1px solid rgba(221,68,51,0.9)}.button+.button,input[type="submit"]+.button,.button+input[type="submit"],input[type="submit"]+input[type="submit"]{margin-left:1em}input[type="email"],input[type="number"],input[type="password"],input[type="search"],input[type="tel"],input[type="text"],input[type="url"],input[type="color"],input[type="date"],input[type="datetime"],input[type="datetime-local"],input[type="month"],input[type="time"],input[type="week"],textarea{-webkit-transition:border 0.2s ease-in-out;-moz-transition:border 0.2s ease-in-out;transition:border 0.2s ease-in-out;-webkit-appearance:none;appearance:none;background:#fff;border:1px solid rgba(221,68,51,0.3);border-radius:0;color:#d43;display:block;font-size:1.125em;margin:0 0 1.5em;outline:none;padding:9px 12px;width:100%}input[type="email"]::-webkit-input-placeholder,input[type="number"]::-webkit-input-placeholder,input[type="password"]::-webkit-input-placeholder,input[type="search"]::-webkit-input-placeholder,input[type="tel"]::-webkit-input-placeholder,input[type="text"]::-webkit-input-placeholder,input[type="url"]::-webkit-input-placeholder,input[type="color"]::-webkit-input-placeholder,input[type="date"]::-webkit-input-placeholder,input[type="datetime"]::-webkit-input-placeholder,input[type="datetime-local"]::-webkit-input-placeholder,input[type="month"]::-webkit-input-placeholder,input[type="time"]::-webkit-input-placeholder,input[type="week"]::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#d43}input[type="email"]::-moz-placeholder,input[type="number"]::-moz-placeholder,input[type="password"]::-moz-placeholder,input[type="search"]::-moz-placeholder,input[type="tel"]::-moz-placeholder,input[type="text"]::-moz-placeholder,input[type="url"]::-moz-placeholder,input[type="color"]::-moz-placeholder,input[type="date"]::-moz-placeholder,input[type="datetime"]::-moz-placeholder,input[type="datetime-local"]::-moz-placeholder,input[type="month"]::-moz-placeholder,input[type="time"]::-moz-placeholder,input[type="week"]::-moz-placeholder,textarea::-moz-placeholder{color:#d43}input[type="email"]:-moz-placeholder,input[type="number"]:-moz-placeholder,input[type="password"]:-moz-placeholder,input[type="search"]:-moz-placeholder,input[type="tel"]:-moz-placeholder,input[type="text"]:-moz-placeholder,input[type="url"]:-moz-placeholder,input[type="color"]:-moz-placeholder,input[type="date"]:-moz-placeholder,input[type="datetime"]:-moz-placeholder,input[type="datetime-local"]:-moz-placeholder,input[type="month"]:-moz-placeholder,input[type="time"]:-moz-placeholder,input[type="week"]:-moz-placeholder,textarea:-moz-placeholder{color:#d43}input[type="email"]:-ms-input-placeholder,input[type="number"]:-ms-input-placeholder,input[type="password"]:-ms-input-placeholder,input[type="search"]:-ms-input-placeholder,input[type="tel"]:-ms-input-placeholder,input[type="text"]:-ms-input-placeholder,input[type="url"]:-ms-input-placeholder,input[type="color"]:-ms-input-placeholder,input[type="date"]:-ms-input-placeholder,input[type="datetime"]:-ms-input-placeholder,input[type="datetime-local"]:-ms-input-placeholder,input[type="month"]:-ms-input-placeholder,input[type="time"]:-ms-input-placeholder,input[type="week"]:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#d43}textarea{height:5em;resize:none}input[type="email"]:focus,input[type="number"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="text"]:focus,input[type="url"]:focus,input[type="color"]:focus,input[type="date"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="month"]:focus,input[type="time"]:focus,input[type="week"]:focus,textarea:focus{border:1px solid #d43}input[type="submit"]{outline:none}ul{font-size:1.125em;margin:1.5em 0}ul li{color:#999;line-height:1;margin:0 0 1.25em}.unstyled-list,.inline-list{list-style-type:none;padding:0}.inline-list{margin:0}.inline-list:after{content:"";display:table;clear:both}.inline-list li{display:inline}::-moz-selection{background:#d43;color:#ffffff;text-shadow:none}::selection{background:#d43;color:#ffffff;text-shadow:none}.mobile{display:none}.desktop{display:block}.hidden{display:none !important;visibility:hidden}.invisible{visibility:hidden}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{content:"";display:table}.clearfix:after{clear:both}@media print{*{background:transparent !important;color:black !important;box-shadow:none !important;text-shadow:none !important;filter:none !important;-ms-filter:none !important}a,a:visited{text-decoration:underline}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}}img,object,embed{max-width:100%}img{height:auto}@media screen and (max-width: 1139px){div.main-wrapper article{float:left;display:block;margin-right:3.57866%;width:61.158%}div.main-wrapper article:last-child{margin-right:0}div.main-wrapper aside{margin-left:0%;float:left;display:block;margin-right:3.57866%;width:35.26334%}div.main-wrapper aside:last-child{margin-right:0}}@media screen and (max-width: 1023px){div.main-wrapper article{float:left;display:block;margin-right:4.82916%;width:100%}div.main-wrapper article:last-child{margin-right:0}div.main-wrapper aside{float:left;display:block;margin-right:4.82916%;width:100%}div.main-wrapper aside:last-child{margin-right:0}}@media screen and (max-width: 767px){body{-webkit-text-size-adjust:none}.mobile{display:block}.desktop{display:none}div.main-wrapper article,div.main-wrapper aside{float:left;display:block;margin-right:38.19821%;width:100%}div.main-wrapper article:last-child,div.main-wrapper aside:last-child{margin-right:0}.button,input[type="submit"]{display:block;margin-bottom:1em;text-align:center;width:100%}.button+.button,input[type="submit"]+.button,.button+input[type="submit"],input[type="submit"]+input[type="submit"]{margin-left:0}}
+@charset "UTF-8";
+/*****************
+	Normalise CSS
+*/
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+* 1. Set default font family to sans-serif.
+* 2. Prevent iOS text size adjust after orientation change, without disabling
+*    user zoom.
+*/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+* Remove default margin.
+*/
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+========================================================================== */
+/**
+* Correct `block` display not defined for any HTML5 element in IE 8/9.
+* Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+* Correct `block` display not defined for `main` in IE 11.
+*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+* 1. Correct `inline-block` display not defined in IE 8/9.
+* 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+*/
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+* Prevent modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices.
+*/
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+* Address `[hidden]` styling not present in IE 8/9/10.
+* Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+*/
+[hidden],
+template {
+  display: none; }
+
+/* Links
+========================================================================== */
+/**
+* Remove the gray background color from active links in IE 10.
+*/
+a {
+  background: transparent; }
+
+/**
+* Improve readability when focused and also mouse hovered in all browsers.
+*/
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+========================================================================== */
+/**
+* Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+*/
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+* Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+*/
+b,
+strong {
+  font-weight: bold; }
+
+/**
+* Address styling not present in Safari and Chrome.
+*/
+dfn {
+  font-style: italic; }
+
+/**
+* Address variable `h1` font-size and margin within `section` and `article`
+* contexts in Firefox 4+, Safari, and Chrome.
+*/
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+* Address styling not present in IE 8/9.
+*/
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+* Address inconsistent and variable font size in all browsers.
+*/
+small {
+  font-size: 80%; }
+
+/**
+* Remove italics from address
+*/
+address {
+  font-style: normal; }
+
+/**
+* Prevent `sub` and `sup` affecting `line-height` in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+========================================================================== */
+/**
+* Remove border when inside `a` element in IE 8/9/10.
+*/
+img {
+  border: 0; }
+
+/**
+* Correct overflow not hidden in IE 9/10/11.
+*/
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+========================================================================== */
+/**
+* Address margin not present in IE 8/9 and Safari.
+*/
+figure {
+  margin: 1em 0; }
+
+/**
+* Address differences between Firefox and other browsers.
+*/
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+* Contain overflow in all browsers.
+*/
+pre {
+  overflow: auto; }
+
+/**
+* Address odd `em`-unit font size rendering in all browsers.
+*/
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+========================================================================== */
+/**
+* Known limitation: by default, Chrome and Safari on OS X allow very limited
+* styling of `select`, unless a `border` property is set.
+*/
+/**
+* 1. Correct color not being inherited.
+*    Known issue: affects color of disabled elements.
+* 2. Correct font properties not being inherited.
+* 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+* Address `overflow` set to `hidden` in IE 8/9/10/11.
+*/
+button {
+  overflow: visible; }
+
+/**
+* Address inconsistent `text-transform` inheritance for `button` and `select`.
+* All other form control elements do not inherit `text-transform` values.
+* Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+* Correct `select` style inheritance in Firefox.
+*/
+button,
+select {
+  text-transform: none; }
+
+/**
+* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+*    and `video` controls.
+* 2. Correct inability to style clickable `input` types in iOS.
+* 3. Improve usability and consistency of cursor style between image-type
+*    `input` and others.
+*/
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+* Re-set default cursor for disabled elements.
+*/
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+* Remove inner padding and border in Firefox 4+.
+*/
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+* Address Firefox 4+ setting `line-height` on `input` using `!important` in
+* the UA stylesheet.
+*/
+input {
+  line-height: normal; }
+
+/**
+* It's recommended that you don't attempt to style these elements.
+* Firefox's implementation doesn't respect box-sizing, padding, or width.
+*
+* 1. Address box sizing set to `content-box` in IE 8/9/10.
+* 2. Remove excess padding in IE 8/9/10.
+*/
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+* Fix the cursor style for Chrome's increment/decrement buttons. For certain
+* `font-size` values of the `input`, it causes the cursor style of the
+* decrement button to change from `default` to `text`.
+*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+* 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+* 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+*    (include `-moz` to future-proof).
+*/
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+* Remove inner padding and search cancel button in Safari and Chrome on OS X.
+* Safari (but not Chrome) clips the cancel button when the search input has
+* padding (and `textfield` appearance).
+*/
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+* Define consistent border, margin, and padding.
+*/
+fieldset {
+  border: none;
+  margin: 1em 0;
+  padding: 0; }
+
+/**
+* 1. Correct `color` not being inherited in IE 8/9/10/11.
+* 2. Remove padding so people aren't caught out if they zero out fieldsets.
+*/
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+* Remove default vertical scrollbar in IE 8/9/10/11.
+*/
+textarea {
+  overflow: auto; }
+
+/**
+* Don't inherit the `font-weight` (applied by a rule above).
+* NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+*/
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+========================================================================== */
+/**
+* Remove most spacing between table cells.
+*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/********************
+	Website Settings
+	----------------
+	Colour, and 
+	typography
+
+*/
+/*******************
+	Colour settings
+*/
+/* Brand colours */
+/* SASS colour calls */
+/*******************
+	Website margins
+	& paddings
+*/
+/* Margins & Padding */
+/***********************
+	Typography settings
+*/
+/* Lato */
+/* Typography - SASS calls */
+body,
+p,
+h6,
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+textarea,
+ul li {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, san-serif;
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6, .button, input[type="submit"] {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, san-serif;
+  font-weight: 700; }
+
+header .intro {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, san-serif;
+  font-weight: 300; }
+
+/**********************\
+	Trigger Options
+	---------------
+
+	Update the relevant
+	values below.
+
+\**********************/
+/************
+	1. Grids
+*/
+/* A.1: Do you want to use Bourbon Neat for grids? */
+/* A.2: Fill out the maximum width, and number of grids for Desktop, Tablet and Mobile */
+/* B: If you aren't going to use Bourbon Neat what width is your site? */
+/***************************
+	Bourbon
+	------------------------
+	Import Bourbon and
+	Bourbon Neat (for grids)
+
+*/
+/* Bourbon 4.0.2
+ * http://bourbon.io
+ * Copyright 2011-2014 thoughtbot, inc.
+ * MIT License */
+/**
+ * Returns a media context (media query / grid context) that can be stored in a variable and passed to `media()` as a single-keyword argument. Media contexts defined using `new-breakpoint` are used by the visual grid, as long as they are defined before importing Neat.
+ *
+ * @param {List} $query
+ *   - A list of media query features and values. Each `$feature` should have a corresponding `$value`. If there is only a single `$value` in `$query`, `$default-feature` is going to be used. The number of total columns in the grid can be set by passing `$columns` at the end of the list (overrides `$total-columns`). For a list of valid values for `$feature`, click [here](http://www.w3.org/TR/css3-mediaqueries/#media1).
+ *
+ * @param {Number (unitless)} $total-columns ($grid-columns)
+ *   - Number of columns to use in the new grid context. Can be set as a shorthand in the first parameter.
+ *
+ * @example scss - Usage
+ *   $mobile: new-breakpoint(max-width 480px 4);
+ *
+ *   .element {
+ *     @include media($mobile) {
+ *       @include span-columns(4);
+ *     }
+ *   }
+ *
+ * @example css - CSS Output
+ *   @media screen and (max-width: 480px) {
+ *     .element {
+ *       display: block;
+ *       float: left;
+ *       margin-right: 7.42297%;
+ *       width: 100%;
+ *     }
+ *     .element:last-child {
+ *       margin-right: 0;
+ *     }
+ *   }
+ */
+/**
+ * Sets the relative width of a single grid column. The unit used should be the same one used to define `$gutter`. To learn more about golden-ratio() see [Bourbon docs](http://bourbon.io/docs/#golden-ratio). Set with a `!global` flag.
+ *
+ * @type Number (Unit)
+ */
+/**
+ * Sets the relative width of a single grid gutter. The unit used should be the same one used to define `$column`. To learn more about golden-ratio() see [Bourbon docs](http://bourbon.io/docs/#golden-ratio). Set with the `!global` flag.
+ *
+ * @type Number (Unit)
+ */
+/**
+ * Sets the total number of columns in the grid. Its value can be overridden inside a media query using the `media()` mixin. Set with the `!global` flag.
+ *
+ * @type Number (Unitless)
+ */
+/**
+ * Sets the max-width property of the element that includes `outer-container()`. To learn more about `em()` see [Bourbon docs](http://bourbon.io/docs/#px-to-em). Set with the `!global` flag.
+ *
+ * @type Number (Unit)
+ */
+/**
+ * When set to true, it sets the box-sizing property of all elements to `border-box`. Set with a `!global` flag.
+ *
+ * @type Bool
+ *
+ * @example css - CSS Output
+ *   * {
+ *     -webkit-box-sizing: border-box;
+ *     -moz-box-sizing: border-box;
+ *     box-sizing: border-box;
+ *   }
+ */
+/**
+ * Sets the default [media feature](http://www.w3.org/TR/css3-mediaqueries/#media) that `media()` and `new-breakpoint()` revert to when only a breakpoint value is passed. Set with a `!global` flag.
+ *
+ * @type String
+ */
+/**
+ * Sets the default layout direction of the grid. Can be `LTR` or `RTL`. Set with a `!global` flag.
+ *
+ * @type String
+ */
+/**
+ * Displays the visual grid when set to true. The overlaid grid may be few pixels off depending on the browser's rendering engine and pixel rounding algorithm. Set with the `!global` flag.
+ *
+ * @type Bool
+ */
+/**
+ * Sets the visual grid color. Set with `!global` flag.
+ *
+ * @type Color
+ */
+/**
+ * Sets the `z-index` property of the visual grid. Can be `back` (behind content) or `front` (in front of content). Set with `!global` flag.
+ *
+ * @type String
+ */
+/**
+ * Sets the opacity property of the visual grid. Set with `!global` flag.
+ *
+ * @type Number (unitless)
+ */
+/**
+ * Disable all deprecation warnings. Defaults to `false`. Set with a `!global` flag.
+ *
+ * @type Bool
+ */
+/*****************
+	Grid settings
+*/
+/***************
+	Breakpoints
+*/
+/* Neat 1.7.0.pre
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+/**
+ * Returns a media context (media query / grid context) that can be stored in a variable and passed to `media()` as a single-keyword argument. Media contexts defined using `new-breakpoint` are used by the visual grid, as long as they are defined before importing Neat.
+ *
+ * @param {List} $query
+ *   - A list of media query features and values. Each `$feature` should have a corresponding `$value`. If there is only a single `$value` in `$query`, `$default-feature` is going to be used. The number of total columns in the grid can be set by passing `$columns` at the end of the list (overrides `$total-columns`). For a list of valid values for `$feature`, click [here](http://www.w3.org/TR/css3-mediaqueries/#media1).
+ *
+ * @param {Number (unitless)} $total-columns ($grid-columns)
+ *   - Number of columns to use in the new grid context. Can be set as a shorthand in the first parameter.
+ *
+ * @example scss - Usage
+ *   $mobile: new-breakpoint(max-width 480px 4);
+ *
+ *   .element {
+ *     @include media($mobile) {
+ *       @include span-columns(4);
+ *     }
+ *   }
+ *
+ * @example css - CSS Output
+ *   @media screen and (max-width: 480px) {
+ *     .element {
+ *       display: block;
+ *       float: left;
+ *       margin-right: 7.42297%;
+ *       width: 100%;
+ *     }
+ *     .element:last-child {
+ *       margin-right: 0;
+ *     }
+ *   }
+ */
+/**
+ * Sets the relative width of a single grid column. The unit used should be the same one used to define `$gutter`. To learn more about golden-ratio() see [Bourbon docs](http://bourbon.io/docs/#golden-ratio). Set with a `!global` flag.
+ *
+ * @type Number (Unit)
+ */
+/**
+ * Sets the relative width of a single grid gutter. The unit used should be the same one used to define `$column`. To learn more about golden-ratio() see [Bourbon docs](http://bourbon.io/docs/#golden-ratio). Set with the `!global` flag.
+ *
+ * @type Number (Unit)
+ */
+/**
+ * Sets the total number of columns in the grid. Its value can be overridden inside a media query using the `media()` mixin. Set with the `!global` flag.
+ *
+ * @type Number (Unitless)
+ */
+/**
+ * Sets the max-width property of the element that includes `outer-container()`. To learn more about `em()` see [Bourbon docs](http://bourbon.io/docs/#px-to-em). Set with the `!global` flag.
+ *
+ * @type Number (Unit)
+ */
+/**
+ * When set to true, it sets the box-sizing property of all elements to `border-box`. Set with a `!global` flag.
+ *
+ * @type Bool
+ *
+ * @example css - CSS Output
+ *   * {
+ *     -webkit-box-sizing: border-box;
+ *     -moz-box-sizing: border-box;
+ *     box-sizing: border-box;
+ *   }
+ */
+/**
+ * Sets the default [media feature](http://www.w3.org/TR/css3-mediaqueries/#media) that `media()` and `new-breakpoint()` revert to when only a breakpoint value is passed. Set with a `!global` flag.
+ *
+ * @type String
+ */
+/**
+ * Sets the default layout direction of the grid. Can be `LTR` or `RTL`. Set with a `!global` flag.
+ *
+ * @type String
+ */
+/**
+ * Displays the visual grid when set to true. The overlaid grid may be few pixels off depending on the browser's rendering engine and pixel rounding algorithm. Set with the `!global` flag.
+ *
+ * @type Bool
+ */
+/**
+ * Sets the visual grid color. Set with `!global` flag.
+ *
+ * @type Color
+ */
+/**
+ * Sets the `z-index` property of the visual grid. Can be `back` (behind content) or `front` (in front of content). Set with `!global` flag.
+ *
+ * @type String
+ */
+/**
+ * Sets the opacity property of the visual grid. Set with `!global` flag.
+ *
+ * @type Number (unitless)
+ */
+/**
+ * Disable all deprecation warnings. Defaults to `false`. Set with a `!global` flag.
+ *
+ * @type Bool
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/**
+ * Removes the element's gutter margin, regardless of its position in the grid hierarchy or display property. It can target a specific element, or every `nth-child` occurrence. Works only with `block` layouts.
+ *
+ * @param {List} $query (block)
+ *   List of arguments. Supported arguments are `nth-child` selectors (targets a specific pseudo element) and `auto` (targets `last-child`).
+ *
+ *   When passed an `nth-child` argument of type `*n` with `block` display, the omega mixin automatically adds a clear to the `*n+1` th element. Note that composite arguments such as `2n+1` do not support this feature.
+ *
+ *   **Deprecation warning**: The omega mixin will no longer take a `$direction` argument. To change the layout direction, use `row($direction)` or set `$default-layout-direction` instead.
+ *
+ * @example scss - Usage
+ *   .element {
+ *     @include omega;
+ *   }
+ *
+ *   .nth-element {
+ *     @include omega(4n);
+ *   }
+ *
+ * @example css - CSS Output
+ *   .element {
+ *     margin-right: 0;
+ *   }
+ *
+ *   .nth-element:nth-child(4n) {
+ *     margin-right: 0;
+ *   }
+ *
+ *   .nth-element:nth-child(4n+1) {
+ *     clear: left;
+ *   }
+ */
+/**
+ * Makes an element a outer container by centring it in the viewport, clearing its floats, and setting its `max-width`.
+ * Although optional, using `outer-container` is recommended. The mixin can be called on more than one element per page, as long as they are not nested.
+ *
+ * @param {Number (unit)} $local-max-width ($max-width)
+ *   Max width to be applied to the element. Can be a percentage or a measure.
+ *
+ * @example scss - Usage
+ *   .element {
+ *     @include outer-container(100%);
+ *   }
+ *
+ * @example css - CSS Output
+ *   .element {
+ *     *zoom: 1;
+ *     max-width: 100%;
+ *     margin-left: auto;
+ *     margin-right: auto;
+ *   }
+ *
+ *   .element:before, .element:after {
+ *     content: " ";
+ *     display: table;
+ *   }
+ *
+ *   .element:after {
+ *     clear: both;
+ *   }
+ */
+/**
+ * Specifies the number of columns an element should span. If the selector is nested the number of columns of its parent element should be passed as an argument as well.
+ *
+ * @param {List} $span
+ *   A list containing `$columns`, the unitless number of columns the element spans (required), and `$container-columns`, the number of columns the parent element spans (optional).
+ *
+ *   If only one value is passed, it is assumed that it's `$columns` and that that `$container-columns` is equal to `$grid-columns`, the total number of columns in the grid.
+ *
+ *   The values can be separated with any string such as `of`, `/`, etc.
+ *
+ * @param {String} $display (block)
+ *   Sets the display property of the element. By default it sets the display propert of the element to `block`.
+ *
+ *   If passed `block-collapse`, it also removes the margin gutter by adding it to the element width.
+ *
+ *   If passed `table`, it sets the display property to `table-cell` and calculates the width of the element without taking gutters into consideration. The result does not align with the block-based grid.
+ *
+ * @example scss - Usage
+ *   .element {
+ *     @include span-columns(6);
+
+ *    .nested-element {
+ *      @include span-columns(2 of 6);
+ *    }
+ *  }
+ *
+ * @example css - CSS Output
+ *   .element {
+ *     display: block;
+ *     float: left;
+ *     margin-right: 2.35765%;
+ *     width: 48.82117%;
+ *   }
+ *
+ *   .element:last-child {
+ *     margin-right: 0;
+ *   }
+ *
+ *   .element .nested-element {
+ *     display: block;
+ *     float: left;
+ *     margin-right: 4.82916%;
+ *     width: 30.11389%;
+ *   }
+ *
+ *   .element .nested-element:last-child {
+ *     margin-right: 0;
+ *   }
+ */
+/**
+ * Designates the element as a row of columns in the grid layout. It clears the floats on the element and sets its display property. Rows can't be nested, but there can be more than one row element—with different display properties—per layout.
+ *
+ * @param {String} $display (default)
+ *   Sets the display property of the element and the display context that will be used by its children. Can be `block` or `table`.
+ *
+ * @param {String} $direction ($default-layout-direction)
+ *   Sets the layout direction. Can be `LTR` (left-to-right) or `RTL` (right-to-left).
+ *
+ * @example scss - Usage
+ *   .element {
+ *     @include row();
+ *   }
+ *
+ * @example css - CSS Output
+ *   .element {
+ *     *zoom: 1;
+ *     display: block;
+ *   }
+ *
+ *  .element:before, .element:after {
+ *    content: " ";
+ *    display: table;
+ *  }
+ *
+ *  .element:after {
+ *    clear: both;
+ *  }
+ */
+/**
+ * Translates an element horizontally by a number of columns. Positive arguments shift the element to the active layout direction, while negative ones shift it to the opposite direction.
+ *
+ * @param {Number (unitless)} $n-columns (1)
+ *   Number of columns by which the element shifts.
+ *
+ * @example scss - Usage
+ *   .element {
+ *     @include shift(-3);
+ *   }
+ *
+ * @example css - CSS output
+ *   .element {
+ *     margin-left: -25.58941%;
+ *   }
+ */
+/**
+ * Translates an element horizontally by a number of columns, in a specific nesting context.
+ *
+ * @param {List} $shift
+ *   A list containing the number of columns to shift (`$columns`) and the number of columns of the parent element (`$container-columns`).
+ *
+ *   The two values can be separated with any string such as `of`, `/`, etc.
+ *
+ * @example scss - Usage
+ *   .element {
+ *     @include shift(-3 of 6);
+ *   }
+ *
+ * @example css - CSS output
+ *   .element {
+ *     margin-left: -52.41458%;
+ *   }
+ */
+/**
+ * Adds padding to the element.
+ *
+ * @param {List} $padding (flex-gutter())
+ *   A list of padding value(s) to use. Passing `default` in the list will result in using the gutter width as a padding value.
+ *
+ * @example scss - Usage
+ *   .element {
+ *     @include pad(30px -20px 10px default);
+ *   }
+ *
+ * @example css - CSS Output
+ *   .element {
+ *     padding: 30px -20px 10px 2.35765%;
+ *   }
+ */
+/**
+ * Forces the element to fill its parent container.
+ *
+ * @example scss - Usage
+ *   .element {
+ *     @include fill-parent;
+ *   }
+ *
+ * @example css - CSS Output
+ *   .element {
+ *     width: 100%;
+ *     -webkit-box-sizing: border-box;
+ *     -moz-box-sizing: border-box;
+ *     box-sizing: border-box;
+ *   }
+ */
+/**
+ * Outputs a media-query block with an optional grid context (the total number of columns used in the grid).
+ *
+ * @param {List} $query
+ *   A list of media query features and values, where each `$feature` should have a corresponding `$value`.
+ *   For a list of valid values for `$feature`, click [here](http://www.w3.org/TR/css3-mediaqueries/#media1).
+ *
+ *   If there is only a single `$value` in `$query`, `$default-feature` is going to be used.
+ *
+ *   The number of total columns in the grid can be set by passing `$columns` at the end of the list (overrides `$total-columns`).
+ *
+ *
+ * @param {Number (unitless)} $total-columns ($grid-columns)
+ *   - Number of columns to use in the new grid context. Can be set as a shorthand in the first parameter.
+ *
+ * @example scss - Usage
+ *   .responsive-element {
+ *      @include media(769px) {
+ *        @include span-columns(6);
+ *      }
+ *   }
+ *
+ *  .new-context-element {
+ *    @include media(min-width 320px max-width 480px, 6) {
+ *      @include span-columns(6);
+ *    }
+ *  }
+ *
+ * @example css - CSS Output
+ *  @media screen and (min-width: 769px) {
+ *    .responsive-element {
+ *      display: block;
+ *      float: left;
+ *      margin-right: 2.35765%;
+ *      width: 48.82117%;
+ *    }
+ *
+ *    .responsive-element:last-child {
+ *      margin-right: 0;
+ *    }
+ *  }
+ *
+ *  @media screen and (min-width: 320px) and (max-width: 480px) {
+ *    .new-context-element {
+ *      display: block;
+ *      float: left;
+ *      margin-right: 4.82916%;
+ *      width: 100%;
+ *    }
+ *
+ *    .new-context-element:last-child {
+ *      margin-right: 0;
+ *    }
+ *  }
+ */
+/**
+ * Resets the active display property to `block`. Particularly useful when changing the display property in a single row.
+ *
+ * @example scss - Usage
+ *   .element {
+ *     @include row(table);
+ *     // Context changed to table display
+ *   }
+ *
+ *   @include reset-display;
+ *   // Context is reset to block display
+ */
+/**
+ * Resets the active layout direction to the default value set in `$default-layout-direction`. Particularly useful when changing the layout direction in a single row.
+ *
+ * @example scss - Usage
+ *   .element {
+ *     @include row($direction: RTL);
+ *     // Context changed to right-to-left
+ *   }
+ *
+ *   @include reset-layout-direction;
+ *   // Context is reset to left-to-right
+ */
+/**
+ * Resets both the active layout direction and the active display property.
+ *
+ * @example scss - Usage
+ *   .element {
+ *     @include row(table, RTL);
+ *     // Context changed to table table and right-to-left
+ *   }
+ *
+ *   @include reset-all;
+ *   // Context is reset to block display and left-to-right
+ */
+/**
+ * Changes the display property used by other mixins called in the code block argument.
+ *
+ * @param {String} $display (block)
+ *   Display value to be used within the block. Can be `table` or `block`.
+ *
+ * @example scss
+ *   @include display(table) {
+ *    .display-table {
+ *      @include span-columns(6);
+ *     }
+ *   }
+ *
+ * @example css
+ *   .display-table {
+ *      display: table-cell;
+ *      ...
+ *   }
+ */
+/**
+ * Changes the direction property used by other mixins called in the code block argument.
+ *
+ * @param {String} $direction (left-to-right)
+ *   Layout direction to be used within the block. Can be `left-to-right` or `right-to-left`.
+ *
+ * @example scss - Usage
+ *   @include direction(right-to-left) {
+ *    .right-to-left-block {
+ *      @include span-columns(6);
+ *     }
+ *   }
+ *
+ * @example css - CSS Output
+ *   .right-to-left-block {
+ *     float: right;
+ *      ...
+ *   }
+ */
+/***********************************
+
+	This file should NOT be changed
+	--------------------------------
+	All settings for the site should
+	be configured in _config.scss
+
+*/
+/***************************************************
+	A.1: Do you want to use Bourbon Neat for grids?
+
+*/
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/************************
+	Typography
+	---------------------
+	Set all of your sites 
+	typography here
+	
+*/
+* {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+p {
+  color: #999999;
+  font-size: 1.125em;
+  line-height: 1.6;
+  margin: 1.5em 0; }
+
+p a {
+  color: #dd4433; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+  line-height: 1.2;
+  margin: 1em 0 0.5em;
+  padding: 0;
+  text-rendering: optimizeLegibility; }
+
+h1 {
+  font-size: 4.5em; }
+
+h2 {
+  font-size: 3.125em; }
+
+h3 {
+  font-size: 2.25em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.125em; }
+
+h6 {
+  font-size: 1.125em; }
+
+/************************
+	Layouts & Elements
+	---------------------
+	Edit your header, 
+	footer, and main 
+	page styles here
+	
+*/
+/******************
+	Layout Imports
+*/
+header {
+  padding: 50px 20px 0; }
+  header h1 {
+    margin: 0;
+    text-transform: uppercase; }
+  header .intro {
+    color: #444444;
+    font-size: 2.25em;
+    margin: 0; }
+  header .logo a {
+    color: #444444;
+    display: block;
+    height: 0px;
+    width: 0px; }
+  header nav {
+    padding-top: 20px; }
+
+/********
+	Main
+*/
+* {
+  margin: 0; }
+
+html {
+  background-color: #ffffff; }
+
+body {
+  color: #999999;
+  font-size: 1em;
+  line-height: 1;
+  margin: 0; }
+
+a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #dd4433;
+  text-decoration: none; }
+
+div.main-wrapper {
+  padding: 0 20px; }
+  div.main-wrapper article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    div.main-wrapper article:last-child {
+      margin-right: 0; }
+  div.main-wrapper aside {
+    margin-left: 8.5298%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    div.main-wrapper aside:last-child {
+      margin-right: 0; }
+
+hr {
+  margin: 1em 0; }
+
+/********************
+	Module SCSS here
+*/
+/******************
+	Page SCSS here
+*/
+footer {
+  margin: 0 0 30px;
+  padding: 0 20px; }
+  footer p {
+    font-size: 0.75em;
+    font-weight: bold; }
+
+/*******************
+	Element Imports
+*/
+/***********
+	Buttons
+*/
+.button, input[type="submit"] {
+  display: inline-block;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  background: #dd4433;
+  border: 1px solid #dd4433;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.125em;
+  line-height: 1;
+  padding: 9px 12px; }
+  .button:hover, input[type="submit"]:hover, .button:focus, input[type="submit"]:focus {
+    background: rgba(221, 68, 51, 0.8); }
+
+.button.inactive, input.inactive[type="submit"] {
+  background: transparent;
+  border: 1px solid rgba(221, 68, 51, 0.3);
+  color: #dd4433; }
+  .button.inactive:hover, input.inactive[type="submit"]:hover, .button.inactive:focus, input.inactive[type="submit"]:focus {
+    border: 1px solid rgba(221, 68, 51, 0.9); }
+
+.button + .button, input[type="submit"] + .button, .button + input[type="submit"], input[type="submit"] + input[type="submit"] {
+  margin-left: 1em; }
+
+/*****************
+	Form Elements
+*/
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+textarea {
+  -webkit-transition: border 0.2s ease-in-out;
+  -moz-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ffffff;
+  border: 1px solid rgba(221, 68, 51, 0.3);
+  border-radius: 0;
+  color: #dd4433;
+  display: block;
+  font-size: 1.125em;
+  margin: 0 0 1.5em;
+  outline: none;
+  padding: 9px 12px;
+  width: 100%; }
+  input[type="email"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, input[type="color"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="datetime"]::-webkit-input-placeholder, input[type="datetime-local"]::-webkit-input-placeholder, input[type="month"]::-webkit-input-placeholder, input[type="time"]::-webkit-input-placeholder, input[type="week"]::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: #dd4433; }
+  input[type="email"]::-moz-placeholder, input[type="number"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="text"]::-moz-placeholder, input[type="url"]::-moz-placeholder, input[type="color"]::-moz-placeholder, input[type="date"]::-moz-placeholder, input[type="datetime"]::-moz-placeholder, input[type="datetime-local"]::-moz-placeholder, input[type="month"]::-moz-placeholder, input[type="time"]::-moz-placeholder, input[type="week"]::-moz-placeholder,
+  textarea::-moz-placeholder {
+    color: #dd4433; }
+  input[type="email"]:-moz-placeholder, input[type="number"]:-moz-placeholder, input[type="password"]:-moz-placeholder, input[type="search"]:-moz-placeholder, input[type="tel"]:-moz-placeholder, input[type="text"]:-moz-placeholder, input[type="url"]:-moz-placeholder, input[type="color"]:-moz-placeholder, input[type="date"]:-moz-placeholder, input[type="datetime"]:-moz-placeholder, input[type="datetime-local"]:-moz-placeholder, input[type="month"]:-moz-placeholder, input[type="time"]:-moz-placeholder, input[type="week"]:-moz-placeholder,
+  textarea:-moz-placeholder {
+    color: #dd4433; }
+  input[type="email"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, input[type="color"]:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder, input[type="datetime"]:-ms-input-placeholder, input[type="datetime-local"]:-ms-input-placeholder, input[type="month"]:-ms-input-placeholder, input[type="time"]:-ms-input-placeholder, input[type="week"]:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: #dd4433; }
+
+textarea {
+  height: 5em;
+  resize: none; }
+
+input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+textarea:focus {
+  border: 1px solid #dd4433; }
+
+input[type="submit"] {
+  border: none;
+  outline: none; }
+
+ul {
+  font-size: 1.125em;
+  margin: 1.5em 0; }
+  ul li {
+    color: #999999;
+    line-height: 1;
+    margin: 0 0 1.25em; }
+
+.unstyled-list,
+.inline-list {
+  list-style-type: none;
+  padding: 0; }
+
+.inline-list {
+  margin: 0; }
+  .inline-list:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .inline-list li {
+    display: inline; }
+
+/***********
+	Helpers
+*/
+/******************
+	Helper Imports
+*/
+/*******************
+	Default Helpers
+*/
+::-moz-selection {
+  background: #dd4433;
+  color: #ffffff;
+  text-shadow: none; }
+
+::selection {
+  background: #dd4433;
+  color: #ffffff;
+  text-shadow: none; }
+
+.mobile {
+  display: none; }
+
+.desktop {
+  display: block; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+/****************
+	Media Queries 
+*/
+/****************************
+	Import all media queries
+*/
+img, object, embed {
+  max-width: 100%; }
+
+img {
+  height: auto; }
+
+/* Landscape tablet and small desktop */
+@media screen and (max-width: 1139px) {
+  div.main-wrapper article {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 61.158%; }
+    div.main-wrapper article:last-child {
+      margin-right: 0; }
+  div.main-wrapper aside {
+    margin-left: 0%;
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 35.26334%; }
+    div.main-wrapper aside:last-child {
+      margin-right: 0; } }
+/* Tablet (Portrait) */
+@media screen and (max-width: 1023px) {
+  div.main-wrapper article {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%; }
+    div.main-wrapper article:last-child {
+      margin-right: 0; }
+  div.main-wrapper aside {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%; }
+    div.main-wrapper aside:last-child {
+      margin-right: 0; } }
+/* Mobile (Landscape) */
+@media screen and (max-width: 767px) {
+  body {
+    -webkit-text-size-adjust: none; }
+
+  .mobile {
+    display: block; }
+
+  .desktop {
+    display: none; }
+
+  div.main-wrapper article,
+  div.main-wrapper aside {
+    float: left;
+    display: block;
+    margin-right: 38.19821%;
+    width: 100%; }
+    div.main-wrapper article:last-child,
+    div.main-wrapper aside:last-child {
+      margin-right: 0; }
+
+  .button, input[type="submit"] {
+    display: block;
+    margin-bottom: 1em;
+    text-align: center;
+    width: 100%; }
+
+  .button + .button, input[type="submit"] + .button, .button + input[type="submit"], input[type="submit"] + input[type="submit"] {
+    margin-left: 0; } }
+
 /*# sourceMappingURL=style.css.map */
