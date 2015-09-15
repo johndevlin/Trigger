@@ -8,7 +8,7 @@ If you name isn't Shane O'Neil fuck off.
 
 ## Get started
 
-`sass --watch development/css/base.scss:css/style.css`
+Run `sass --watch development/css/base.scss:css/style.css` in yo terminal. 
 
 
 
