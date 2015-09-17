@@ -98,6 +98,15 @@ module.exports = function(grunt) {
 		
 		clean: {
 			img: ["!img/*.svg", "!img/svg/*", "img/*.{png,jpg,gif}", "img/**/*.{png,jpg,gif}"]
+		},
+		
+		bowercopy: {
+			options: {
+				// Task-specific options go here 
+			},
+			your_target: {
+				// Target-specific file lists and/or options go here 
+			}
 		}
 
 	});
@@ -111,6 +120,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-htmlhint');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-bowercopy');
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'watch']);

@@ -1,23 +1,24 @@
 {
-	"name": "Trigger",
-	"version": "0.0.0",
-	"homepage": "https://github.com/johndevlin/Trigger",
-	"authors": [
-	"John Devlin <j@johndevlin.me>"
-	],
-	
-	"license": "MIT",
-	
-	"ignore": [
-		"**/.*",
-		"node_modules",
-		"bower_components",
-		"test",
-		"tests"
-	],
-	
-	"dependencies": {
-		"bourbon": "~4.2.4",
-		"neat": "~1.7.2"
-	}
+  "name": "Trigger",
+  "version": "0.0.0",
+  "homepage": "https://github.com/johndevlin/Trigger",
+  "description": "A front end frame work preliminary used by a bearded lad named John.",
+  "authors": [
+    "John Devlin <j@johndevlin.me>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "development/bower-components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.4",
+    "jquery": "~2.1.4",
+    "jquery-placeholder": "~2.1.2",
+    "neat": "~1.7.2"
+  }
 }
