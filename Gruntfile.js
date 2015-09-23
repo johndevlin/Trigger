@@ -101,12 +101,27 @@ module.exports = function(grunt) {
 		},
 		
 		bowercopy: {
-			options: {
-				// Task-specific options go here 
+			// options: {
+			// 	clean: true
+			// },
+
+			libs: {
+				options: {
+					destPrefix: 'development/js/libs'
+				},
+				files: {
+					'jquery.js': 'jquery/dist/jquery.js'
+				},
 			},
-			your_target: {
-				// Target-specific file lists and/or options go here 
-			}
+			plugins: {
+				options: {
+					destPrefix: 'development/js/plugins'
+				},
+				files: {
+					'jquery.placeholder.js': 'jquery-placeholder/jquery.placeholder.js',
+					'bxslider.js': 'bxslider-4/dist/jquery.bxslider.js'
+				}
+			},
 		}
 
 	});
